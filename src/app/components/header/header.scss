@@ -1,0 +1,56 @@
+$primary-color: #a0ca70;
+$hover-color: #ad7d23;
+$lang-hover-color: #00bcd4;
+$text-color: white;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: $primary-color;
+  color: $text-color;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 50px;
+
+  .logo {
+    a {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+
+  .nav-links {
+    a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: $text-color;
+      transition: color 0.3s;
+      font-weight: bold;
+
+      &:hover,
+      &.active {
+        color: $hover-color;
+      }
+    }
+  }
+
+  .language-switch {
+    button {
+      background: none;
+      border: none;
+      color: $text-color;
+      margin: 0 5px;
+      cursor: pointer;
+      font-weight: bold;
+
+      &:hover {
+        color: $lang-hover-color;
+      }
+    }
+  }
+}
