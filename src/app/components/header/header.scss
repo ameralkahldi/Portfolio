@@ -5,7 +5,7 @@ $text-color: white;
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 15px 30px;
   color: $text-color;
@@ -13,6 +13,7 @@ $text-color: white;
   top: 0;
   z-index: 1000;
   height: 50px;
+  padding: 50px 20px;
 
   .logo {
     a {
@@ -29,7 +30,7 @@ $text-color: white;
       text-decoration: none;
       color: $text-color;
       transition: color 0.3s;
-      font-weight: bold;
+      
 
       &:hover,
       &.active {
@@ -48,7 +49,7 @@ $text-color: white;
       font-weight: bold;
 
       &:hover {
-        color: $lang-hover-color;
+        color:  $hover-color;
       }
     }
   }
