@@ -1,11 +1,11 @@
-$primary-color: #00bcd4;
+$primary-color: #3DCFB6;
 $secondary-color: #fff;
 $font-main: 'Segoe UI', sans-serif;
 
 .home-hero {
   position: relative;
   height: 70vh;
-  
+  padding-top: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,23 +71,18 @@ $font-main: 'Segoe UI', sans-serif;
         }
       }}}
 
-     .bottom-row {
+.bottom-row {
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 90vw;
   padding: 0 2rem;
   position: relative;
   z-index: 2;
 
-  a {
-    text-decoration: none;
-    color: $secondary-color;
-  }
-
   .scroll-down-arrow {
     font-size: 1.2rem;
-    background-color: transparent;
     border: 2px solid $primary-color;
     padding: 10px;
     border-radius: 50%; 
@@ -106,18 +101,37 @@ $font-main: 'Segoe UI', sans-serif;
     }
   }
 
-  .github-icon img {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.3s;
-  transform: rotate(90deg); 
-  padding: 15px;
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
 
-  &:hover {
-    transform: scale(1.1) rotate(90deg);
+    .icon {
+      width: 50px;
+      height: 50px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+      }
+
+      img {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
   }
-}
-
 }
 
 
@@ -130,4 +144,28 @@ $font-main: 'Segoe UI', sans-serif;
       transform: translate(-50%, -10px);
     }
   }
+}
+
+.angled-banner {
+  width: 100%;
+  background-color: #3a4630;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transform: skewY(-3deg);
+  position: relative; 
+  z-index: 20;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  color: #3DCFB6;
+
+  span {
+    white-space: nowrap;
+  }
+
+
 }
