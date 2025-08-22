@@ -5,17 +5,18 @@ $text-color: white;
 
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between; // توزيع العناصر على الأطراف
   align-items: center;
   padding: 15px 30px;
   color: $text-color;
   position: sticky;
   top: 0;
   z-index: 1000;
-  height: 50px;
-  padding: 50px 20px;
+  height: 80px;
 
   .logo {
+    flex: 1;
+
     a {
       font-size: 1.5rem;
       font-weight: bold;
@@ -25,11 +26,16 @@ $text-color: white;
   }
 
   .nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-left: 10%;
+
     a {
       text-decoration: none;
       color: $text-color;
       transition: color 0.3s;
-      margin: 0 15px;
 
       &:hover,
       &.active {
@@ -39,6 +45,10 @@ $text-color: white;
   }
 
   .language-switch {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
     button {
       background: none;
       border: none;
@@ -48,7 +58,7 @@ $text-color: white;
       font-weight: bold;
 
       &:hover {
-        color:  $hover-color;
+        color: $hover-color;
       }
     }
   }
