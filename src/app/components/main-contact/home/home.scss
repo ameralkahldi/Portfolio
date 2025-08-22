@@ -107,14 +107,17 @@ $font-main: 'Segoe UI', sans-serif;
   }
 
   .github-icon img {
-    width: 32px;
-    height: 32px;
-    transition: transform 0.3s;
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s;
+  transform: rotate(90deg); 
+  padding: 15px;
 
-    &:hover {
-      transform: scale(1.1);
-    }
+  &:hover {
+    transform: scale(1.1) rotate(90deg);
   }
+}
+
 }
 
 
