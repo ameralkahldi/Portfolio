@@ -1,0 +1,30 @@
+<section class="technologies">
+  <div class="container">
+    <h2 class="section-title">Technologies</h2>
+    <div class="content-wrapper">
+      <div class="header-box">
+        <h3>Skill Set</h3>
+        <p>
+          A short introduction of your skills. Highlight your experience of using different front-end technologies
+          and emphasise your openness to learning and adapting to new technologies.
+          Show how important it is for you to keep up with the rapid changes in web development.
+        </p>
+        <p class="contact-note">
+          You need another skill?<br />
+          <strong>Feel free to contact me.</strong> I look forward to expanding on my previous knowledge.
+        </p>
+
+        <button class="btn-talk">Let’s Talk</button>
+      </div>
+
+      <div class="skills-grid">
+        @for (skill of skills; track skill.name) {
+          <div class="skill-card">
+            <img [src]="skill.icon" [alt]="skill.name" />
+            <span>{{ skill.name }}</span>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>
