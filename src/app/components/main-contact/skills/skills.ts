@@ -41,7 +41,7 @@ export class SkillsComponent {
       icon : '/assets/icon_logos/git-svgrepo-com.png'
     }
     ,{
-      name : 'Rest Apis',
+      name : 'Rest Api',
       icon : '/assets/icon_logos/api-svgrepo-com.png'
     }
   ]
