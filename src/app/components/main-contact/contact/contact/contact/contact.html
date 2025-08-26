@@ -1,1 +1,42 @@
-<p>contact works!</p>
+<section class="contact">
+  <div class="container">
+    <div class="contact-wrapper">
+      <div class="contact-heading">
+        <h3>Contact Me</h3>
+        <h1>Let's work together</h1>
+        
+        <h2>
+          Got a problem to solve? </h2>
+          <p>Need a Frontend developer? Let's talk!  
+          I’ll help bring your ideas to life with clean, modern, and responsive code.
+        </p>
+      </div>
+
+      <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
+        <div class="form-group">
+          <label>What's your name?</label>
+          <input formControlName="name" placeholder="Your name goes here" />
+        </div>
+
+        <div class="form-group">
+          <label>What's your email?</label>
+          <input formControlName="email" placeholder="youremail@email.com" />
+        </div>
+
+        <div class="form-group">
+          <label>How can I help you?</label>
+          <textarea formControlName="message" rows="5" placeholder="Hello, I am interested in..."></textarea>
+        </div>
+
+        <div class="form-group checkbox">
+          <input type="checkbox" formControlName="privacy" />
+          <label>I’ve read the privacy policy and agree to the processing of my data.</label>
+        </div>
+
+        <button class="btn" type="submit" [disabled]="contactForm.invalid">Say Hello :)</button>
+
+        <p *ngIf="submitted" class="success-message">Thanks! I’ll get back to you soon 🚀</p>
+      </form>
+    </div>
+  </div>
+</section>

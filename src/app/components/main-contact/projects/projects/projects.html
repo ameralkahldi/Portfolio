@@ -1,30 +1,36 @@
 <section class="projects">
   <div class="container">
-    <div class="header-row">
-      <h2 class="section-title">My Projects</h2>
-      <div class="tab-buttons">
-        <button
-          *ngFor="let project of projects; let i = index"
-          class="tab-button"
-          [class.active]="i === selectedProjectIndex"
-          (click)="selectProject(i)">
-          {{ project.title }}
-        </button>
+    <h4 class="portfolio-title">Portfolio</h4> 
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="subtitle">Explore a selection of my work here - Interact with projects to see my skills in action.</p>
+
+    <div class="project-list">
+      <div
+        *ngFor="let project of projects; let i = index"
+        class="project-box"
+        (click)="selectProject(i)"
+        [class.active]="selectedProjectIndex === i"
+      >
+        <span class="project-title">{{ project.title }}</span>
+        <span class="tech-stack">{{ project.techStack.join(' | ') }}</span>
       </div>
     </div>
 
-    <div *ngIf="selectedProject" class="project-display">
-      <div class="project-image">
-        <img [src]="selectedProject.image" [alt]="selectedProject.title" />
-      </div>
-      <div class="project-info">
-        <h3>{{ selectedProject.title }}</h3>
-        <p>{{ selectedProject.description }}</p>
-        <div class="btn-group">
-          <a [href]="selectedProject.link" target="_blank" class="btn">GitHub</a>
-          <a [href]="selectedProject.testLink" target="_blank" class="btn btn-secondary">Test Live</a>
-        </div>
-      </div>
-    </div>
+ <div *ngIf="selectedProject" class="project-card">
+  <button class="nav-arrow left" (click)="prevProject()">&larr;</button>
+
+  <img [src]="selectedProject.image" [alt]="selectedProject.title" />
+  <h3>{{ selectedProject.title }}</h3>
+  <p>{{ selectedProject.description }}</p>
+  <p><strong>Tech Stack:</strong> {{ selectedProject.techStack.join(', ') }}</p>
+  
+  <div class="btn-group">
+    <a *ngIf="selectedProject.link" [href]="selectedProject.link" target="_blank" class="btn">GitHub</a>
+    <a *ngIf="selectedProject.testLink" [href]="selectedProject.testLink" target="_blank" class="btn btn-secondary">Test Live</a>
+  </div>
+
+  <button class="nav-arrow right" (click)="nextProject()">&rarr;</button>
+</div>
+
   </div>
 </section>
