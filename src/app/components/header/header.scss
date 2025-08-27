@@ -1,66 +1,166 @@
-$primary-color: #a0ca70;
-$hover-color: #ad7d23;
-$lang-hover-color: #00bcd4;
-$text-color: white;
-
 .navbar {
-  display: flex;
-  justify-content: space-between;  
-  align-items: center;
-  padding: 15px 30px;
-  color: $text-color;
   position: sticky;
   top: 0;
   z-index: 1000;
-  height: 80px;
-  background-color: #70541f;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  gap: 2rem;
+  background: linear-gradient(135deg, #1C1C1C, #1e2b1f, #08463B);
 
   .logo {
-    flex: 1;
+    margin-left: auto;
 
     a {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       font-weight: bold;
+      color: #3DCFB6;
       text-decoration: none;
-      color: $text-color;
     }
   }
 
   .nav-links {
-    flex: 1;
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    align-items: center;
+    gap: 2rem;
     font-size: 24px;
+    margin-right: auto;
 
     a {
       text-decoration: none;
-      color: $text-color;
+      color: #ffffff;
+      font-weight: 600;
       transition: color 0.3s;
 
-      &:hover,
+      &.active,
+      &:hover {
+        color: #3DCFB6;
+      }
+    }
+
+    .mobile-lang {
+      display: none; 
+    }
+  }
+
+  .desktop-lang {
+    display: inline-flex;
+    border: 1px solid #3DCFB6;
+    border-radius: 12px;
+    overflow: hidden;
+
+    button {
+      padding: 0.5rem 1.4rem;
+      background-color: transparent;
+      color: #3DCFB6;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:first-child {
+        border-right: 1px solid #3DCFB6;
+      }
+
       &.active {
-        color: $hover-color;
+        background-color: #3DCFB6;
+        color: white;
+      }
+
+      &:hover:not(.active) {
+        background-color: rgba(61, 207, 182, 0.1);
       }
     }
   }
 
-  .language-switch {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
+  .menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #3DCFB6;
+    background: none;
+    border: none;
+  }
+}
 
-    button {
-      background: none;
-      border: none;
-      color: $text-color;
-      margin: 0 5px;
-      cursor: pointer;
-      font-weight: bold;
+// ---------------- Responsive ----------------
 
-      &:hover {
-        color: $hover-color;
+@media (max-width: 800px) {
+  .navbar {
+    padding: 1rem;
+
+    .desktop-lang {
+      display: none; 
+    }
+
+    .menu-toggle {
+      display: block;
+      margin-left: 1rem;
+    }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-right: 0;
+      background: #1a1a1a;
+      padding: 1rem 2rem;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      border-radius: 0 0 12px 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+
+      a {
+        font-size: 1.1rem;
+        color: white;
+        font-weight: 600;
+
+        &:hover,
+        &.active {
+          color: #3DCFB6;
+        }
       }
+
+      .mobile-lang {
+        display: inline-flex;
+        margin-top: 1rem;
+        border: 1px solid #3DCFB6;
+        border-radius: 12px;
+        overflow: hidden;
+
+        button {
+          padding: 0.5rem 1.4rem;
+          background-color: transparent;
+          color: #3DCFB6;
+          font-weight: 600;
+          font-size: 0.95rem;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.3s ease, color 0.3s ease;
+
+          &:first-child {
+            border-right: 1px solid #3DCFB6;
+          }
+
+          &.active {
+            background-color: #3DCFB6;
+            color: white;
+          }
+
+          &:hover:not(.active) {
+            background-color: rgba(61, 207, 182, 0.1);
+          }
+        }
+      }
+    }
+
+    .nav-links.open {
+      display: flex;
     }
   }
 }

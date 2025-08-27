@@ -7,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrl: './home.scss'
 })
 export class HomeComponent {
+  
+  startScroll(event: MouseEvent) {
+  const target = event.currentTarget as HTMLElement;
+  target.classList.add('scrolling');
+}
+
+stopScroll(event: MouseEvent) {
+  const target = event.currentTarget as HTMLElement;
+  target.classList.remove('scrolling');
+}
+
 
 }

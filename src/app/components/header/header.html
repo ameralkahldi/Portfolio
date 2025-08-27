@@ -1,17 +1,24 @@
 <header class="navbar">
-  <div class="logo">
-    <a routerLink="/">Portfolio</a>
+  <div class="language-switch desktop-lang">
+    <button [class.active]="currentLang === 'en'" (click)="switchLanguage('en')">EN</button>
+    <button [class.active]="currentLang === 'de'" (click)="switchLanguage('de')">DE</button>
   </div>
 
-  <nav class="nav-links">
-    <a routerLink="/about" routerLinkActive="active">About Me</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+  <nav class="nav-links" [class.open]="isMenuVisible">
+    <a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">About Me</a>
+    <a href="#skills" (click)="closeMenu()">Skills</a>
+    <a href="#projects" (click)="closeMenu()">Projects</a>
+   
+
+    <div class="language-switch mobile-lang">
+      <button [class.active]="currentLang === 'en'" (click)="switchLanguage('en'); closeMenu()">EN</button>
+      <button [class.active]="currentLang === 'de'" (click)="switchLanguage('de'); closeMenu()">DE</button>
+    </div>
   </nav>
 
-  <div class="language-switch">
-    <button >DE</button>
-    <button >EN</button>
+  <button class="menu-toggle" (click)="toggleMenu()" aria-label="Toggle menu">&#9776;</button>
+
+  <div class="logo">
+    <a routerLink="/">Portfolio</a>
   </div>
 </header>
