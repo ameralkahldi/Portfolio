@@ -10,21 +10,23 @@
           Show how important it is for you to keep up with the rapid changes in web development.
         </p>
         <p class="contact-note">
-          You need another skill?<br />
-          <strong>Feel free to contact me.</strong> I look forward to expanding on my previous knowledge.
+          <span class="highlighted-question">You need another skill?</span><br /><br />
+          Feel free to contact me. I look forward to expanding on my previous knowledge.
         </p>
 
         <button class="btn-talk">Let’s Talk</button>
+
       </div>
 
       <div class="skills-grid">
-        @for (skill of skills; track skill.name) {
-          <div class="skill-card">
-            <img [src]="skill.icon" [alt]="skill.name" />
-            <span>{{ skill.name }}</span>
-          </div>
+        @for (skill of skills; track skill.icon) {
+        <div class="skill-card">
+          <img [src]="skill.icon" [alt]="skill.icon" />
+
+        </div>
         }
       </div>
+
     </div>
   </div>
 </section>

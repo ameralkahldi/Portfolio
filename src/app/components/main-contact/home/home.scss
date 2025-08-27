@@ -208,7 +208,6 @@ $font-main: 'Segoe UI', sans-serif;
 }
 @keyframes scroll-loop { 0% { transform: translateX(0%); } 100% { transform: translateX(-50%); } } 
 @keyframes scroll-word-by-word { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } } 
-
 @keyframes scroll-left { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } } 
-
+@keyframes bounceUpDown { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
 

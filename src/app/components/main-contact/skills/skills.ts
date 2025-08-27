@@ -9,40 +9,50 @@ import { Component } from '@angular/core';
 })
 export class SkillsComponent {
   skills :{
-    name: string;
+ 
     icon: string;
   }[] = [
     {
-      name: 'HTML',
-      icon : 'assets/icon_logos/html-svgrepo-com.png'
+    
+      icon : 'assets/icon_logos/HTML.png'
     },
     {
-      name: 'CSS',
-      icon : '/assets/icon_logos/css-svgrepo-com.png'
+    
+      icon : 'assets/icon_logos/17. Skill animation.png'
     },
     {
-      name: 'JavaScript',
-      icon : '/assets/icon_logos/javascript-16-svgrepo-com.png'
+      
+      icon : 'assets/icon_logos/JavaScript.png'
     },
     {
-      name:'Bootstrap',
-      icon : '/assets/icon_logos/bootstrap-svgrepo-com.png'
+
+      icon : 'assets/icon_logos/Material Design (1).png'
     },
     {
-      name: 'Angular',
-      icon : '/assets/icon_logos/angular-16-svgrepo-com.png'
+     
+      icon : 'assets/icon_logos/TypeScript.png'
     },
     {
-      name: 'TypeScript',
-      icon : '/assets/icon_logos/typescript-16-svgrepo-com (1).png'
+     
+      icon : 'assets/icon_logos/Angular.png'
     },
     {
-      name :'GitHub',
-      icon : '/assets/icon_logos/git-svgrepo-com.png'
+      icon : 'assets/icon_logos/Firebase.png'
+
+    },
+    {
+      
+      icon : 'assets/icon_logos/GIT.png'
     }
     ,{
-      name : 'Rest Api',
-      icon : '/assets/icon_logos/api-svgrepo-com.png'
+      
+      icon : 'assets/icon_logos/Rest-Api.png'
+    },
+    {
+      icon :'assets/icon_logos/Scrum.png'
+    },
+    {
+      icon:'assets/icon_logos/18. Growth Mindset interaction.png'
     }
   ]
 
