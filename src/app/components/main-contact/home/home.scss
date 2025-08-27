@@ -6,11 +6,11 @@ $font-main: 'Segoe UI', sans-serif;
 
 .home-hero {
   position: relative;
-  min-height: 100vh; // ✅ بدل height
+  min-height: 100vh;
   padding-top: 3rem;
   display: flex;
-  flex-direction: column; // ✅ مهم ليظهر كل شيء بشكل عمودي
-  justify-content: space-between; // ✅ لتوزيع المحتوى والـ angled-banner
+  flex-direction: column; 
+  justify-content: space-between; 
   color: $secondary-color;
   font-family: $font-main;
   background: linear-gradient(135deg, #1C1C1C, #1e2b1f, #08463B);
