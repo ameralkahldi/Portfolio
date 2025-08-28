@@ -9,6 +9,7 @@
     padding: 3rem;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(15, 209, 31, 0.05);
+    background-color: #1c1c1c; // خلفية داكنة لتعزيز التباين
   }
 
   .contact-wrapper {
@@ -28,12 +29,6 @@
       padding-right: 2rem;
       gap: 4rem;
 
-      h2 {
-        font-size: 2.5rem;
-        color: #3dcfb6;
-        margin: 0;
-      }
-
       h3 {
         font-size: 1.8rem;
         color: #2aa48a;
@@ -43,6 +38,12 @@
       h1 {
         font-size: 2.8rem;
         color: #2aa48a;
+        margin: 0;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+        color: #3dcfb6;
         margin: 0;
       }
 
@@ -63,7 +64,8 @@
       .form-group {
         display: flex;
         flex-direction: column;
-        border-bottom: 2px solid #f1eded;  /* الخط الفاصل */
+        position: relative;
+        border-bottom: 2px solid #f1eded;
 
         label {
           margin-bottom: 0.5rem;
@@ -83,15 +85,21 @@
           transition: border-color 0.3s;
           color: #ffffff;
 
-            &::placeholder {
-              color: #ffffff;
-                opacity: 1;
-               }
-
+          &::placeholder {
+            color: #ffffff;
+            opacity: 1;
+          }
 
           &:focus {
             border-bottom-color: #3dcfb6;
           }
+        }
+
+        // رسائل الأخطاء
+        .error {
+          color: red;
+          font-size: 0.9rem;
+          margin-top: 0.3rem;
         }
 
         &.checkbox {
@@ -100,21 +108,24 @@
           gap: 0.5rem;
           border-bottom: none;
 
+          input {
+            width: auto;
+            margin: 0;
+            padding: 0;
+            border: none;
+            outline: none;
+          }
+
           label {
             margin: 0;
             font-weight: 400;
+            color: #ffffff;
           }
 
-          input {
-            width: auto;
-            border: none;
-            padding: 0;
-            border-bottom: none;
-
-            &:focus {
-              border-bottom: none;
-              outline-offset: 0;
-            }
+          .error {
+            flex: 1 1 100%;
+            margin-left: 2rem;
+            margin-top: 0.3rem;
           }
         }
       }
@@ -146,6 +157,7 @@
         text-align: center;
         color: #28a745;
         font-weight: 600;
+        margin-top: 1rem;
       }
     }
   }

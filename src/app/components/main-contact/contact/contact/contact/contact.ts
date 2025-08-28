@@ -23,10 +23,13 @@ export class ContactComponent {
   }
 
   submitForm() {
-    if (this.contactForm.valid) {
-      this.submitted = true;
-      console.log(this.contactForm.value);
-      this.contactForm.reset();
-    }
+  if (this.contactForm.invalid) {
+    this.contactForm.markAllAsTouched(); // <-- هذا يُظهر الأخطاء فورًا بعد الإرسال
+    return;
   }
+
+  this.submitted = true;
+  console.log(this.contactForm.value);
+  this.contactForm.reset();
+}
 }
