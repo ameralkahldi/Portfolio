@@ -29,11 +29,50 @@
     gap: 0.5rem;
   }
 
-  .footer-logo {
+.logo {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+
+  .logo-icon {
+    background: linear-gradient(135deg, #32b49b, #29a49a);
+    color: white;
+    font-weight: 700;
     font-size: 1.4rem;
-    font-weight: bold;
-    color: #3dcfb6;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    span {
+      font-size: 0.8rem;
+      margin-left: 1px;
+    }
   }
+
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+
+    .name {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #f0e5e5;
+      text-align: center;
+    }
+
+    .surname {
+      font-size: 1rem;
+      color: #f0e5e5;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+  }
+}
 
   .footer-left p {
     margin: 0;
@@ -44,12 +83,15 @@
   .footer-center {
     text-align: center;
 
-    .copyright {
-      font-size: 22px;
-      color: #3dcfb6;
-      font-family: 'Times New Roman', Times, serif;
-      margin-top: 25px;
-    }
+   .copyright {
+  font-size: 18px;
+  color: #3dcfb6;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 25px;
+  text-align: center;
+  font-weight: 500;
+}
+
   }
 
   .footer-right {
