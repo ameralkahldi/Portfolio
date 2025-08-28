@@ -4,6 +4,7 @@ import { AboutComponent } from './components/main-contact/about/about/about/abou
 import { ProjectsComponent } from './components/main-contact/projects/projects/projects';
 import { ContactComponent } from './components/main-contact/contact/contact/contact/contact';
 import { SkillsComponent } from './components/main-contact/skills/skills';
+import { ImprintComponent } from './components/footer/imprint/imprint';
 
 
 
@@ -13,5 +14,6 @@ import { SkillsComponent } from './components/main-contact/skills/skills';
 { path: 'projects', component: ProjectsComponent },
 { path: 'contact', component: ContactComponent},
 { path: 'skills', component: SkillsComponent },
+{ path: 'legal', component: ImprintComponent },
 { path: '**', redirectTo: '' }
 ];

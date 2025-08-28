@@ -1,11 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-imprint',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './imprint.html',
-  styleUrl: './imprint.scss'
+  styleUrls: ['./imprint.scss']
 })
-export class Imprint {
+export class ImprintComponent {
 
 }
