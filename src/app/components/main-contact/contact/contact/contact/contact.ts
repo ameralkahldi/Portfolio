@@ -24,7 +24,7 @@ export class ContactComponent {
 
   submitForm() {
   if (this.contactForm.invalid) {
-    this.contactForm.markAllAsTouched(); // <-- هذا يُظهر الأخطاء فورًا بعد الإرسال
+    this.contactForm.markAllAsTouched(); 
     return;
   }
 
