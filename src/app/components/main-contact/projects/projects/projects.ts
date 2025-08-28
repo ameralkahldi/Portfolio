@@ -12,9 +12,21 @@ export class ProjectsComponent {
   projects = [
     {
       title: 'Pekomen Show',
+      frage :'What is this project About ?',
       description: 'A dynamic website showcasing delicious chicken recipes.',
       image: 'assets/img/2025-08-25 (1).png',
-      techStack: ['JavaScript', 'CSS', 'HTML', 'API'],
+      pro : ['HTML', 'CSS', 'JavaScript', 'API'],
+      techStack: [
+        {
+          icon:'assets/icon_skill/HTML.png'
+        },
+        {
+          icon : 'assets/icon_skill/CSS.png'
+        },
+        {
+          icon : ' assets/icon_skill/Frame 375.png'
+        }
+      ],
       link: 'https://amer-alkhalidy.developerakademie.net/Pokemon%20API/Pokemon%20API/index.html',
       testLink: 'https://amer-alkhalidy.developerakademie.net/Pokemon%20API/index.html'
     },
@@ -22,7 +34,18 @@ export class ProjectsComponent {
       title: 'El Pollo Loco Spiel',
       description: 'A dynamic website showcasing delicious chicken recipes.',
       image: 'assets/img/2025-08-25 (3).png',
-      techStack: ['JavaScript', 'CSS', 'HTML'],
+      pro : ['HTML', 'CSS', 'JavaScript'],
+      techStack: [
+        {
+          icon:'assets/icon_skill/HTML.png'
+        },
+        {
+          icon : 'assets/icon_skill/CSS.png'
+        },
+        {
+          icon : ' assets/icon_skill/Frame 375.png'
+        }
+      ],
       link: 'https://github.com/ameralkahldi/El-Pollo-Loco',
       testLink: 'https://amer-alkhalidy.developerakademie.net/EL%20Pollo%20Loco/index.html'
     },
@@ -30,7 +53,18 @@ export class ProjectsComponent {
       title: 'Project 3',
       description: 'Coming soon...',
       image: 'assets/img/coming-soon.png',
-      techStack: ['JavaScript', 'CSS', 'HTML'],
+      pro : ['HTML', 'CSS', 'JavaScript', 'API'],
+       techStack: [
+        {
+          icon:'assets/icon_skill/HTML.png'
+        },
+        {
+          icon : 'assets/icon_skill/CSS.png'
+        },
+        {
+          icon : 'assets/icon_skill/Frame 375.png'
+        }
+      ],
       link: '',
       testLink: ''
     }

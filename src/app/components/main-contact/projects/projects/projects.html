@@ -4,33 +4,63 @@
     <h2 class="section-title">Featured Projects</h2>
     <p class="subtitle">Explore a selection of my work here - Interact with projects to see my skills in action.</p>
 
-    <div class="project-list">
-      <div
-        *ngFor="let project of projects; let i = index"
-        class="project-box"
-        (click)="selectProject(i)"
-        [class.active]="selectedProjectIndex === i"
-      >
-        <span class="project-title">{{ project.title }}</span>
-        <span class="tech-stack">{{ project.techStack.join(' | ') }}</span>
+<div class="project-list">
+  <div
+    *ngFor="let project of projects; let i = index"
+    class="project-box"
+    (click)="selectProject(i)"
+    [class.active]="selectedProjectIndex === i"
+  >
+    <span class="project-title">
+      {{ project.title }}
+      <img src="assets/icon_skill/arrow_outward.png" alt="arrow" class="title-arrow" />
+    </span>
+    <span class="tech-stack">
+      {{ project.pro.join(' | ') }}
+    </span>
+  </div>
+</div>
+
+
+
+
+<div *ngIf="selectedProject" class="project-card-overlay">
+  <div class="project-card-modal">
+
+    <div class="project-left">
+      <p class="project-id">Project {{ selectedProjectIndex! + 1 }}</p>
+      <h3 class="project-title">{{ selectedProject.title }}</h3>
+      <p class="project-question text-red"> {{ selectedProject.frage || 'What is this project about?' }}</p>
+      <p class="project-description">{{ selectedProject.description }}</p>
+
+      <div class="tech-stack-icons">
+        <img *ngFor="let tech of selectedProject.techStack" [src]="tech.icon.trim()" alt="tech icon" class="tech-icon" />
+      </div>
+
+      <div class="btn-group">
+        <a *ngIf="selectedProject.link" [href]="selectedProject.link" target="_blank" class="btn">GitHub
+          <img src="assets/icon_skill/arrow_outward.png" alt="Arrow" class="btn-icon" />
+        </a>
+        <a *ngIf="selectedProject.testLink" [href]="selectedProject.testLink" target="_blank" class="btn btn-secondary">Test Live
+          <img src="assets/icon_skill/arrow_outward.png" alt="Arrow" class="btn-icon" />
+        </a>
       </div>
     </div>
 
- <div *ngIf="selectedProject" class="project-card">
-  <button class="nav-arrow left" (click)="prevProject()">&larr;</button>
+    <div class="project-right">
+      <img src="assets/icon_skill/23. Close Button.png" alt="Close" class="close-icon" (click)="selectedProjectIndex = null" />
 
-  <img [src]="selectedProject.image" [alt]="selectedProject.title" />
-  <h3>{{ selectedProject.title }}</h3>
-  <p>{{ selectedProject.description }}</p>
-  <p><strong>Tech Stack:</strong> {{ selectedProject.techStack.join(', ') }}</p>
-  
-  <div class="btn-group">
-    <a *ngIf="selectedProject.link" [href]="selectedProject.link" target="_blank" class="btn">GitHub</a>
-    <a *ngIf="selectedProject.testLink" [href]="selectedProject.testLink" target="_blank" class="btn btn-secondary">Test Live</a>
+      <img [src]="selectedProject.image" [alt]="selectedProject.title" class="project-image" />
+
+      <div class="next-project" (click)="nextProject()">
+        <span class="next-text text-red">Next Project</span>
+        <span class="arrow text-red">&rarr;</span>
+      </div>
+    </div>
+
   </div>
-
-  <button class="nav-arrow right" (click)="nextProject()">&rarr;</button>
+</div>
 </div>
 
-  </div>
+  
 </section>
