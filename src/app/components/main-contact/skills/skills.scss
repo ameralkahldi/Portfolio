@@ -17,8 +17,9 @@
 
    
   }
-  .btn-talk {
-  margin-top: 1.5rem;
+.btn-talk {
+  display: inline-block;           
+  text-decoration: none;          
   background-color: #3DCFB61A;
   color: white;
   border: none;
@@ -33,6 +34,7 @@
     background-color: #32b49b;
   }
 }
+
 
 
   .content-wrapper {
