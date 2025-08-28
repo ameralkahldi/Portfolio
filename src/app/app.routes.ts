@@ -1,19 +1,12 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './components/main-contact/home/home';
-import { AboutComponent } from './components/main-contact/about/about/about/about';
-import { ProjectsComponent } from './components/main-contact/projects/projects/projects';
-import { ContactComponent } from './components/main-contact/contact/contact/contact/contact';
-import { SkillsComponent } from './components/main-contact/skills/skills';
 import { ImprintComponent } from './components/footer/imprint/imprint';
+import { MainContactComponent } from './components/main-contact/main-contact';
 
 
 
  export const routes: Routes = [
 
-{ path: 'about', component: AboutComponent },
-{ path: 'projects', component: ProjectsComponent },
-{ path: 'contact', component: ContactComponent},
-{ path: 'skills', component: SkillsComponent },
+{ path: '', component: MainContactComponent },
 { path: 'legal', component: ImprintComponent },
 { path: '**', redirectTo: '' }
 ];

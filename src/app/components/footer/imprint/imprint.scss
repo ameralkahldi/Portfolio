@@ -1,0 +1,32 @@
+.legal-notice {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #3dcfb6;
+    background: linear-gradient(135deg, #1C1C1C, #1e2b1f, #08463B);
+
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  section {
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+
+  li {
+    margin-bottom: 0.4rem;
+  }
+}
