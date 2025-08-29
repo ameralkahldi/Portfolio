@@ -1,0 +1,109 @@
+{
+  "NAV": {
+    "ABOUT": "About Me",
+    "SKILLS": "Skills",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact"
+  },
+  "HOME": {
+    "ROLE": "Frontend Developer",
+    "CHECK_WORK": "Check My Work",
+    "CONTACT_ME": "Contact Me",
+    "AVAILABLE": "Available for remote work",
+    "LOCATION": "Based in Munich",
+    "OPEN": "Open to work"
+  },
+  
+    
+  "ABOUT": {
+    "LABEL": "Who I Am",
+    "TITLE": "About me",
+    "INTRO": "Hey there, I'm Amer.",
+    "DETAILS": "Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills?",
+    "LOCATION": "Where are you based? Would you be open to working remotely or potentially relocating?",
+    "LEARNING": "Show that you are open-minded. Are you enthusiastic about learning new technologies and continually improving your skills?",
+    "PROBLEM_SOLVING": "A brief description of your problem-solving approach. Do you learn from each challenge as you search for the most efficient or elegant solution? You can include some keywords like analytical thinking, creativity, persistence, and collaboration."
+  },
+  
+  "CONTACT": {
+    "HEADING": "Contact Me",
+    "SUBHEADING": "Let's work together",
+    "QUESTION": "Got a problem to solve?",
+    "DESCRIPTION": "Need a Frontend developer? Let's talk! I’ll help bring your ideas to life with clean, modern, and responsive code.",
+    
+    "NAME_LABEL": "What's your name?",
+    "NAME_PLACEHOLDER": "Your name goes here",
+    "EMAIL_LABEL": "What's your email?",
+    "EMAIL_PLACEHOLDER": "youremail@email.com",
+    "MESSAGE_LABEL": "How can I help you?",
+    "MESSAGE_PLACEHOLDER": "Hello, I am interested in...",
+    "PRIVACY_LABEL": "I’ve read the privacy policy and agree to the processing of my data.",
+
+    "SUBMIT": "Say Hello :)",
+    "SUCCESS": "Thanks! I’ll get back to you soon",
+
+    "ERROR_NAME": "Please enter a valid name.",
+    "ERROR_REQUIRED": "You must fill in the field.",
+    "ERROR_EMAIL": "Please enter a valid email.",
+    "ERROR_PRIVACY": "You must agree to the privacy policy."
+  },
+  
+  "TECHNOLOGIES": {
+    "TITLE": "Technologies",
+    "SKILLSET": "Skill Set",
+    "DESCRIPTION": "A short introduction of your skills. Highlight your experience of using different front-end technologies and emphasise your openness to learning and adapting to new technologies. Show how important it is for you to keep up with the rapid changes in web development.",
+    "QUESTION": "You need another skill?",
+    "CONTACT_NOTE": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+    "TALK_BUTTON": "Let’s Talk"
+  },
+  "PROJECTS": {
+    "PORTFOLIO": "Portfolio",
+    "FEATURED": "Featured Projects",
+    "SUBTITLE": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "PROJECT": "Project",
+    "DEFAULT_QUESTION": "What is this project about?",
+    "GITHUB": "GitHub",
+    "LIVE_TEST": "Test Live",
+    "NEXT": "Next Project"
+  },
+ "FOOTER": {
+    "ROLE": "Web Developer",
+    "LOCATION": "Munich, Germany",
+    "RIGHTS": "All rights reserved.",
+    "GITHUB": "Github",
+    "LINKEDIN": "LinkedIn",
+    "EMAIL": "Email",
+    "LEGAL": "Legal Notice"
+  },
+  
+  "LEGAL": {
+    "TITLE": "Imprint",
+    "PUBLISHER_INFO": "Publisher Information",
+    "NAME": "Name",
+    "ADDRESS": "Address",
+    "CITY": "City",
+    "EMAIL": "Email",
+    "ACCEPTANCE_TERMS": "Acceptance of Terms",
+    "ACCEPTANCE_TERMS_TEXT": "By accessing and using this Portfolio (\"Product\"), you acknowledge and agree to the following terms and conditions, including any policies, guidelines, or amendments that may be presented from time to time. The listed students may update or change the terms and conditions without notice.",
+    "SCOPE_OWNERSHIP": "Scope and Ownership of the Product",
+    "SCOPE_OWNERSHIP_TEXT_1": "This Portfolio has been developed as part of a student group project in a web development bootcamp at the Developer Akademie GmbH. It is intended for educational purposes only and not for extensive personal or commercial use. Therefore, we cannot guarantee consistent performance, reliability, security, or any specific quality attributes.",
+    "SCOPE_OWNERSHIP_TEXT_2": "The design of the Portfolio is owned by the Developer Akademie GmbH. Unauthorized use, reproduction, modification, distribution, or replication of the design is strictly prohibited.",
+    "PROPRIETARY_RIGHTS": "Proprietary Rights",
+    "PROPRIETARY_RIGHTS_TEXT": "Apart from the design owned by Developer Akademie GmbH, the listed students retain all proprietary rights to the Portfolio, including associated copyrighted material, trademarks, and other proprietary information.",
+    "USE_PRODUCT": "Use of the Product",
+    "USE_PRODUCT_TEXT": "This Portfolio is intended to be used for lawful purposes only, in accordance with all applicable laws and regulations. Any use of the Portfolio for illegal activities, or to harass, harm, threaten, or intimidate others, is strictly prohibited. You are solely responsible for your interactions with other users of the Portfolio.",
+    "DISCLAIMER": "Disclaimer of Warranties and Limitation of Liability",
+    "DISCLAIMER_TEXT": "The Portfolio is provided \"as is\" without any warranty, express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event shall the listed students or the Developer Akademie be liable for any direct, indirect, incidental, special, consequential, or exemplary damages — including but not limited to loss of profits, goodwill, use, data, or other intangible losses — even if advised of the possibility of such damages, arising out of or in connection with the use or performance of the Portfolio.",
+    "INDEMNITY": "Indemnity",
+    "INDEMNITY_TEXT": "You agree to indemnify, defend, and hold harmless the listed students, the Developer Akademie, and their affiliates, partners, officers, directors, agents, and employees from any claim, demand, loss, damage, cost, or liability (including reasonable legal fees) arising out of or related to your use of the Portfolio and/or your breach of this Legal Notice.",
+    "CONTACT": "Contact",
+    "CONTACT_TEXT": "For any questions or notices, please contact us at: <strong>amer.alkhaldi@icloud.com</strong>"
+  }
+
+
+}
+
+
+
+
+

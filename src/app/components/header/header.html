@@ -5,9 +5,10 @@
   </div>
 
   <nav class="nav-links" [class.open]="isMenuVisible">
-    <a href="#about" (click)="closeMenu()">About Me</a>
-    <a href="#skills" (click)="closeMenu()">Skills</a>
-    <a href="#projects" (click)="closeMenu()">Projects</a>
+ <a href="#about" (click)="closeMenu()">{{ 'NAV.ABOUT' | translate }}</a>
+<a href="#skills" (click)="closeMenu()">{{ 'NAV.SKILLS' | translate }}</a>
+<a href="#projects" (click)="closeMenu()">{{ 'NAV.PROJECTS' | translate }}</a>
+
    
 
     <div class="language-switch mobile-lang">

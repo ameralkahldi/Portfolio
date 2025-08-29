@@ -2,57 +2,55 @@
   <div class="container">
     <div class="contact-wrapper">
       <div class="contact-heading">
-        <h3>Contact Me</h3>
-        <h1>Let's work together</h1>
-        
-        <h2>
-          Got a problem to solve? </h2>
-          <p>Need a Frontend developer? Let's talk!  
-          I’ll help bring your ideas to life with clean, modern, and responsive code.
-        </p>
+        <h3>{{ 'CONTACT.HEADING' | translate }}</h3>
+        <h1>{{ 'CONTACT.SUBHEADING' | translate }}</h1>
+
+        <h2>{{ 'CONTACT.QUESTION' | translate }}</h2>
+        <p>{{ 'CONTACT.DESCRIPTION' | translate }}</p>
       </div>
+
       <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
-  <div class="form-group">
-    <label>What's your name?</label>
-    <input formControlName="name" placeholder="Your name goes here" />
-    <p class="error" *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
-      Please enter a valid name.
-    </p>
-  </div>
+        <div class="form-group">
+          <label>{{ 'CONTACT.NAME_LABEL' | translate }}</label>
+          <input formControlName="name" [placeholder]="'CONTACT.NAME_PLACEHOLDER' | translate" />
+          <p class="error" *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+            {{ 'CONTACT.ERROR_NAME' | translate }}
+          </p>
+        </div>
 
-  <div class="form-group">
-    <label>What's your email?</label>
-    <input formControlName="email" placeholder="youremail@email.com" />
-    <p class="error" *ngIf="contactForm.get('email')?.hasError('required') && contactForm.get('email')?.touched">
-      You must fill in the field.
-    </p>
-    <p class="error" *ngIf="contactForm.get('email')?.hasError('email') && contactForm.get('email')?.touched">
-      Please enter a valid email.
-    </p>
-  </div>
+        <div class="form-group">
+          <label>{{ 'CONTACT.EMAIL_LABEL' | translate }}</label>
+          <input formControlName="email" [placeholder]="'CONTACT.EMAIL_PLACEHOLDER' | translate" />
+          <p class="error" *ngIf="contactForm.get('email')?.hasError('required') && contactForm.get('email')?.touched">
+            {{ 'CONTACT.ERROR_REQUIRED' | translate }}
+          </p>
+          <p class="error" *ngIf="contactForm.get('email')?.hasError('email') && contactForm.get('email')?.touched">
+            {{ 'CONTACT.ERROR_EMAIL' | translate }}
+          </p>
+        </div>
 
-  <div class="form-group">
-    <label>How can I help you?</label>
-    <textarea formControlName="message" rows="5" placeholder="Hello, I am interested in..."></textarea>
-    <p class="error" *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
-      You must fill in the field.
-    </p>
-  </div>
+        <div class="form-group">
+          <label>{{ 'CONTACT.MESSAGE_LABEL' | translate }}</label>
+          <textarea formControlName="message" rows="5" [placeholder]="'CONTACT.MESSAGE_PLACEHOLDER' | translate"></textarea>
+          <p class="error" *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
+            {{ 'CONTACT.ERROR_REQUIRED' | translate }}
+          </p>
+        </div>
 
-  <div class="form-group checkbox">
-    <input type="checkbox" formControlName="privacy" />
-    <label>I’ve read the privacy policy and agree to the processing of my data.</label>
-    <p class="error" *ngIf="contactForm.get('privacy')?.invalid && contactForm.get('privacy')?.touched">
-      You must agree to the privacy policy.
-    </p>
-  </div>
+        <div class="form-group checkbox">
+          <input type="checkbox" formControlName="privacy" />
+          <label>{{ 'CONTACT.PRIVACY_LABEL' | translate }}</label>
+          <p class="error" *ngIf="contactForm.get('privacy')?.invalid && contactForm.get('privacy')?.touched">
+            {{ 'CONTACT.ERROR_PRIVACY' | translate }}
+          </p>
+        </div>
 
-  <button class="btn" type="submit" [disabled]="contactForm.invalid">Say Hello :)</button>
+        <button class="btn" type="submit" [disabled]="contactForm.invalid">
+          {{ 'CONTACT.SUBMIT' | translate }}
+        </button>
 
-  <p *ngIf="submitted" class="success-message">Thanks! I’ll get back to you soon </p>
-</form>
-
-
+        <p *ngIf="submitted" class="success-message">{{ 'CONTACT.SUCCESS' | translate }}</p>
+      </form>
     </div>
   </div>
 </section>

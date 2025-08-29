@@ -1,66 +1,63 @@
 <section class="projects">
   <div class="container">
-    <h4 class="portfolio-title">Portfolio</h4> 
-    <h2 class="section-title">Featured Projects</h2>
-    <p class="subtitle">Explore a selection of my work here - Interact with projects to see my skills in action.</p>
+    <h4 class="portfolio-title">{{ 'PROJECTS.PORTFOLIO' | translate }}</h4>
+    <h2 class="section-title">{{ 'PROJECTS.FEATURED' | translate }}</h2>
+    <p class="subtitle">{{ 'PROJECTS.SUBTITLE' | translate }}</p>
 
-<div class="project-list">
-  <div
-    *ngFor="let project of projects; let i = index"
-    class="project-box"
-    (click)="selectProject(i)"
-    [class.active]="selectedProjectIndex === i"
-  >
-    <span class="project-title">
-      {{ project.title }}
-      <img src="assets/icon_skill/arrow_outward.png" alt="arrow" class="title-arrow" />
-    </span>
-    <span class="tech-stack">
-      {{ project.pro.join(' | ') }}
-    </span>
-  </div>
-</div>
-
-
-
-
-<div *ngIf="selectedProject" class="project-card-overlay">
-  <div class="project-card-modal">
-
-    <div class="project-left">
-      <p class="project-id">Project {{ selectedProjectIndex! + 1 }}</p>
-      <h3 class="project-title">{{ selectedProject.title }}</h3>
-      <p class="project-question text-red"> {{ selectedProject.frage || 'What is this project about?' }}</p>
-      <p class="project-description">{{ selectedProject.description }}</p>
-
-      <div class="tech-stack-icons">
-        <img *ngFor="let tech of selectedProject.techStack" [src]="tech.icon.trim()" alt="tech icon" class="tech-icon" />
-      </div>
-
-      <div class="btn-group">
-        <a *ngIf="selectedProject.link" [href]="selectedProject.link" target="_blank" class="btn">GitHub
-          <img src="assets/icon_skill/arrow_outward.png" alt="Arrow" class="btn-icon" />
-        </a>
-        <a *ngIf="selectedProject.testLink" [href]="selectedProject.testLink" target="_blank" class="btn btn-secondary">Test Live
-          <img src="assets/icon_skill/arrow_outward.png" alt="Arrow" class="btn-icon" />
-        </a>
+    <div class="project-list">
+      <div
+        *ngFor="let project of projects; let i = index"
+        class="project-box"
+        (click)="selectProject(i)"
+        [class.active]="selectedProjectIndex === i"
+      >
+        <span class="project-title">
+          {{ project.title }}
+          <img src="assets/icon_skill/arrow_outward.png" alt="arrow" class="title-arrow" />
+        </span>
+        <span class="tech-stack">
+          {{ project.pro.join(' | ') }}
+        </span>
       </div>
     </div>
 
-    <div class="project-right">
-      <img src="assets/icon_skill/23. Close Button.png" alt="Close" class="close-icon" (click)="selectedProjectIndex = null" />
+    <div *ngIf="selectedProject" class="project-card-overlay">
+      <div class="project-card-modal">
 
-      <img [src]="selectedProject.image" [alt]="selectedProject.title" class="project-image" />
+        <div class="project-left">
+          <p class="project-id">{{ 'PROJECTS.PROJECT' | translate }} {{ selectedProjectIndex! + 1 }}</p>
+          <h3 class="project-title">{{ selectedProject.title }}</h3>
+          <p class="project-question text-red">{{ selectedProject.frage || ('PROJECTS.DEFAULT_QUESTION' | translate) }}</p>
+          <p class="project-description">{{ selectedProject.description }}</p>
 
-      <div class="next-project" (click)="nextProject()">
-        <span class="next-text text-red">Next Project</span>
-        <span class="arrow text-red">&rarr;</span>
+          <div class="tech-stack-icons">
+            <img *ngFor="let tech of selectedProject.techStack" [src]="tech.icon.trim()" alt="tech icon" class="tech-icon" />
+          </div>
+
+          <div class="btn-group">
+            <a *ngIf="selectedProject.link" [href]="selectedProject.link" target="_blank" class="btn">
+              {{ 'PROJECTS.GITHUB' | translate }}
+              <img src="assets/icon_skill/arrow_outward.png" alt="Arrow" class="btn-icon" />
+            </a>
+            <a *ngIf="selectedProject.testLink" [href]="selectedProject.testLink" target="_blank" class="btn btn-secondary">
+              {{ 'PROJECTS.LIVE_TEST' | translate }}
+              <img src="assets/icon_skill/arrow_outward.png" alt="Arrow" class="btn-icon" />
+            </a>
+          </div>
+        </div>
+
+        <div class="project-right">
+          <img src="assets/icon_skill/23. Close Button.png" alt="Close" class="close-icon" (click)="selectedProjectIndex = null" />
+
+          <img [src]="selectedProject.image" [alt]="selectedProject.title" class="project-image" />
+
+          <div class="next-project" (click)="nextProject()">
+            <span class="next-text text-red">{{ 'PROJECTS.NEXT' | translate }}</span>
+            <span class="arrow text-red">&rarr;</span>
+          </div>
+        </div>
+
       </div>
     </div>
-
   </div>
-</div>
-</div>
-
-  
 </section>

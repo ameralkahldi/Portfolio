@@ -1,80 +1,49 @@
-
 <div class="legal-notice">
-  <h1> Imprint</h1>
+  <h1>{{ 'LEGAL.TITLE' | translate }}</h1>
 
   <section>
-    <h2>Publisher Information</h2>
+    <h2>{{ 'LEGAL.PUBLISHER_INFO' | translate }}</h2>
     <ul>
-      <li><strong>Name:</strong> Amer Alkhalidy</li>
-      <li><strong>Address:</strong> Rober-Koch Str 9  </li>
-      <li><strong>City:</strong> 56073 Koblenz</li>
-      <li><strong>Email:</strong> amer.alkhaldi@icloud.com</li>
+      <li><strong>{{ 'LEGAL.NAME' | translate }}:</strong> Amer Alkhalidy</li>
+      <li><strong>{{ 'LEGAL.ADDRESS' | translate }}:</strong> Rober-Koch Str 9</li>
+      <li><strong>{{ 'LEGAL.CITY' | translate }}:</strong> 56073 Koblenz</li>
+      <li><strong>{{ 'LEGAL.EMAIL' | translate }}:</strong> amer.alkhaldi@icloud.com</li>
     </ul>
   </section>
 
   <section>
-    <h2>Acceptance of Terms</h2>
-    <p>
-      By accessing and using this Portfolio ("Product"), you acknowledge and agree to the following terms and conditions,
-      including any policies, guidelines, or amendments that may be presented from time to time. The listed students may
-      update or change the terms and conditions without notice.
-    </p>
+    <h2>{{ 'LEGAL.ACCEPTANCE_TERMS' | translate }}</h2>
+    <p>{{ 'LEGAL.ACCEPTANCE_TERMS_TEXT' | translate }}</p>
   </section>
 
   <section>
-    <h2>Scope and Ownership of the Product</h2>
-    <p>
-      This Portfolio has been developed as part of a student group project in a web development bootcamp at the Developer Akademie GmbH.
-      It is intended for educational purposes only and not for extensive personal or commercial use. Therefore, we cannot guarantee
-      consistent performance, reliability, security, or any specific quality attributes.
-    </p>
-    <p>
-      The design of the Portfolio is owned by the Developer Akademie GmbH. Unauthorized use, reproduction, modification,
-      distribution, or replication of the design is strictly prohibited.
-    </p>
+    <h2>{{ 'LEGAL.SCOPE_OWNERSHIP' | translate }}</h2>
+    <p>{{ 'LEGAL.SCOPE_OWNERSHIP_TEXT_1' | translate }}</p>
+    <p>{{ 'LEGAL.SCOPE_OWNERSHIP_TEXT_2' | translate }}</p>
   </section>
 
   <section>
-    <h2>Proprietary Rights</h2>
-    <p>
-      Apart from the design owned by Developer Akademie GmbH, the listed students retain all proprietary rights to the Portfolio,
-      including associated copyrighted material, trademarks, and other proprietary information.
-    </p>
+    <h2>{{ 'LEGAL.PROPRIETARY_RIGHTS' | translate }}</h2>
+    <p>{{ 'LEGAL.PROPRIETARY_RIGHTS_TEXT' | translate }}</p>
   </section>
 
   <section>
-    <h2>Use of the Product</h2>
-    <p>
-      This Portfolio is intended to be used for lawful purposes only, in accordance with all applicable laws and regulations.
-      Any use of the Portfolio for illegal activities, or to harass, harm, threaten, or intimidate others, is strictly prohibited.
-      You are solely responsible for your interactions with other users of the Portfolio.
-    </p>
+    <h2>{{ 'LEGAL.USE_PRODUCT' | translate }}</h2>
+    <p>{{ 'LEGAL.USE_PRODUCT_TEXT' | translate }}</p>
   </section>
 
   <section>
-    <h2>Disclaimer of Warranties and Limitation of Liability</h2>
-    <p>
-      The Portfolio is provided "as is" without any warranty, express or implied, including but not limited to the implied warranties
-      of merchantability, fitness for a particular purpose, and non-infringement. In no event shall the listed students or the Developer
-      Akademie be liable for any direct, indirect, incidental, special, consequential, or exemplary damages — including but not limited
-      to loss of profits, goodwill, use, data, or other intangible losses — even if advised of the possibility of such damages, arising
-      out of or in connection with the use or performance of the Portfolio.
-    </p>
+    <h2>{{ 'LEGAL.DISCLAIMER' | translate }}</h2>
+    <p>{{ 'LEGAL.DISCLAIMER_TEXT' | translate }}</p>
   </section>
 
   <section>
-    <h2>Indemnity</h2>
-    <p>
-      You agree to indemnify, defend, and hold harmless the listed students, the Developer Akademie, and their affiliates, partners,
-      officers, directors, agents, and employees from any claim, demand, loss, damage, cost, or liability (including reasonable legal fees)
-      arising out of or related to your use of the Portfolio and/or your breach of this Legal Notice.
-    </p>
+    <h2>{{ 'LEGAL.INDEMNITY' | translate }}</h2>
+    <p>{{ 'LEGAL.INDEMNITY_TEXT' | translate }}</p>
   </section>
 
   <section>
-    <h2>Contact</h2>
-    <p>
-      For any questions or notices, please contact us at: <strong>(Contact Email)</strong>
-    </p>
+    <h2>{{ 'LEGAL.CONTACT' | translate }}</h2>
+    <p [innerHTML]="'LEGAL.CONTACT_TEXT' | translate"></p>
   </section>
 </div>

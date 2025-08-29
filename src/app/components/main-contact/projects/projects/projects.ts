@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
   templateUrl: './projects.html',
   styleUrls: ['./projects.scss'],  
-  imports: [CommonModule]
+  imports: [CommonModule,TranslatePipe]
 })
 export class ProjectsComponent {
   projects = [
@@ -88,21 +89,9 @@ export class ProjectsComponent {
   trackByTitle(index: number, project: any): string {
     return project.title;
   }
-   prevProject() {
-    if (this.selectedProjectIndex === null) return;
-    if (this.selectedProjectIndex === 0) {
-      this.selectedProjectIndex = this.projects.length - 1; 
-    } else {
-      this.selectedProjectIndex--;
-    }
-  }
-
   nextProject() {
-    if (this.selectedProjectIndex === null) return;
-    if (this.selectedProjectIndex === this.projects.length - 1) {
-      this.selectedProjectIndex = 0; 
-    } else {
-      this.selectedProjectIndex++;
+    if (this.selectedProjectIndex !== null) {
+      this.selectedProjectIndex = (this.selectedProjectIndex + 1) % this.projects.length;
     }
   }
 }

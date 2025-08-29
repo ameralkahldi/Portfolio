@@ -1,32 +1,30 @@
 <section class="technologies">
   <div class="container">
-    <h5 class="section-title">Technologies</h5>
+    <h5 class="section-title">{{ 'TECHNOLOGIES.TITLE' | translate }}</h5>
+
     <div class="content-wrapper">
       <div class="header-box">
-        <h3>Skill Set</h3>
+        <h3>{{ 'TECHNOLOGIES.SKILLSET' | translate }}</h3>
+
         <p>
-          A short introduction of your skills. Highlight your experience of using different front-end technologies
-          and emphasise your openness to learning and adapting to new technologies.
-          Show how important it is for you to keep up with the rapid changes in web development.
+          {{ 'TECHNOLOGIES.DESCRIPTION' | translate }}
         </p>
+
         <p class="contact-note">
-          <span class="highlighted-question">You need another skill?</span><br /><br />
-          Feel free to contact me. I look forward to expanding on my previous knowledge.
+          <span class="highlighted-question">{{ 'TECHNOLOGIES.QUESTION' | translate }}</span><br /><br />
+          {{ 'TECHNOLOGIES.CONTACT_NOTE' | translate }}
         </p>
 
-<a href="#contact" class="btn-talk">Let’s Talk</a>
-
+        <a href="#contact" class="btn-talk">{{ 'TECHNOLOGIES.TALK_BUTTON' | translate }}</a>
       </div>
 
       <div class="skills-grid">
         @for (skill of skills; track skill.icon) {
         <div class="skill-card">
           <img [src]="skill.icon" [alt]="skill.icon" />
-
         </div>
         }
       </div>
-
     </div>
   </div>
 </section>

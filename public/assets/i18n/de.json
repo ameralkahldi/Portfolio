@@ -1,0 +1,117 @@
+{
+  "NAV": {
+    "ABOUT": "Über mich",
+    "SKILLS": "Fähigkeiten",
+    "PROJECTS": "Projekte",
+    "CONTACT": "Kontakt"
+  },
+  
+  "HOME": {
+    "ROLE": "Frontend-Entwickler",
+    "CHECK_WORK": "Meine Arbeit ansehen",
+    "CONTACT_ME": "Kontaktiere mich",
+    "AVAILABLE": "Verfügbar für Remote-Arbeit",
+    "LOCATION": "Ansässig in München",
+    "OPEN": "Offen für neue Herausforderungen"
+  },
+  
+  "ABOUT": {
+    "LABEL": "Wer ich bin",
+    "TITLE": "Über mich",
+    "INTRO": "Hallo, ich bin Amer.",
+    "DETAILS": "Schreibe einige IT-bezogene Informationen über dich. Warum bist du leidenschaftlich beim Programmieren? Was inspiriert dich, deine Fähigkeiten zu verbessern?",
+    "LOCATION": "Wo lebst du? Bist du offen für Remote-Arbeit oder sogar für einen Umzug?",
+    "LEARNING": "Zeige, dass du offen für Neues bist. Bist du begeistert davon, neue Technologien zu lernen und deine Fähigkeiten ständig zu verbessern?",
+    "PROBLEM_SOLVING": "Eine kurze Beschreibung deines Ansatzes zur Problemlösung. Lernst du aus jeder Herausforderung, um die effizienteste oder eleganteste Lösung zu finden? Du kannst Begriffe wie analytisches Denken, Kreativität, Ausdauer und Zusammenarbeit verwenden."
+  },
+
+  "CONTACT": {
+    "HEADING": "Kontaktiere mich",
+    "SUBHEADING": "Lass uns zusammenarbeiten",
+    "QUESTION": "Hast du ein Problem zu lösen?",
+    "DESCRIPTION": "Brauchst du einen Frontend-Entwickler? Lass uns reden! Ich helfe dir, deine Ideen mit sauberem, modernem und responsivem Code zum Leben zu erwecken.",
+    
+    "NAME_LABEL": "Wie heißt du?",
+    "NAME_PLACEHOLDER": "Dein Name hier",
+    "EMAIL_LABEL": "Wie lautet deine E-Mail?",
+    "EMAIL_PLACEHOLDER": "deinemail@email.com",
+    "MESSAGE_LABEL": "Wie kann ich dir helfen?",
+    "MESSAGE_PLACEHOLDER": "Hallo, ich interessiere mich für...",
+    "PRIVACY_LABEL": "Ich habe die Datenschutzrichtlinie gelesen und stimme der Verarbeitung meiner Daten zu.",
+
+    "SUBMIT": "Sag Hallo :)",
+    "SUCCESS": "Danke! Ich melde mich bald bei dir.",
+
+    "ERROR_NAME": "Bitte gib einen gültigen Namen ein.",
+    "ERROR_REQUIRED": "Dieses Feld muss ausgefüllt werden.",
+    "ERROR_EMAIL": "Bitte gib eine gültige E-Mail-Adresse ein.",
+    "ERROR_PRIVACY": "Du musst der Datenschutzrichtlinie zustimmen."
+  },
+  "TECHNOLOGIES": {
+    "TITLE": "Technologien",
+    "SKILLSET": "Fähigkeiten",
+    "DESCRIPTION": "Eine kurze Einführung in deine Fähigkeiten. Hebe deine Erfahrung mit verschiedenen Frontend-Technologien hervor und betone deine Bereitschaft, neue Technologien zu erlernen und dich anzupassen. Zeige, wie wichtig es für dich ist, mit den schnellen Entwicklungen im Web Schritt zu halten.",
+    "QUESTION": "Brauchst du eine andere Fähigkeit?",
+    "CONTACT_NOTE": "Kontaktiere mich gerne. Ich freue mich darauf, mein Wissen zu erweitern.",
+    "TALK_BUTTON": "Lass uns reden"
+  },
+ 
+  "PROJECTS": {
+    "PORTFOLIO": "Portfolio",
+    "FEATURED": "Ausgewählte Projekte",
+    "SUBTITLE": "Hier findest du eine Auswahl meiner Arbeiten – interagiere mit den Projekten, um meine Fähigkeiten zu sehen.",
+    "PROJECT": "Projekt",
+    "DEFAULT_QUESTION": "Worum geht es in diesem Projekt?",
+    "GITHUB": "GitHub",
+    "LIVE_TEST": "Live testen",
+    "NEXT": "Nächstes Projekt"
+  },
+  
+  "FOOTER": {
+    "ROLE": "Webentwickler",
+    "LOCATION": "München, Deutschland",
+    "RIGHTS": "Alle Rechte vorbehalten.",
+    "GITHUB": "Github",
+    "LINKEDIN": "LinkedIn",
+    "EMAIL": "E-Mail",
+    "LEGAL": "Impressum"
+  
+},
+
+  "LEGAL": {
+    "TITLE": "Impressum",
+    "PUBLISHER_INFO": "Herausgeber Informationen",
+    "NAME": "Name",
+    "ADDRESS": "Adresse",
+    "CITY": "Stadt",
+    "EMAIL": "E-Mail",
+    "ACCEPTANCE_TERMS": "Akzeptanz der Bedingungen",
+    "ACCEPTANCE_TERMS_TEXT": "Durch den Zugriff und die Nutzung dieses Portfolios (\"Produkt\") erkennen Sie die folgenden Bedingungen und Konditionen an, einschließlich aller Richtlinien, Leitlinien oder Änderungen, die von Zeit zu Zeit präsentiert werden können. Die genannten Studenten können die Bedingungen ohne Vorankündigung aktualisieren oder ändern.",
+    "SCOPE_OWNERSHIP": "Geltungsbereich und Eigentum des Produkts",
+    "SCOPE_OWNERSHIP_TEXT_1": "Dieses Portfolio wurde im Rahmen eines Gruppenprojekts im Webentwicklungs-Bootcamp der Developer Akademie GmbH entwickelt. Es dient ausschließlich Bildungszwecken und nicht für umfangreiche persönliche oder kommerzielle Nutzung. Daher können wir keine konsistente Leistung, Zuverlässigkeit, Sicherheit oder spezifische Qualitätsmerkmale garantieren.",
+    "SCOPE_OWNERSHIP_TEXT_2": "Das Design des Portfolios gehört der Developer Akademie GmbH. Unbefugte Nutzung, Vervielfältigung, Änderung, Verteilung oder Replikation des Designs ist strengstens untersagt.",
+    "PROPRIETARY_RIGHTS": "Eigentumsrechte",
+    "PROPRIETARY_RIGHTS_TEXT": "Abgesehen vom Design, das der Developer Akademie GmbH gehört, behalten die genannten Studenten alle Eigentumsrechte am Portfolio, einschließlich damit verbundener urheberrechtlich geschützter Materialien, Marken und anderer Eigentumsinformationen.",
+    "USE_PRODUCT": "Nutzung des Produkts",
+    "USE_PRODUCT_TEXT": "Dieses Portfolio darf nur für rechtmäßige Zwecke in Übereinstimmung mit allen geltenden Gesetzen und Vorschriften verwendet werden. Jede Nutzung des Portfolios für illegale Aktivitäten oder zur Belästigung, Schädigung, Bedrohung oder Einschüchterung anderer ist streng verboten. Sie sind allein verantwortlich für Ihre Interaktionen mit anderen Nutzern des Portfolios.",
+    "DISCLAIMER": "Haftungsausschluss und Begrenzung der Haftung",
+    "DISCLAIMER_TEXT": "Das Portfolio wird \"wie besehen\" ohne jegliche Gewährleistung, ausdrücklich oder stillschweigend, einschließlich aber nicht beschränkt auf die stillschweigenden Gewährleistungen der Marktgängigkeit, Eignung für einen bestimmten Zweck und Nichtverletzung bereitgestellt. In keinem Fall haften die genannten Studenten oder die Developer Akademie für direkte, indirekte, zufällige, besondere, Folgeschäden oder beispielhafte Schäden — einschließlich, aber nicht beschränkt auf entgangenen Gewinn, Goodwill, Nutzung, Daten oder andere immaterielle Verluste — selbst wenn sie auf die Möglichkeit solcher Schäden hingewiesen wurden, die sich aus der Nutzung oder Leistung des Portfolios ergeben.",
+    "INDEMNITY": "Entschädigung",
+    "INDEMNITY_TEXT": "Sie erklären sich damit einverstanden, die genannten Studenten, die Developer Akademie und deren verbundenen Unternehmen, Partner, Geschäftsführer, Direktoren, Agenten und Mitarbeiter von jeglichen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Verbindlichkeiten (einschließlich angemessener Anwaltskosten) freizustellen, zu verteidigen und schadlos zu halten, die sich aus Ihrer Nutzung des Portfolios und/oder Ihrem Verstoß gegen dieses Impressum ergeben.",
+    "CONTACT": "Kontakt",
+    "CONTACT_TEXT": "Für Fragen oder Mitteilungen kontaktieren Sie uns bitte unter: <strong>amer.alkhaldi@icloud.com</strong>"
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
