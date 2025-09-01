@@ -1,0 +1,35 @@
+<div class="references-container">
+
+  <div class="cards-wrapper">
+    @for (card of visibleCards; track card) {
+      <div class="card">
+        <h3>{{ card.name }}</h3>
+        <p>{{ card.text }}</p>
+      </div>
+    }
+  </div>
+
+<div class="arrows">
+  <button (click)="prev()" [disabled]="currentIndex === 0">&larr;</button>
+
+  <div class="dots">
+    @for (i of [].constructor(totalGroups); track i) {
+      <span
+        class="dot"
+        [class.active]="i === currentGroupIndex"
+        (click)="setCurrentGroup(i)"
+      ></span>
+    }
+  </div>
+
+  <button (click)="next()" [disabled]="currentIndex + 3 >= allCards.length">&rarr;</button>
+</div>
+
+  <div class="testimonial-form">
+    <h3>Add Testimonial</h3>
+    <input [(ngModel)]="nameInput" placeholder="Name" />
+    <textarea [(ngModel)]="textInput" placeholder="Write your testimonial here..."></textarea>
+    <button (click)="addTestimonial()">Submit</button>
+  </div>
+
+</div>

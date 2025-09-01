@@ -1,0 +1,89 @@
+.references-container {
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #3DCFB6;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.arrows {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.dots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #3DCFB6;
+}
+
+
+button {
+  padding: 8px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #3DCFB6;
+  color: white;
+}
+
+button:disabled {
+  background-color: #3DCFB6;
+  cursor: not-allowed;
+}
+
+.testimonial-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.testimonial-form input,
+.testimonial-form textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.testimonial-form textarea {
+  height: 100px;
+  resize: vertical;
+}
