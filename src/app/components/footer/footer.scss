@@ -26,58 +26,39 @@
     flex: 1 1 200px;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
   }
 
 .logo {
   display: flex;
-  gap: 0.8rem;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  color: #32b49b; 
+  padding-left: 20px;
 
   .logo-icon {
-    background: linear-gradient(135deg, #32b49b, #29a49a);
-    color: white;
-    font-weight: 700;
-    font-size: 1.4rem;
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    span {
-      font-size: 0.8rem;
-      margin-left: 1px;
-    }
+    background-color: #ffffff;
+    border: 2px solid #32b49b;
+    border-radius: 50%;
+    padding: 0.4rem 0.7rem;
+    font-size: 1.2rem;
+    margin-right: 0.6rem;
   }
 
-  .logo-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.1;
-
-    .name {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: #f0e5e5;
-      text-align: center;
-    }
-
-    .surname {
-      font-size: 1rem;
-      color: #f0e5e5;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-    }
+  .logo-name {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
   }
 }
 
   .footer-left p {
-    margin: 0;
-    font-size: 1rem;
-    color: #ccc;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: 'Karla';
+  line-height: 1.5;
+  padding-left: 20px;
+
   }
 
   .footer-center {
@@ -86,7 +67,7 @@
    .copyright {
   font-size: 18px;
   color: #3dcfb6;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Fira Code', monospace;
   margin-top: 25px;
   text-align: center;
   font-weight: 500;

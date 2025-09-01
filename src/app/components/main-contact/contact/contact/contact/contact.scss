@@ -1,15 +1,11 @@
 .contact {
-  padding: 5rem 2rem;
-  display: flex;
-  justify-content: center;
+  margin-left:10rem;
 
   .container {
     max-width: 1000px;
     width: 100%;
-    padding: 3rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(15, 209, 31, 0.05);
-    background-color: #1c1c1c; 
+    padding: 2rem;
+  
   }
 
   .contact-wrapper {
@@ -30,27 +26,36 @@
       gap: 4rem;
 
       h3 {
-        font-size: 1.8rem;
-        color: #2aa48a;
-        margin: 0;
+        font-size: 24px;
+        color: #3DCFB6;
+        font-family: 'Karla';
+        font-weight: 500;
       }
 
       h1 {
-        font-size: 2.8rem;
-        color: #2aa48a;
-        margin: 0;
+
+        color: #3DCFB6;
+        font-family: 700;
+        font-size: 64px;
+        font-family: 'Fira Code', monospace;
+       
       }
 
       h2 {
-        font-size: 2.5rem;
+        font-size: 24px;
         color: #3dcfb6;
-        margin: 0;
+        font-family: 'Fira Code', monospace;
+        font-weight: 700;
+
+
       }
 
       p {
-        font-size: 1.1rem;
+        font-size: 16px;
         color: #ffffff;
-        line-height: 1.7;
+        font-family: 'Karla';
+        line-height: 1.2;
+        font-weight: 400;
         margin-top: 1rem;
       }
     }
@@ -65,12 +70,12 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        border-bottom: 2px solid #f1eded;
+        border-bottom: 2px solid #3DCFB6;
 
         label {
           margin-bottom: 0.5rem;
           font-weight: 600;
-          color: #3dcfb6;
+          color: #3DCFB6;
         }
 
         input,
@@ -118,7 +123,7 @@
           label {
             margin: 0;
             font-weight: 400;
-            color: #ffffff;
+          
           }
 
           .error {

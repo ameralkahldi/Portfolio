@@ -13,6 +13,37 @@ import { TranslatePipe } from '@ngx-translate/core';
 export class ContactComponent {
   contactForm: FormGroup;
   submitted = false;
+  formFields = [
+  {
+    name: 'name',
+    label: 'CONTACT.NAME_LABEL',
+    placeholder: 'CONTACT.NAME_PLACEHOLDER',
+    type: 'text',
+    error: 'CONTACT.ERROR_NAME'
+  },
+  {
+    name: 'email',
+    label: 'CONTACT.EMAIL_LABEL',
+    placeholder: 'CONTACT.EMAIL_PLACEHOLDER',
+    type: 'email',
+    error: 'CONTACT.ERROR_EMAIL'
+  },
+  {
+    name: 'message',
+    label: 'CONTACT.MESSAGE_LABEL',
+    placeholder: 'CONTACT.MESSAGE_PLACEHOLDER',
+    type: 'textarea',
+    error: 'CONTACT.ERROR_REQUIRED'
+  },
+  {
+    name: 'privacy',
+    label: 'CONTACT.PRIVACY_LABEL',
+    placeholder: '',
+    type: 'checkbox',
+    error: 'CONTACT.ERROR_PRIVACY'
+  }
+];
+
 
   constructor(private fb: FormBuilder) {
     this.contactForm = this.fb.group({
