@@ -33,11 +33,12 @@ $font-main: 'Segoe UI', sans-serif;
         font-size: 40px;
         margin-bottom: 0.5rem;
         font-weight: 400;
+        font-family: 'Fira Code', monospace;
       }
 
       h1.name {
         font-size: 100px;
-        font-family: 'Karla, sans-serif';
+        font-family: 'Karla';
         font-weight: 700;
         margin-bottom: 2rem;
         color: color.adjust($secondary-color, $lightness: 40%);
@@ -188,12 +189,13 @@ $font-main: 'Segoe UI', sans-serif;
   color: $primary-color;
   overflow: hidden;
   padding: 1rem 2rem;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: 400;
   transform: skewY(-3deg);
   position: relative;
   z-index: 10;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-family: 'Fira Code', monospace;
 
   .marquee {
     display: flex;

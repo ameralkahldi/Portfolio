@@ -1,89 +1,115 @@
 .references-container {
-  width: 100%;
   text-align: center;
-  margin: 20px auto;
+  padding: 5rem;
+  margin: auto;
+  overflow: hidden;
+  max-width: 100vw;
+}
+
+.titlereference h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  font-family: 'Fira Code ', monospace;
+  color: #3dcfb6;
+
 }
 
 .cards-wrapper {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: nowrap;
-  overflow: hidden;
-  margin-bottom: 10px;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+  overflow: visible;
 }
 
 .card {
-  width: 300px;
+  width: 480px;
   height: 200px;
-  padding: 15px;
-  border: 1px solid #ccc;
+  padding: 1.5rem;
   border-radius: 20px;
-  background-color: #3DCFB6;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #a3e5d9;
+  opacity: 0.5;
+  transform: scale(0.9);
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  flex-direction:column-reverse;
+  justify-content: space-around;
+
 }
 
-.arrows {
+.card.active {
+  background-color: #3dcfb6;
+  transform: scale(1.1);
+  opacity: 1;
+  z-index: 2;
+}
+
+.card.left,
+.card.right {
+  background-color: #76bbac;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.card.right {
+  transform: translateX(50%) scale(0.9);
+}
+
+.card.left {
+  transform: translateX(-50%) scale(0.9);
+}
+
+
+.navigation-controls {
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
 }
+
+.arrow-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.arrow-btn:hover {
+  transform: scale(1.3);
+  color: #3dcfb6;
+}
+
 .dots {
   display: flex;
-  gap: 8px;
+  gap: 0.5rem;
   align-items: center;
-  margin: 0 15px;
+  justify-content: center;
 }
 
 .dot {
   width: 12px;
   height: 12px;
-  border-radius: 50%;
   background-color: #ccc;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+}
+
+.dot:hover {
+  background-color: red;
+  transform: scale(1.2);
 }
 
 .dot.active {
-  background-color: #3DCFB6;
-}
-
-
-button {
-  padding: 8px 15px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #3DCFB6;
-  color: white;
-}
-
-button:disabled {
-  background-color: #3DCFB6;
-  cursor: not-allowed;
-}
-
-.testimonial-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  max-width: 400px;
-  margin: auto;
-}
-
-.testimonial-form input,
-.testimonial-form textarea {
-  width: 100%;
-  padding: 8px;
-  font-size: 14px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.testimonial-form textarea {
-  height: 100px;
-  resize: vertical;
+  background-color: #007bff;
+  transform: scale(1.4);
 }

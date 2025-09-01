@@ -1,35 +1,43 @@
 <div class="references-container">
+  <div class="titlereference">
+    <h3>What my colleagues say about me</h3>
+  </div>
 
   <div class="cards-wrapper">
-    @for (card of visibleCards; track card) {
-      <div class="card">
+    @for (card of visibleCards; let i = $index; track card) {
+      <div
+        class="card"
+        [class.active]="i === 1"
+        [class.left]="i === 0"
+        [class.right]="i === 2"
+      >
         <h3>{{ card.name }}</h3>
         <p>{{ card.text }}</p>
       </div>
     }
   </div>
 
-<div class="arrows">
-  <button (click)="prev()" [disabled]="currentIndex === 0">&larr;</button>
+  <div class="navigation-controls">
+    <button class="arrow-btn" (click)="prev()" [disabled]="currentIndex === 0">
+      &#10094;
+    </button>
 
-  <div class="dots">
-    @for (i of [].constructor(totalGroups); track i) {
-      <span
-        class="dot"
-        [class.active]="i === currentGroupIndex"
-        (click)="setCurrentGroup(i)"
-      ></span>
-    }
+    <div class="dots">
+      @for (i of [].constructor(totalGroups); track i) {
+        <span
+          class="dot"
+          [class.active]="i === currentGroupIndex"
+          (click)="setCurrentGroup(i)"
+        ></span>
+      }
+    </div>
+
+    <button
+      class="arrow-btn"
+      (click)="next()"
+      [disabled]="currentIndex + 3 >= allCards.length"
+    >
+      &#10095;
+    </button>
   </div>
-
-  <button (click)="next()" [disabled]="currentIndex + 3 >= allCards.length">&rarr;</button>
-</div>
-
-  <div class="testimonial-form">
-    <h3>Add Testimonial</h3>
-    <input [(ngModel)]="nameInput" placeholder="Name" />
-    <textarea [(ngModel)]="textInput" placeholder="Write your testimonial here..."></textarea>
-    <button (click)="addTestimonial()">Submit</button>
-  </div>
-
 </div>

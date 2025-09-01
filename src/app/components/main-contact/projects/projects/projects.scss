@@ -1,37 +1,39 @@
 .projects {
-  padding: 3rem 0.7rem; 
-  max-width: 900px;   
-  margin: 0 auto;     
+  max-width: 880px;   
+  margin-left:10rem;
+  padding-top: 5rem;
+      
 
   .portfolio-title {
     
-    font-weight: 600;
+    font-weight: 700;
     color: #2aa48a;
-    margin-bottom: 0.5rem;
-    text-align: left;
+    font-family: 'Karla';
+    font-size: 24px;
   }
 
   .section-title {
-    font-size: 3rem;
+    font-size: 64px;
     color: #3dcfb6;
     margin-bottom: 0.25rem;
+    font-family: 'Fira Code', monospace;
     font-weight: 700;
-    text-align: left;
+
   }
 
   .subtitle {
-    font-size: 1rem;
+    font-size: 18px;
     color: #ffffff;
     margin-bottom: 2rem;
-    text-align: left;
-    font-style: italic;
+    font-family: 'Karla';
+    font-weight: 400;
   }
 }
  .project-list {
   .project-box {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    
     padding: 1rem 0;
     border-bottom: 1px solid #3dcfb6;
     cursor: pointer;
