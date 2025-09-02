@@ -22,9 +22,8 @@ $breakpoints: (
 
 .home-hero {
   position: relative;
-  min-height: 100vh;
-  padding-top: 3rem;
   display: flex;
+ height: 900px;
   flex-direction: column; 
   justify-content: space-between; 
   color: $secondary-color;
@@ -189,7 +188,9 @@ $breakpoints: (
 .social-icons {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
+  
+
 
   .email-icon {
     color: white;
@@ -200,6 +201,7 @@ $breakpoints: (
     transform: rotate(180deg);
     transition: color 0.3s ease;
     margin-left: 10px;
+    margin-top: -200px;
 
     &:hover {
       color: lighten(white, 20%);
@@ -215,6 +217,7 @@ $breakpoints: (
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s ease;
+    
 
     &:hover {
       background-color: rgba(255, 255, 255, 0.15);
@@ -252,6 +255,7 @@ $breakpoints: (
     gap: 3rem; 
     animation: scroll-loop 20s linear infinite;
     white-space: nowrap;
+   
   }
 
   span {

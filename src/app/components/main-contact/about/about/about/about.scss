@@ -1,24 +1,33 @@
 .about-me {
-  height: 100vh; 
+  min-height: 100vh;
   padding: 4rem;
   background-color: #1c1c1c;
   color: #fff;
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
 
   .about-wrapper {
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
+
+    // ✅ RESPONSIVE: تصبح عمودية في الشاشات الصغيرة
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   .left-side {
     flex: 1 1 300px;
     display: flex;
     justify-content: center;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
 
     .image-wrapper {
       width: 100%;
@@ -29,8 +38,8 @@
       margin-top: -40px;
 
       img {
-        width: 568px;
-      height: 568px;
+        width: 100%;
+        height: auto;
         object-fit: cover;
         display: block;
         border-radius: 30px;
@@ -43,25 +52,36 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
-   
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
 
     .label {
       font-size: 24px;
       color: #3dcfb6;
-      margin-top:5rem;
+      margin-top: 5rem;
       font-weight: 500;
       font-family: 'Karla';
 
+      @media (max-width: 768px) {
+        margin-top: 2rem;
+        text-align: center;
+      }
     }
 
     .about-box {
       background-color: rgba(61, 207, 182, 0.1);
       padding: 2rem;
-      border-radius: 10px;
+      border-radius: 30px;
       width: 568px;
       height: 568px;
-      border-radius: 30px;
-  
+
+      @media (max-width: 768px) {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+      }
 
       h2 {
         font-size: 64px;
@@ -69,14 +89,19 @@
         color: #3dcfb6;
         font-weight: bold;
         font-family: 'Fira Code', monospace;
+
+        @media (max-width: 768px) {
+          font-size: 36px;
+          text-align: center;
+        }
       }
 
       p {
         font-size: 18px;
-       
         margin-bottom: 1rem;
-        font-family: 'karla';
+        font-family: 'Karla';
         font-weight: 400;
+        text-align: justify;
       }
 
       .info-item {
