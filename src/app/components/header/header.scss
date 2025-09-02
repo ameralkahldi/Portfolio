@@ -101,6 +101,8 @@
 @media (max-width: 800px) {
   .navbar {
     padding: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
 
     .desktop-lang {
       display: none; 
@@ -108,7 +110,7 @@
 
     .menu-toggle {
       display: block;
-      margin-left: 1rem;
+      margin-left: 3rem;
     }
 
     .nav-links {
