@@ -1,5 +1,7 @@
 .contact {
-  margin-left:10rem;
+display: flex;
+justify-content: center;
+padding-right: 18rem;
 
   .container {
     max-width: 1000px;
@@ -11,7 +13,7 @@
   .contact-wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 10rem;
 
     @media (max-width: 768px) {
       flex-direction: column;
