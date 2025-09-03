@@ -6,100 +6,80 @@
 
     <div class="project-list-wrapper">
       <div class="project-list">
-  @for (project of projects; track $index; let i = $index) {
-    <div
-      class="project-box"
-      (mouseenter)="hoveredProjectIndex = i"
-      (mouseleave)="hoveredProjectIndex = null"
-      (click)="selectProject(i)"
-      [class.active]="selectedProjectIndex === i"
-    >
-      <span class="project-title">
-        {{ project.title }}
-        <img src="assets/icon_skill/arrow_outward.png" alt="arrow" class="title-arrow" />
-      </span>
-      <span class="tech-stack">
-        {{ project.pro.join(' | ') }}
-      </span>
-    </div>
-  }
-</div>
+        @for (project of projects; track $index; let i = $index) {
+        <div class="project-box" (mouseenter)="hoveredProjectIndex = i" (mouseleave)="hoveredProjectIndex = null"
+          (click)="selectProject(i)" [class.active]="selectedProjectIndex === i">
+          <span class="project-title">
+            {{ project.title }}
+            <img src="assets/icon_skill/arrow_outward.png" alt="arrow" class="title-arrow" />
+          </span>
+          <span class="tech-stack">
+            {{ project.pro.join(' | ') }}
+          </span>
+        </div>
+        }
+      </div>
 
 
       @if (hoveredProjectIndex !== null) {
-        <div class="hover-preview">
-          <img
-            [src]="projects[hoveredProjectIndex!].image"
-            [alt]="projects[hoveredProjectIndex!].title"
-            class="hover-image"
-          />
-        </div>
+      <div class="hover-preview">
+        <img [src]="projects[hoveredProjectIndex!].image" [alt]="projects[hoveredProjectIndex!].title"
+          class="hover-image" />
+      </div>
       }
 
     </div>
 
     @if (selectedProject) {
-      <div class="project-card-overlay">
-        <div class="project-card-modal">
-          <div class="project-left">
-            <p class="project-id">
-              {{ 'PROJECTS.PROJECT' | translate }} {{ selectedProjectIndex! + 1 }}
-            </p>
-            <h3 class="project-title">{{ selectedProject.title }}</h3>
-            <p class="project-question text-red">
-              {{ selectedProject.frage || ('PROJECTS.DEFAULT_QUESTION' | translate) }}
-            </p>
-            <p class="project-description">{{ selectedProject.description }}</p>
+    <div class="project-card-overlay">
+      <div class="project-card-modal">
+        <div class="project-left">
+          <p class="project-id">
+            {{ 'PROJECTS.PROJECT' | translate }} {{ selectedProjectIndex! + 1 }}
+          </p>
+          <h3 class="project-title">{{ selectedProject.title }}</h3>
+          <p class="project-question text-red">
+            {{ selectedProject.frage || ('PROJECTS.DEFAULT_QUESTION' | translate) }}
+          </p>
+          <p class="project-description">{{ selectedProject.description }}</p>
 
-            <div class="tech-stack-icons">
-  @for (tech of selectedProject.techStack; track $index) {
-    <img
-      [src]="tech.icon.trim()"
-      alt="tech icon"
-      class="tech-icon"
-    />
-  }
-</div>
-
-
-            <div class="btn-group">
-              @if (selectedProject.link) {
-                <a [href]="selectedProject.link" target="_blank" class="btn">
-                  {{ 'PROJECTS.GITHUB' | translate }}
-                  <img src="assets/icon_skill/arrow_outward.png" alt="Arrow" class="btn-icon" />
-                </a>
-              }
-
-              @if (selectedProject.testLink) {
-                <a [href]="selectedProject.testLink" target="_blank" class="btn btn-secondary">
-                  {{ 'PROJECTS.LIVE_TEST' | translate }}
-                  <img src="assets/icon_skill/arrow_outward.png" alt="Arrow" class="btn-icon" />
-                </a>
-              }
-            </div>
+          <div class="tech-stack-icons">
+            @for (tech of selectedProject.techStack; track $index) {
+            <img [src]="tech.icon.trim()" alt="tech icon" class="tech-icon" />
+            }
           </div>
 
-          <div class="project-right">
-            <img
-              src="assets/icon_skill/23. Close Button.png"
-              alt="Close"
-              class="close-icon"
-              (click)="selectedProjectIndex = null"
-            />
 
-            <img
-              [src]="selectedProject.image"
-              [alt]="selectedProject.title"
-              class="project-image"
-            />
+          <div class="btn-group">
+            @if (selectedProject.link) {
+            <a [href]="selectedProject.link" target="_blank" class="btn">
+              {{ 'PROJECTS.GITHUB' | translate }}
+              <img src="assets/icon_skill/arrow_outward.png" alt="Arrow" class="btn-icon" />
+            </a>
+            }
 
-            <div class="next-project" (click)="nextProject()">
-              <span class="next-text text-red">{{ 'PROJECTS.NEXT' | translate }}</span>
-              <span class="arrow text-red">&rarr;</span>
-            </div>
+            @if (selectedProject.testLink) {
+            <a [href]="selectedProject.testLink" target="_blank" class="btn btn-secondary">
+              {{ 'PROJECTS.LIVE_TEST' | translate }}
+              <img src="assets/icon_skill/arrow_outward.png" alt="Arrow" class="btn-icon" />
+            </a>
+            }
+          </div>
+        </div>
+
+        <div class="project-right">
+          <img src="assets/icon_skill/23. Close Button.png" alt="Close" class="close-icon"
+            (click)="selectedProjectIndex = null" />
+
+          <img [src]="selectedProject.image" [alt]="selectedProject.title" class="project-image" />
+
+          <div class="next-project" (click)="nextProject()">
+            <span class="next-text text-red">{{ 'PROJECTS.NEXT' | translate }}</span>
+            <span class="arrow text-red">&rarr;</span>
           </div>
         </div>
       </div>
+    </div>
     }
 
   </div>

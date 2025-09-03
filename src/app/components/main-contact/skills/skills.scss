@@ -4,39 +4,34 @@
   align-items: center;
 
   .container {
-    
     margin: 0 auto;
   }
- 
 
   .section-title {
-font-size: 24px;
+    font-size: 24px;
     margin-bottom: 1rem;
     color: #3dcfb6;
     font-weight: 700;
     font-family: 'Karla';
-
-   
   }
-.btn-talk {
-  display: inline-block;           
-  text-decoration: none;          
-  background-color: #3DCFB61A;
-  color: white;
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 50px;
 
-  &:hover {
-    background-color: #32b49b;
+  .btn-talk {
+    display: inline-block;           
+    text-decoration: none;          
+    background-color: #3DCFB61A;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+
+    &:hover {
+      background-color: #32b49b;
+    }
   }
-}
-
-
 
   .content-wrapper {
     display: flex;
@@ -47,6 +42,7 @@ font-size: 24px;
     @media (max-width: 768px) {
       flex-direction: column;
       align-items: center;
+      gap: 1.5rem;  
     }
   }
 
@@ -56,9 +52,8 @@ font-size: 24px;
     padding: 1.5rem;
     border-radius: 30px;
     text-align: left;
-   width: 520px;
+    width: 520px;
     height: 503px;
-    
 
     h3 {
       color: #3dcfb6;
@@ -70,27 +65,44 @@ font-size: 24px;
 
     p {
       font-size: 18px;
-      color:#ffffff;
+      color: #ffffff;
       font-family: 'Karla';
       font-weight: 400;
     }
+
     .contact-note {
-  font-family: 'Karla';
-  font-weight: 400;
-  font-size: 16px;
+      font-family: 'Karla';
+      font-weight: 400;
+      font-size: 16px;
 
-  .highlighted-question {
-    color: #3dcfb6;
-    font-weight: 700;
-    font-family: 'Fira Code';
-    font-size: 24px;
-    line-height: 120%;
-  }
-}
-
+      .highlighted-question {
+        color: #3dcfb6;
+        font-weight: 700;
+        font-family: 'Fira Code';
+        font-size: 24px;
+        line-height: 120%;
+      }
+    }
 
     @media (max-width: 768px) {
+      width: 100%; 
+      height: auto; 
       text-align: center;
+
+      h3 {
+        font-size: 42px; 
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .contact-note {
+        font-size: 14px;
+        .highlighted-question {
+          font-size: 20px;
+        }
+      }
     }
   }
 
@@ -106,7 +118,6 @@ font-size: 24px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 
     .skill-card {
-      
       color: white;
       border-radius: 12px;
       padding: 1rem;
@@ -133,6 +144,26 @@ font-size: 24px;
         color: white;
       }
     }
+
+    @media (max-width: 768px) {
+      width: 100%;  
+      height: auto; 
+
+      .skill-card {
+        justify-content: center;
+        gap: 1rem;
+
+        img {
+          width: 60px;
+          height: 60px;
+          margin-bottom: 0;
+        }
+
+        span {
+          font-size: 0.9rem;
+        }
+      }
+    }
   }
 
   .contact-note {
@@ -142,6 +173,15 @@ font-size: 24px;
 
     strong {
       color: #3dcfb6;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .btn-talk {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+      margin-top: 30px;
     }
   }
 }
