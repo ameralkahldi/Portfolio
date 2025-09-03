@@ -66,18 +66,23 @@ padding-right: 18rem;
       flex: 1;
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 3rem;
 
       .form-group {
         display: flex;
         flex-direction: column;
         position: relative;
-        border-bottom: 2px solid #3DCFB6;
+    
 
         label {
           margin-bottom: 0.5rem;
           font-weight: 600;
           color: #3DCFB6;
+        }
+        hr {
+          border: none;
+          border-top: 1px solid #3DCFB6;
+          margin:1rem 0;
         }
 
         input,
@@ -88,17 +93,15 @@ padding-right: 18rem;
           padding: 0.5rem 0;
           font-size: 1rem;
           outline: none;
-          border-bottom: 2px solid transparent;
-          transition: border-color 0.3s;
           color: #ffffff;
+          
+        
+          transition: border-color 0.3s;
+         
 
           &::placeholder {
             color: #ffffff;
             opacity: 1;
-          }
-
-          &:focus {
-            border-bottom-color: #3dcfb6;
           }
         }
 
@@ -146,6 +149,7 @@ padding-right: 18rem;
         font-weight: bold;
         cursor: pointer;
         transition: all 0.3s ease;
+        margin-bottom: 2rem;
 
         &:hover {
           background: linear-gradient(135deg, #2aa48a, #3dcfb6);
@@ -153,18 +157,39 @@ padding-right: 18rem;
           transform: translateY(-2px);
         }
 
-        &:disabled {
-          opacity: 0.6;
-          cursor: not-allowed;
-        }
       }
 
-      .success-message {
-        text-align: center;
-        color: #28a745;
-        font-weight: 600;
-        margin-top: 1rem;
-      }
+     .success-message {
+    text-align: center;
+    color: #28a745;
+    font-weight: 600;
+    margin-top: 1rem;
+    background-color: #e6ffed;
+    border: 1px solid #28a745;
+    padding: 1rem;
+    border-radius: 5px;
+    animation: fadeInOut 5s forwards;
+  }
+
+  .error-message {
+    text-align: center;
+    color: #dc3545;
+    font-weight: 600;
+    margin-top: 1rem;
+    background-color: #ffe6e6;
+    border: 1px solid #dc3545;
+    padding: 1rem;
+    border-radius: 5px;
+    animation: fadeInOut 5s forwards;
+  }
+
+  @keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
     }
   }
 }

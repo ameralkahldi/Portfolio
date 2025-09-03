@@ -4,49 +4,44 @@
       <div class="contact-heading">
         <h3>{{ 'CONTACT.HEADING' | translate }}</h3>
         <h1>{{ 'CONTACT.SUBHEADING' | translate }}</h1>
-
         <h2>{{ 'CONTACT.QUESTION' | translate }}</h2>
         <p>{{ 'CONTACT.DESCRIPTION' | translate }}</p>
       </div>
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <div class="form-group">
+          <label for="name">{{ 'CONTACT.NAME_LABEL' | translate }}</label>
+          <input [(ngModel)]="contactData.name" type="text" id="name" name="name" required />
+          <hr>
 
-      <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
-        @for (field of formFields; track field.name) {
-          <div class="form-group" [class.checkbox]="field.type === 'checkbox'">
-            <label *ngIf="field.type !== 'checkbox'">{{ field.label | translate }}</label>
+          <label for="email">{{ 'CONTACT.EMAIL_LABEL' | translate }}</label>
+          <input [(ngModel)]="contactData.email" type="email" id="email" name="email"  required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$" />
 
-            @if (field.type === 'textarea') {
-              <textarea
-                [formControlName]="field.name"
-                rows="5"
-                [placeholder]="field.placeholder | translate"
-              ></textarea>
-            } @else if (field.type === 'checkbox') {
-              <input type="checkbox" [formControlName]="field.name" />
-              <label>{{ field.label | translate }}</label>
-            } @else {
-              <input
-                [type]="field.type"
-                [formControlName]="field.name"
-                [placeholder]="field.placeholder | translate"
-              />
-            }
+          <hr>
 
-            @if (contactForm.get(field.name)?.invalid && contactForm.get(field.name)?.touched) {
-              <p class="error">
-                {{ field.error | translate }}
-              </p>
-            }
-          </div>
-        }
+          <label for="message">{{ 'CONTACT.MESSAGE_LABEL' | translate }}</label>
+          <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message" required></textarea>
+           @if(!message.valid && !message.touched){
+            <span class="error">{{ 'CONTACT.MESSAGE_ERROR' | translate }}</span>
+           }
+           <hr>
 
-        <button class="btn" type="submit" [disabled]="contactForm.invalid">
-          {{ 'CONTACT.SUBMIT' | translate }}
-        </button>
+          <label for="privacy">
+            <input [(ngModel)]="contactData.privacy" type="checkbox" id="privacy" name="privacy"  required />
+      
+            {{ 'CONTACT.PRIVACY_LABEL' | translate }}
+          </label>
+          <button class ="btn" type="submit">{{ 'CONTACT.SUBMIT' | translate }}</button>
+        </div>
+        <div *ngIf="successMessage" class="success-message">
+  {{ successMessage }}
+</div>
 
-        @if (submitted) {
-          <p class="success-message">{{ 'CONTACT.SUCCESS' | translate }}</p>
-        }
+<div *ngIf="errorMessage" class="error-message">
+  {{ errorMessage }}
+</div>
       </form>
-    </div>
+      
+
+  </div>
   </div>
 </section>

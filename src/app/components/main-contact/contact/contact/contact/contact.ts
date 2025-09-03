@@ -1,67 +1,50 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
-import { TranslatePipe } from '@ngx-translate/core';
+import { FormsModule, NgForm } from '@angular/forms';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, TranslatePipe],
+  imports: [CommonModule, FormsModule, TranslatePipe],
   templateUrl: './contact.html',
-  styleUrl: './contact.scss'
+  styleUrl: './contact.scss',
 })
 export class ContactComponent {
-  contactForm: FormGroup;
-  submitted = false;
-  formFields = [
-  {
-    name: 'name',
-    label: 'CONTACT.NAME_LABEL',
-    placeholder: 'CONTACT.NAME_PLACEHOLDER',
-    type: 'text',
-    error: 'CONTACT.ERROR_NAME'
-  },
-  {
-    name: 'email',
-    label: 'CONTACT.EMAIL_LABEL',
-    placeholder: 'CONTACT.EMAIL_PLACEHOLDER',
-    type: 'email',
-    error: 'CONTACT.ERROR_EMAIL'
-  },
-  {
-    name: 'message',
-    label: 'CONTACT.MESSAGE_LABEL',
-    placeholder: 'CONTACT.MESSAGE_PLACEHOLDER',
-    type: 'textarea',
-    error: 'CONTACT.ERROR_REQUIRED'
-  },
-  {
-    name: 'privacy',
-    label: 'CONTACT.PRIVACY_LABEL',
-    placeholder: '',
-    type: 'checkbox',
-    error: 'CONTACT.ERROR_PRIVACY'
+  successMessage = '';
+  errorMessage = '';
+
+  contactData = {
+    name: '',
+    email: '',
+    message: '',
+    privacy: false
+  };
+
+  private endPoint = 'https://yourdomain.com/sendMail.php';
+
+  constructor(private http: HttpClient, private translate: TranslateService) {}
+
+  onSubmit(form: NgForm) {
+    if (form.valid) {
+      const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+
+      this.http.post(this.endPoint, this.contactData, { headers, responseType: 'text' })
+        .subscribe({
+          next: () => {
+            this.successMessage = this.translate.instant('CONTACT.SUCCESS_MESSAGE');
+            this.errorMessage = '';
+            form.resetForm();
+            setTimeout(() => this.successMessage = '', 5000);
+          },
+          error: () => {
+            this.errorMessage = this.translate.instant('CONTACT.ERROR_MESSAGE');
+            this.successMessage = '';
+            setTimeout(() => this.errorMessage = '', 5000);
+          },
+          complete: () => console.info('📬 Form submission completed'),
+        });
+    }
   }
-];
-
-
-  constructor(private fb: FormBuilder) {
-    this.contactForm = this.fb.group({
-      name: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required],
-      privacy: [false, Validators.requiredTrue]
-    });
-  }
-
-  submitForm() {
-  if (this.contactForm.invalid) {
-    this.contactForm.markAllAsTouched(); 
-    return;
-  }
-
-  this.submitted = true;
-  console.log(this.contactForm.value);
-  this.contactForm.reset();
-}
 }
