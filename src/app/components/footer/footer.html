@@ -1,29 +1,32 @@
 <footer class="footer">
   <div class="footer-container">
 
-    <div class="footer-left">
-    <div class="logo">
-    <span class="logo-icon">AA</span>
-    <span class="logo-name">Amer Alkhalidy</span>
-  </div>
-      
+    <!-- صف يحتوي على left و right فقط -->
+    <div class="footer-row-container">
+      <div class="footer-left">
+        <div class="logo">
+          <span class="logo-icon">AA</span>
+          <span class="logo-name">Amer Alkhalidy</span>
+        </div>
 
-      <p>{{ 'FOOTER.ROLE' | translate }}</p>
-      <p>{{ 'FOOTER.LOCATION' | translate }}</p>
+        <p>{{ 'FOOTER.ROLE' | translate }}</p>
+        <p>{{ 'FOOTER.LOCATION' | translate }}</p>
+      </div>
+
+      <div class="footer-right">
+        <a href="https://github.com/ameralkahldi">{{ 'FOOTER.GITHUB' | translate }}</a>
+        <a href="https://www.linkedin.com/in/ameralkhalidy/">{{ 'FOOTER.LINKEDIN' | translate }}</a>
+        <a href="mailto:amer.alkhaldi@icloud.com">{{ 'FOOTER.EMAIL' | translate }}</a>
+        <a [routerLink]="['/legal']">{{ 'FOOTER.LEGAL' | translate }}</a>
+      </div>
     </div>
 
+    <!-- center يأتي في سطر خاص -->
     <div class="footer-center">
       <p class="copyright">
         &copy; 2025 <strong>Amer Alkhalidy</strong>. {{ 'FOOTER.RIGHTS' | translate }}
       </p>
     </div>
 
-    <div class="footer-right">
-      <a href="https://github.com/ameralkahldi">{{ 'FOOTER.GITHUB' | translate }}</a>
-      <a href="https://www.linkedin.com/in/ameralkhalidy/">{{ 'FOOTER.LINKEDIN' | translate }}</a>
-      <a href="mailto:amer.alkhaldi@icloud.com">{{ 'FOOTER.EMAIL' | translate }}</a>
-      <a [routerLink]="['/legal']">{{ 'FOOTER.LEGAL' | translate }}</a>
-    </div>
-    </div>
-
+  </div>
 </footer>
