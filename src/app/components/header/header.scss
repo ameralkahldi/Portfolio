@@ -1,6 +1,7 @@
 .navbar {
   position: sticky;
   top: 0;
+  z-index: 1000;
 
   display: flex;
   align-items: center;
@@ -14,7 +15,12 @@
   font-family: 'Segoe UI', sans-serif;
   font-weight: bold;
   color: #32b49b; 
+img{
+  height: 100px;
+  width: 100px;
 
+ 
+}
   .logo-icon {
     background-color: #ffffff;
     border: 2px solid #32b49b;
@@ -111,6 +117,7 @@
     .menu-toggle {
       display: block;
       margin-left: 3rem;
+     
     }
 
     .nav-links {
