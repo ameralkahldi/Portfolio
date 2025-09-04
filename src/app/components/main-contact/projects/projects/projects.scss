@@ -107,7 +107,7 @@
 
 .hover-preview {
   position: absolute;
-  left: 70%;
+  left: 75%;
   transform: translate(-40%);
   pointer-events: none;
 
@@ -118,8 +118,8 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   }
 
-  @media (max-width: 768px) {
-    display: none; // إخفاء المعاينة على الشاشات الصغيرة
+  @media (max-width: 1025px) {
+    display: none; 
   }
 }
 
