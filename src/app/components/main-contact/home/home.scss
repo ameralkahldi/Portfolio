@@ -22,7 +22,6 @@ $breakpoints: (
 
 .home-hero {
   position: relative;
-  max-height: 130vh;
   display: flex;
   flex-direction: column; 
   justify-content: space-between; 
@@ -30,14 +29,6 @@ $breakpoints: (
   font-family: $font-main;
   background: linear-gradient(135deg, #1C1C1C, #1e2b1f, #08463B);
 
-  @include respond-to(md) {
-    padding-top: 2rem;
-  }
-
-  @include respond-to(sm) {
-    padding-top: 1rem;
-  }
-}
 
 .hero-content {
   &.centered {
@@ -110,12 +101,12 @@ $breakpoints: (
 
       @include respond-to(md) {
         font-size: 18px;
-        padding: 0 1rem;
+     
       }
 
       @include respond-to(xs) {
         font-size: 16px;
-        padding: 0 1rem;
+       
       }
 }
     .cta-buttons {
@@ -172,150 +163,51 @@ $breakpoints: (
       }
     }
   }
-.hr-home {
-  position: absolute;
-  bottom: 0;              
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 0 8rem;
-  z-index: 2;
-}
-
-.hr-home hr.space-left2
- {
-  border: none;
-  width: 2px;
-  height: 220px;        
-  background-color: #00b894;
-  opacity: 0.2;
-  margin: 0;
-}
-.hr-home hr.space-right2{
-  border: none;
-  width: 2px;
-  height: 200px;        
-  background-color: #00b894;
-  opacity: 0.2;
-  margin: 0;
-
-}
-
 .bottom-row {
-  margin-bottom: 9rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; // arrow-group يسار و social-icons يمين
+  align-items: flex-end;
   width: 90vw;
-  padding: 0 2.5rem;
+  margin: 0 auto;
+  padding: 0 3rem;
   position: relative;
   z-index: 2;
-
-  .scroll-down-arrow {
-    color: $secondary-color;
-    border: 2px solid $primary-color;
-    padding: 0.5rem 0.5rem;
-    border-radius: 18px;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    font-size: 1rem;
-
-    &:hover {
-      background-color: transparent;
-      color: lighten($primary-color, 20%);
-      border-color: lighten($primary-color, 10%);
-    }
-
-    .arrow {
-      display: inline-block;
-      animation: bounceUpDown 2s ease-in-out infinite;
-      font-size: 2rem;
-    }
-  }
 }
 
+/* ⬅️ السهم مع الخط اليسار */
+.arrow-group {
+  display: flex;
+  flex-direction: column; // السهم فوق والخط تحته
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ⬅️ الأيقونات مع الخط اليمين */
 .social-icons {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  margin-top: -70px;
-
-  .email-icon {
-    display: flex;
-    width: 50px;
-    height: 50px;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-    overflow: hidden;
-    position: relative;
-
-    
-   
-
-    &:hover {
-      background-color: rgba(255, 255, 255, 0.15);
-    }
-
-    .email-icon-img {
-      display: inline;
-      width: 28px;
-      height: 28px;
-      object-fit: contain;
-      transition: transform 0.3s ease;
-
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-
-    
-    @include respond-to(sm) {
-      width: 50px;
-      height: 50px;
-      flex-direction: row;
-      margin-top: 0;
-      margin-left: 0;
-      writing-mode: initial;
-      transform: none;
-    }
-  }
-
-  .icon {
-    width: 50px;
-    height: 50px;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      background-color: rgba(255, 255, 255, 0.15);
-    }
-
-    img {
-      width: 28px;
-      height: 28px;
-      object-fit: contain;
-      transition: transform 0.3s ease;
-
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-  }
+  align-items: center;
+  gap: 1rem;
 }
+
+/* الخطوط */
+.right-line {
+  border: none;
+  border-left: 2px solid $primary-color;
+  height: 200px;
+  opacity: 0.2;
+}
+.left-line {
+  border: none;
+  border-left: 2px solid $primary-color;
+  height: 250px;
+  opacity: 0.2;
+}
+
+/* ✅ responsive من 1030px وتحت */
+
+
+
 
 .angled-banner {
   width: 100%;
@@ -330,7 +222,7 @@ $breakpoints: (
   z-index: 10;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   font-family: 'Fira Code', monospace;
-  top: -45px;
+
 
   .marquee {
     display: flex;
@@ -345,7 +237,7 @@ $breakpoints: (
 
   @include respond-to(sm) {
     font-size: 20px;
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem;
   }
 }
 
@@ -368,4 +260,5 @@ $breakpoints: (
 @keyframes bounceUpDown {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
+}
 }

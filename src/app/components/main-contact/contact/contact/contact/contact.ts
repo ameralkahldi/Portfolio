@@ -22,7 +22,7 @@ export class ContactComponent {
     privacy: false
   };
 
-  private endPoint = 'https://yourdomain.com/sendMail.php';
+private endPoint = 'http://ameralkhalidy.de';
 
   constructor(private http: HttpClient, private translate: TranslateService) {}
 
