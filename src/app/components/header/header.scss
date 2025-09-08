@@ -7,8 +7,7 @@
   align-items: center;
   padding: 1.5rem 4rem;
   gap: 2rem;
-  background: linear-gradient(135deg, #1C1C1C, #1e2b1f, #08463B);
-
+   background: linear-gradient(35deg,#1c1c1c 30%,#225c51);
 .logo {
   display: flex;
   align-items: center;
@@ -64,7 +63,7 @@ img{
   .desktop-lang {
     display: inline-flex;
     border: 1px solid #3DCFB6;
-    border-radius: 12px;
+    border-radius: 20px;
     overflow: hidden;
 
     button {

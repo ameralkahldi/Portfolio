@@ -13,7 +13,13 @@
     color: #3dcfb6;
     font-weight: 700;
     font-family: 'Karla';
+
+    @media (max-width: 768px) {
+      text-align: center;   
+      width: 100%;        
+    }
   }
+
 
   .btn-talk {
     display: inline-block;           
@@ -145,15 +151,14 @@
       }
     }
 
-    /* ✅ استجابة عند 1200px */
     @media (max-width: 1200px) {
       width: 100%;
       height: auto;
-      justify-content: space-evenly; /* توزيع متناسق */
+      justify-content: space-evenly; 
       gap: 1.5rem;
 
       .skill-card {
-        flex: 0 1 calc(33.33% - 1rem); /* 3 أعمدة */
+        flex: 0 1 calc(33.33% - 1rem); 
         justify-content: center;
         flex-direction: column;
         text-align: center;

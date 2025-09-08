@@ -4,38 +4,44 @@
   padding-right: 28rem;
   margin-top: 5rem;
 
-  .portfolio-title {
-    font-weight: 700;
-    color: #2aa48a;
-    font-family: 'Karla';
-    font-size: 24px;
-  }
+.portfolio-title {
+  font-weight: 700;
+  color: #3DCFB6;
+  font-family: 'Karla';
+  font-size: 24px;
+}
 
-  .section-title {
-    font-size: 64px;
-    color: #3dcfb6;
-    margin-bottom: 0.25rem;
-    font-family: 'Fira Code', monospace;
-    font-weight: 700;
-  }
+.section-title {
+  font-size: 64px;
+  color: #3dcfb6;
+  margin-bottom: 0.25rem;
+  font-family: 'Fira Code', monospace;
+  font-weight: 700;
+}
 
+.subtitle {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  font-family: 'Karla';
+  font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+  padding-right: 5rem;
+}
+
+@media (max-width: 768px) {
+  padding-right: 1rem;
+  align-items: center;
+
+  .portfolio-title,
+  .section-title,
   .subtitle {
-    font-size: 18px;
-    color: #ffffff;
-    margin-bottom: 2rem;
-    font-family: 'Karla';
-    font-weight: 400;
+    text-align: center;   
+    width: 100%;         
   }
-
-  @media (max-width: 1024px) {
-    padding-right: 5rem;
-  }
-
-  @media (max-width: 768px) {
-    padding-right: 1rem;
-    flex-direction: column;
-    align-items: center;
-  }
+}
 }
 
 .project-list-wrapper {
