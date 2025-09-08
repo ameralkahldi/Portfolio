@@ -238,7 +238,37 @@ $breakpoints: (
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+
+  a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      transition: filter 0.3s ease;
+    }
+
+  
+    &:hover img {
+      filter: brightness(0) invert(1);
+    }
+
+  
+    &:hover::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: calc(100% + 8px); 
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+  }
 }
+
 
 .right-line {
   border: none;

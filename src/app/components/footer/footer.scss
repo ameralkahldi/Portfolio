@@ -74,21 +74,34 @@
     }
   }
 
-  .footer-right {
-    align-items: flex-end;
-    text-align: right;
+ .footer-right {
+  align-items: flex-end;
+  text-align: right;
 
-    a {
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 1rem;
-      transition: color 0.3s;
+  a {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
 
-      &:hover {
-        color: #3dcfb6;
-      }
+    &:hover {
+      color: #3dcfb6;
+    }
+
+    &:hover::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: calc(100% + 8px); 
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #3dcfb6;
     }
   }
+}
 
   /* responsive */
   @media (max-width: 768px) {

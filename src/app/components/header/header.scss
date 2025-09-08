@@ -35,30 +35,45 @@ img{
   }
 }
 
-  .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    font-size: 24px;
-    margin-right: auto;
-    font-family: 'Fira Code', monospace;
+ .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 24px;
+  margin-right: auto;
+  font-family: 'Fira Code', monospace;
 
-    a {
-      text-decoration: none;
-      color: #ffffff;
-      font-weight: 600;
-      transition: color 0.3s;
+  a {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    transition: color 0.3s;
 
-      &.active,
-      &:hover {
-        color: #3DCFB6;
-      }
+    &.active,
+    &:hover {
+      color: #3DCFB6;
     }
 
-    .mobile-lang {
-      display: none; 
+    &.active::after,
+    &:hover::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;       
+      left: 50%;
+      transform: translateX(-50%);
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #3DCFB6;
     }
   }
+
+  .mobile-lang {
+    display: none;
+  }
+}
+
 
   .desktop-lang {
     display: inline-flex;

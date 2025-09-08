@@ -4,10 +4,17 @@
     <button [class.active]="currentLang === 'de'" (click)="switchLanguage('de')">DE</button>
   </div>
 
-  <nav class="nav-links" [class.open]="isMenuVisible">
- <a href="#about" (click)="closeMenu()">{{ 'NAV.ABOUT' | translate }}</a>
-<a href="#skills" (click)="closeMenu()">{{ 'NAV.SKILLS' | translate }}</a>
-<a href="#projects" (click)="closeMenu()">{{ 'NAV.PROJECTS' | translate }}</a>
+<nav class="nav-links" [class.open]="isMenuVisible">
+  <a href="#about" (click)="setActive('about')" [class.active]="activeLink === 'about'">
+    {{ 'NAV.ABOUT' | translate }}
+  </a>
+  <a href="#skills" (click)="setActive('skills')" [class.active]="activeLink === 'skills'">
+    {{ 'NAV.SKILLS' | translate }}
+  </a>
+  <a href="#projects" (click)="setActive('projects')" [class.active]="activeLink === 'projects'">
+    {{ 'NAV.PROJECTS' | translate }}
+  </a>
+
 
    
 
