@@ -1,43 +1,24 @@
-<div class="references-container">
-  <div class="titlereference">
-    <h3>What my colleagues say about me</h3>
-  </div>
-
-  <div class="cards-wrapper">
-    @for (card of visibleCards; let i = $index; track card) {
-      <div
-        class="card"
-        [class.active]="i === 1"
-        [class.left]="i === 0"
-        [class.right]="i === 2"
-      >
-        <h3>{{ card.name }}</h3>
-        <p>{{ card.text }}</p>
-      </div>
-    }
-  </div>
-
-  <div class="navigation-controls">
-    <button class="arrow-btn" (click)="prev()" [disabled]="currentIndex === 0">
-      &#10094;
-    </button>
-
-    <div class="dots">
-      @for (i of [].constructor(totalGroups); track i) {
-        <span
-          class="dot"
-          [class.active]="i === currentGroupIndex"
-          (click)="setCurrentGroup(i)"
-        ></span>
-      }
+<section class="testi_wrapper">
+  <div class="testi_container">
+    <div class="headline_wrapper">
+      <h2>What my colleagues say about me</h2>
     </div>
-
-    <button
-      class="arrow-btn"
-      (click)="next()"
-      [disabled]="currentIndex + 3 >= allCards.length"
-    >
-      &#10095;
-    </button>
+    <div class="carousell_wrapper" [class.transitioning]="isTransitioning" [style.transform]="getTransform()"> @for
+      (testimonial of allCards; track $index) { <div class="carousell_container"
+        [class.active]="$index === currentIndex"
+        [class.prev]="$index === (currentIndex - 1 + allCards.length) % allCards.length"
+        [class.next]="$index === (currentIndex + 1) % allCards.length">
+        <h4>{{ testimonial.text }}</h4>
+        <div class="author">
+          <div class="line"></div>
+          <p>{{ testimonial.name }}</p>
+        </div>
+      </div> } </div>
+    <div class="caroussel_navigation">
+      <p class="arrow" (click)="prev()">&larr;</p>
+      <div class="dots"> @for (navigation of allCards; track $index) { <span class="dot"
+          [class.active]="$index === currentIndex % allCards.length" (click)="currentIndex = $index"></span> } </div>
+      <p class="arrow" (click)="next()">&rarr;</p>
+    </div>
   </div>
-</div>
+</section>
