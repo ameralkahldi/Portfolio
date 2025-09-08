@@ -1,8 +1,10 @@
 <header class="navbar">
+ 
   <div class="language-switch desktop-lang">
     <button [class.active]="currentLang === 'en'" (click)="switchLanguage('en')">EN</button>
     <button [class.active]="currentLang === 'de'" (click)="switchLanguage('de')">DE</button>
   </div>
+ 
 
 <nav class="nav-links" [class.open]="isMenuVisible">
   <a href="#about" (click)="setActive('about')" [class.active]="activeLink === 'about'">
@@ -15,14 +17,17 @@
     {{ 'NAV.PROJECTS' | translate }}
   </a>
 
-
    
 
     <div class="language-switch mobile-lang">
       <button [class.active]="currentLang === 'en'" (click)="switchLanguage('en'); closeMenu()">EN</button>
       <button [class.active]="currentLang === 'de'" (click)="switchLanguage('de'); closeMenu()">DE</button>
     </div>
+
   </nav>
+   <div class="logo">
+    <img src="./assets/icon_logos/09020954-9e3e-4577-9853-4d4db9f30b3f.png" alt="">
+  </div>
 
   <button class="menu-toggle" (click)="toggleMenu()" aria-label="Toggle menu">&#9776;</button>
 
