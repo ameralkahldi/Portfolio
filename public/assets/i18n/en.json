@@ -38,6 +38,7 @@
     "MESSAGE_LABEL": "How can I help you?",
     "MESSAGE_PLACEHOLDER": "Hello, I am interested in...",
     "PRIVACY_LABEL": "I’ve read the privacy policy and agree to the processing of my data.",
+    
 
     "SUBMIT": "Say Hello :)",
     "SUCCESS": "Thanks! I’ll get back to you soon",
@@ -98,7 +99,18 @@
     "INDEMNITY_TEXT": "You agree to indemnify, defend, and hold harmless the listed students, the Developer Akademie, and their affiliates, partners, officers, directors, agents, and employees from any claim, demand, loss, damage, cost, or liability (including reasonable legal fees) arising out of or related to your use of the Portfolio and/or your breach of this Legal Notice.",
     "CONTACT": "Contact",
     "CONTACT_TEXT": "For any questions or notices, please contact us at: <strong>amer.alkhaldi@icloud.com</strong>"
-  }
+  },
+  "TESTIMONIALS": {
+  "TITLE": "What my colleagues say about me",
+  "PREV": "Previous",
+  "NEXT": "Next",
+  "CARDS": [
+    { "text": "Amer is a great team player and always ready to help.", "name": "John Doe" },
+    { "text": "Working with Amer was a pleasure. Very professional.", "name": "Jane Smith" },
+    { "text": "He brings a lot of creativity and passion to his work.", "name": "Michael Müller" }
+  ]
+}
+
 
 
 }

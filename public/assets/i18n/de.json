@@ -100,7 +100,18 @@
     "INDEMNITY_TEXT": "Sie erklären sich damit einverstanden, die genannten Studenten, die Developer Akademie und deren verbundenen Unternehmen, Partner, Geschäftsführer, Direktoren, Agenten und Mitarbeiter von jeglichen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Verbindlichkeiten (einschließlich angemessener Anwaltskosten) freizustellen, zu verteidigen und schadlos zu halten, die sich aus Ihrer Nutzung des Portfolios und/oder Ihrem Verstoß gegen dieses Impressum ergeben.",
     "CONTACT": "Kontakt",
     "CONTACT_TEXT": "Für Fragen oder Mitteilungen kontaktieren Sie uns bitte unter: <strong>amer.alkhaldi@icloud.com</strong>"
-  }
+  },
+  "TESTIMONIALS": {
+  "TITLE": "Was meine Kollegen über mich sagen",
+  "PREV": "Zurück",
+  "NEXT": "Weiter",
+  "CARDS": [
+    { "text": "Amer ist ein großartiger Teamplayer und immer hilfsbereit.", "name": "John Doe" },
+    { "text": "Die Zusammenarbeit mit Amer war eine Freude. Sehr professionell.", "name": "Jane Smith" },
+    { "text": "Er bringt viel Kreativität und Leidenschaft in seine Arbeit.", "name": "Michael Müller" }
+  ]
+}
+
 
 
 }

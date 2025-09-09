@@ -1,24 +1,34 @@
 <section class="testi_wrapper">
   <div class="testi_container">
     <div class="headline_wrapper">
-      <h2>What my colleagues say about me</h2>
+      <h2>{{ 'TESTIMONIALS.TITLE' | translate }}</h2>
     </div>
-    <div class="carousell_wrapper" [class.transitioning]="isTransitioning" [style.transform]="getTransform()"> @for
-      (testimonial of allCards; track $index) { <div class="carousell_container"
-        [class.active]="$index === currentIndex"
-        [class.prev]="$index === (currentIndex - 1 + allCards.length) % allCards.length"
-        [class.next]="$index === (currentIndex + 1) % allCards.length">
-        <h4>{{ testimonial.text }}</h4>
-        <div class="author">
-          <div class="line"></div>
-          <p>{{ testimonial.name }}</p>
+
+    <div class="carousell_wrapper" [class.transitioning]="isTransitioning" [style.transform]="getTransform()">
+      <ng-container *ngFor="let testimonial of 'TESTIMONIALS.CARDS' | translate; let i = index">
+        <div class="carousell_container"
+          [class.active]="i === currentIndex"
+          [class.prev]="i === (currentIndex - 1 + ('TESTIMONIALS.CARDS' | translate).length) % ('TESTIMONIALS.CARDS' | translate).length"
+          [class.next]="i === (currentIndex + 1) % ('TESTIMONIALS.CARDS' | translate).length">
+          <h4>{{ testimonial.text }}</h4>
+          <div class="author">
+            <div class="line"></div>
+            <p>{{ testimonial.name }}</p>
+          </div>
         </div>
-      </div> } </div>
+      </ng-container>
+    </div>
+
     <div class="caroussel_navigation">
-      <p class="arrow" (click)="prev()">&larr;</p>
-      <div class="dots"> @for (navigation of allCards; track $index) { <span class="dot"
-          [class.active]="$index === currentIndex % allCards.length" (click)="currentIndex = $index"></span> } </div>
-      <p class="arrow" (click)="next()">&rarr;</p>
+      <p class="arrow" (click)="prev()" title="{{ 'TESTIMONIALS.PREV' | translate }}">&larr;</p>
+      <div class="dots">
+        <ng-container *ngFor="let dot of 'TESTIMONIALS.CARDS' | translate; let i = index">
+          <span class="dot"
+            [class.active]="i === currentIndex % ('TESTIMONIALS.CARDS' | translate).length"
+            (click)="currentIndex = i"></span>
+        </ng-container>
+      </div>
+      <p class="arrow" (click)="next()" title="{{ 'TESTIMONIALS.NEXT' | translate }}">&rarr;</p>
     </div>
   </div>
 </section>
