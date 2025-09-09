@@ -7,19 +7,8 @@
   padding: 1.5rem 4rem;
   gap: 2rem;
    background: linear-gradient(35deg,#1c1c1c 30%,#225c51);
-.logo {
-  
-img{
-  
-  width: 150px;
-  height: 40px;
-  object-fit: cover;
 
- 
 }
- 
-}
-
  .nav-links {
   display: flex;
   align-items: center;
@@ -91,6 +80,53 @@ img{
     }
   }
 
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo-icon {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #3DCFB6;
+  border: 2px solid #3DCFB6;
+  border-radius: 50%;
+  padding: 0.5rem 0.8rem;
+  background:#ffffff;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.logo-text .amer {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.logo-text .alkhalidy {
+  color: #3DCFB6;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+ 
+
+
   .menu-toggle {
     display: none;
     font-size: 1.8rem;
@@ -99,52 +135,60 @@ img{
     background: none;
     border: none;
   }
-}
+
 
 // ---------------- Responsive ----------------
-
 @media (max-width: 800px) {
   .navbar {
     padding: 1rem;
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: space-between; 
+    align-items: center;
+
+    .logo {
+      order: 1; 
+    }
+
+    .menu-toggle {
+      display: block;
+      order: 2; 
+      margin-left: 0;
+    }
 
     .desktop-lang {
       display: none; 
     }
 
-    .menu-toggle {
-      display: block;
-      margin-left: 3rem;
-     
-    }
-
     .nav-links {
-      display: none;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1rem;
-      margin-right: 0;
-      background: #1a1a1a;
-      padding: 1rem 2rem;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      right: 0;
-      border-radius: 0 0 12px 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      z-index: 999;
+  display: none;
+  flex-direction: column;
+  justify-content: center;   
+  align-items: center;      
+  gap: 1rem;
+  margin-right: 0;
+  background: linear-gradient(35deg,#1c1c1c 30%,#225c51);
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  text-align: center;
 
-      a {
-        font-size: 1.1rem;
-        color: white;
-        font-weight: 600;
+  a {
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 600;
 
-        &:hover,
-        &.active {
-          color: #3DCFB6;
-        }
-      }
+    &:hover,
+    &.active {
+      color: #3DCFB6;
+    }
+  }
+
+
 
       .mobile-lang {
         display: inline-flex;

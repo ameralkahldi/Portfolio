@@ -1,4 +1,6 @@
 <header class="navbar">
+
+  
  
   <div class="language-switch desktop-lang">
     <button [class.active]="currentLang === 'en'" (click)="switchLanguage('en')">EN</button>
@@ -24,10 +26,17 @@
       <button [class.active]="currentLang === 'de'" (click)="switchLanguage('de'); closeMenu()">DE</button>
     </div>
 
+   
+
   </nav>
-   <div class="logo">
-    <img src="./assets/icon_logos/09020954-9e3e-4577-9853-4d4db9f30b3f.png" alt="">
-  </div>
+    <a href="#" class="logo">
+    <div class="logo-icon">AA</div>
+    <div class="logo-text">
+      <span class="amer">Amer</span>
+      <span class="alkhalidy">Alkhalidy</span>
+    </div>
+  </a>
+   
 
   <button class="menu-toggle" (click)="toggleMenu()" aria-label="Toggle menu">&#9776;</button>
 
