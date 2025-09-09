@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
@@ -22,29 +22,37 @@ export class ContactComponent {
     privacy: false
   };
 
-private endPoint = 'http://ameralkhalidy.de';
+    
 
-  constructor(private http: HttpClient, private translate: TranslateService) {}
+  post = {
+    endPoint: 'http://ameralkhalidy.de/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
+  http =inject(HttpClient)
 
-  onSubmit(form: NgForm) {
-    if (form.valid) {
-      const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-
-      this.http.post(this.endPoint, this.contactData, { headers, responseType: 'text' })
+  onSubmit(ngForm: NgForm) {
+    if (ngForm.submitted && ngForm.form.valid ) {
+      this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
-          next: () => {
-            this.successMessage = this.translate.instant('CONTACT.SUCCESS_MESSAGE');
-            this.errorMessage = '';
-            form.resetForm();
-            setTimeout(() => this.successMessage = '', 5000);
+          next: (response) => {
+
+            ngForm.resetForm();
           },
-          error: () => {
-            this.errorMessage = this.translate.instant('CONTACT.ERROR_MESSAGE');
-            this.successMessage = '';
-            setTimeout(() => this.errorMessage = '', 5000);
+          error: (error) => {
+            console.error(error);
           },
-          complete: () => console.info('📬 Form submission completed'),
+          complete: () => console.info('send post complete'),
         });
+    } else if (ngForm.submitted && ngForm.form.valid) {
+
+      ngForm.resetForm();
     }
   }
+
 }

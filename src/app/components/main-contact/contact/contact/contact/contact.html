@@ -7,41 +7,61 @@
         <h2>{{ 'CONTACT.QUESTION' | translate }}</h2>
         <p>{{ 'CONTACT.DESCRIPTION' | translate }}</p>
       </div>
+
       <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <div class="form-group">
+
+          <!-- Name -->
           <label for="name">{{ 'CONTACT.NAME_LABEL' | translate }}</label>
-          <input [(ngModel)]="contactData.name" type="text" id="name" name="name" required />
+          <input [(ngModel)]="contactData.name" type="text" id="name" name="name" required #name="ngModel" />
+          <span *ngIf="!name.valid && name.touched" class="error">
+            {{ 'CONTACT.NAME_ERROR' | translate }}
+          </span>
           <hr>
 
+          <!-- Email -->
           <label for="email">{{ 'CONTACT.EMAIL_LABEL' | translate }}</label>
-          <input [(ngModel)]="contactData.email" type="email" id="email" name="email"  required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$" />
-
+          <input [(ngModel)]="contactData.email" type="email" id="email" name="email" required
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" #email="ngModel" />
+          <span *ngIf="!email.valid && email.touched" class="error">
+            {{ 'CONTACT.EMAIL_ERROR' | translate }}
+          </span>
           <hr>
 
+          <!-- Message -->
           <label for="message">{{ 'CONTACT.MESSAGE_LABEL' | translate }}</label>
-          <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message" required></textarea>
-           @if(!message.valid && !message.touched){
-            <span class="error">{{ 'CONTACT.MESSAGE_ERROR' | translate }}</span>
-           }
-           <hr>
+          <textarea [(ngModel)]="contactData.message" id="message" name="message" required
+            #message="ngModel"></textarea>
+          <span *ngIf="!message.valid && message.touched" class="error">
+            {{ 'CONTACT.MESSAGE_ERROR' | translate }}
+          </span>
+          <hr>
 
+          <!-- Privacy -->
           <label for="privacy">
-            <input [(ngModel)]="contactData.privacy" type="checkbox" id="privacy" name="privacy"  required />
-      
+            <input [(ngModel)]="contactData.privacy" type="checkbox" id="privacy" name="privacy" required
+              #privacy="ngModel" />
             {{ 'CONTACT.PRIVACY_LABEL' | translate }}
           </label>
-          <button class ="btn" type="submit">{{ 'CONTACT.SUBMIT' | translate }}</button>
+          <span *ngIf="!privacy.valid && privacy.touched" class="error">
+            {{ 'CONTACT.PRIVACY_ERROR' | translate }}
+          </span>
+
+          <!-- Submit -->
+          <button class="btn" type="submit" [disabled]="!contactForm.valid">
+            {{ 'CONTACT.SUBMIT' | translate }}
+          </button>
         </div>
+
+        <!-- Success & Error Messages -->
         <div *ngIf="successMessage" class="success-message">
-  {{ successMessage }}
-</div>
+          {{ successMessage }}
+        </div>
 
-<div *ngIf="errorMessage" class="error-message">
-  {{ errorMessage }}
-</div>
+        <div *ngIf="errorMessage" class="error-message">
+          {{ errorMessage }}
+        </div>
       </form>
-      
-
-  </div>
+    </div>
   </div>
 </section>

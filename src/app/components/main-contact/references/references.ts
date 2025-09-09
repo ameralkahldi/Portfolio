@@ -30,7 +30,7 @@ export class ReferencesComponent {
   
   ];
 
-  currentIndex = 0;
+  currentIndex = 1;
   isTransitioning = false;
 
   getTransform(): string {

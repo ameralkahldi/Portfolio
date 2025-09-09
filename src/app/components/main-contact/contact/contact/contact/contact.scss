@@ -12,7 +12,7 @@
   .contact-wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 10rem;
+    gap: 6rem;
 
     .contact-heading {
       flex: 1;
@@ -20,7 +20,7 @@
       flex-direction: column;
       justify-content: center;
       padding-right: 2rem;
-      gap: 4rem;
+      gap: 2.5rem;
 
       h3 {
         font-size: 24px;
@@ -57,7 +57,7 @@
       flex: 1;
       display: flex;
       flex-direction: column;
-      gap: 3rem;
+      gap: 2.5rem;
       background-color: #1C1C1C;
 
       .form-group {
@@ -88,7 +88,7 @@
           transition: border-color 0.3s;
 
           &::placeholder {
-            color: #ffffff;
+            color: #aaa;
             opacity: 1;
           }
         }
@@ -137,6 +137,7 @@
         cursor: pointer;
         transition: all 0.3s ease;
         margin-bottom: 2rem;
+        width: 100%;
 
         &:hover {
           background: linear-gradient(135deg, #2AA48A, #3DCFB6);
@@ -156,14 +157,14 @@
       }
 
       .success-message {
-        color: #28a745;
-        background-color: #e6ffed;
-        border: 1px solid #28a745;
+        color: #3DCFB6;
+        background-color: rgba(61, 207, 182, 0.1);
+        border: 1px solid #3DCFB6;
       }
 
       .error-message {
-        color: #dc3545;
-        background-color: #ffe6e6;
+        color: #ff4d4f;
+        background-color: rgba(220, 53, 69, 0.1);
         border: 1px solid #dc3545;
       }
 
@@ -184,22 +185,13 @@
     padding-right: 3rem;
 
     .contact-wrapper {
-      gap: 6rem;
+      gap: 4rem;
     }
 
     .contact-heading {
-      h1 {
-        font-size: 48px;
-      }
-
-      h2,
-      h3 {
-        font-size: 20px;
-      }
-
-      p {
-        font-size: 15px;
-      }
+      h1 { font-size: 48px; }
+      h2, h3 { font-size: 20px; }
+      p { font-size: 15px; }
     }
 
     form {
@@ -219,9 +211,7 @@
     align-items: center;
     padding: 2rem 1rem;
 
-    .container {
-      padding: 1rem;
-    }
+    .container { padding: 1rem; }
 
     .contact-wrapper {
       flex-direction: column;
@@ -233,19 +223,9 @@
       align-items: center;
       text-align: center;
 
-      h1 {
-        font-size: 36px;
-      }
-
-      h2,
-      h3 {
-        font-size: 18px;
-      }
-
-      p {
-        font-size: 14px;
-        line-height: 1.4;
-      }
+      h1 { font-size: 36px; }
+      h2, h3 { font-size: 18px; }
+      p { font-size: 14px; line-height: 1.4; }
     }
 
     form {
@@ -258,7 +238,6 @@
       }
 
       .btn {
-        width: 100%;
         font-size: 1rem;
         padding: 0.8rem;
       }
@@ -269,18 +248,9 @@
 @media (max-width: 480px) {
   .contact {
     .contact-heading {
-      h1 {
-        font-size: 28px;
-      }
-
-      h2,
-      h3 {
-        font-size: 16px;
-      }
-
-      p {
-        font-size: 13px;
-      }
+      h1 { font-size: 28px; }
+      h2, h3 { font-size: 16px; }
+      p { font-size: 13px; }
     }
 
     form {
