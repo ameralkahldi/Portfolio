@@ -30,20 +30,20 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.2rem;   // قللت المسافة كثير
+  gap: 0.2rem;   
 
   .logo img {
     width: 150px;
     object-fit: cover;
     height: auto;
     display: block;
-    margin: 0;   // بدون margin إضافي
+    margin: 0;   
   }
 
   p {
     font-size: 16px;
     color: #ccc;
-    margin: 0;   // يشيل المسافات الافتراضية للنصوص
+    margin: 0;   
   }
 }
 
