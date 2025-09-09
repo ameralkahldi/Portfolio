@@ -54,5 +54,14 @@ export class ContactComponent {
       ngForm.resetForm();
     }
   }
+  scrollActive = false;
+
+startScroll() {
+  if (this.contactData.privacy) {
+    this.scrollActive = true;
+  }
+}
+
+
 
 }

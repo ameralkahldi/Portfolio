@@ -37,23 +37,34 @@
           </span>
           <hr>
 
-          <!-- Privacy -->
-          <label for="privacy">
-            <input [(ngModel)]="contactData.privacy" type="checkbox" id="privacy" name="privacy" required
-              #privacy="ngModel" />
-            {{ 'CONTACT.PRIVACY_LABEL' | translate }}
-          </label>
-          <span *ngIf="!privacy.valid && privacy.touched" class="error">
-            {{ 'CONTACT.PRIVACY_ERROR' | translate }}
-          </span>
+<!-- Privacy -->
+<label for="privacy">
+  <input [(ngModel)]="contactData.privacy" type="checkbox" id="privacy" name="privacy" required #privacy="ngModel" />
+  {{ 'CONTACT.PRIVACY_LABEL' | translate }}
+</label>
+<span *ngIf="!privacy.valid && privacy.touched" class="error">
+  {{ 'CONTACT.PRIVACY_ERROR' | translate }}
+</span>
 
-          <!-- Submit -->
-          <button class="btn" type="submit" [disabled]="!contactForm.valid">
-            {{ 'CONTACT.SUBMIT' | translate }}
-          </button>
-        </div>
+<!-- Submit -->
+<div class="cta-buttons">
+  <button 
+    class="btn" 
+    type="button" 
+    [disabled]="!contactForm.valid"
+    (click)="startScroll()">
+    <span 
+      [class.scroll-text]="scrollActive" 
+      [class.allow-hover]="contactData.privacy">
+      {{ 'CONTACT.SUBMIT' | translate }}
+     
+    </span>
+  </button>
+</div>
+</div>
 
-        <!-- Success & Error Messages -->
+
+
         <div *ngIf="successMessage" class="success-message">
           {{ successMessage }}
         </div>
