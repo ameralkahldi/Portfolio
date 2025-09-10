@@ -14,7 +14,7 @@ export class ProjectsComponent {
     {
       title: 'Pekomen Show',
       frage :'What is this project About ?',
-      description: 'A dynamic website showcasing delicious chicken recipes.',
+      description: 'Pekomen is a simple and modern app to present and manage creative projects. It’s responsive, multilingual, and supports live demos and tech stacks.',
       image: './assets/img/2025-08-25 (1).png',
       pro : ['HTML', 'CSS', 'JavaScript', 'API'],
       techStack: [
@@ -33,7 +33,7 @@ export class ProjectsComponent {
     },
     {
       title: 'El Pollo Loco Spiel',
-      description: 'A dynamic website showcasing delicious chicken recipes.',
+      description: 'Jump, run and throw game based on object-oriented approach.Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
       image: './assets/img/2025-08-25 (3).png',
       pro : ['HTML', 'CSS', 'JavaScript'],
       techStack: [
