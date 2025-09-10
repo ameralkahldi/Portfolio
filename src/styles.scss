@@ -3,16 +3,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+     font-family: 'Karla', sans-serif;
      
 }
 
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+ 
  background-color: rgb(28, 28, 28);
   background: linear-gradient(35deg, rgba(28, 28, 28, 100) 85%, rgba(34, 92, 81, 1) 100%);
   color: #ffffff;
-  max-width: 100%;
+ width: 100%;
   overflow-x: hidden;
  
 }
