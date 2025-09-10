@@ -10,10 +10,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
   <link rel="preconnect" href="https://fonts.bunny.net">
-<link href="https://fonts.bunny.net/css?family=karla:700" rel="stylesheet" />
+  <link href="https://fonts.bunny.net/css?family=karla:700" rel="stylesheet" />
 
+ 
 </head>
 <body>
   <app-root></app-root>
+
+  <div class="cursor-shadow"></div>
+
+  <script>
+    const cursorShadow = document.createElement("div");
+cursorShadow.classList.add("cursor-shadow");
+document.body.appendChild(cursorShadow);
+
+document.addEventListener("mousemove", (e) => {
+  cursorShadow.style.top = `${e.clientY}px`;
+  cursorShadow.style.left = `${e.clientX}px`;
+});
+
+  </script>
 </body>
 </html>

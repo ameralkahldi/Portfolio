@@ -28,11 +28,15 @@ $breakpoints: (
   color: $secondary-color;
   font-family: $font-main;
   background: linear-gradient(35deg,#1c1c1c 50%,#225c51);
-    height: calc(100dvh - 100px);}
+    height: calc(100dvh - 100px);
+  max-width: 100%;
+overflow: hidden;}
+    
 
 
 .hero-content {
   &.centered {
+   
     flex-grow: 1; 
   display: flex;
   flex-direction: column;
@@ -168,7 +172,7 @@ $breakpoints: (
   display: flex;
   justify-content: space-between; 
   align-items: flex-end;
-  width: 80vw;
+  width: 85vw;
   margin: 0 auto;
   padding: 0 2rem;
  
@@ -273,7 +277,7 @@ $breakpoints: (
 .right-line {
   border: none;
   border-left: 2px solid $primary-color;
-  height: 200px;
+  height: 250px;
   opacity: 0.2;
 }
 .left-line {
@@ -300,7 +304,7 @@ $breakpoints: (
   z-index: 10;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   font-family: 'Fira Code', monospace;
-  bottom: 100px;
+  bottom: 120px;
 
  
 
@@ -325,7 +329,7 @@ $breakpoints: (
 // Animations
 @keyframes scroll-loop {
   0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
+  100% { transform: translateX(-25%); }
 }
 
 @keyframes scroll-word-by-word {
