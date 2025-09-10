@@ -100,16 +100,15 @@
     "CONTACT": "Contact",
     "CONTACT_TEXT": "For any questions or notices, please contact us at: <strong>amer.alkhaldi@icloud.com</strong>"
   },
-  "TESTIMONIALS": {
+"TESTIMONIALS": {
   "TITLE": "What my colleagues say about me",
-  "PREV": "Previous",
-  "NEXT": "Next",
   "CARDS": [
-    { "text": "Amer is a great team player and always ready to help.", "name": "John Doe" },
+    { "text": "Amer is a great team player and always helpful.", "name": "John Doe" },
     { "text": "Working with Amer was a pleasure. Very professional.", "name": "Jane Smith" },
     { "text": "He brings a lot of creativity and passion to his work.", "name": "Michael Müller" }
   ]
 }
+
 
 
 

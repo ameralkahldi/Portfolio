@@ -3,32 +3,22 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { TranslatePipe } from '@ngx-translate/core';
 
+interface Testimonial {
+  name :string,
+  text :string
+}
 @Component({
   selector: 'app-references',
-  imports: [CommonModule, FormsModule,TranslatePipe],
+  standalone: true,
+  imports: [CommonModule, FormsModule, TranslatePipe],
   templateUrl: './references.html',
   styleUrls: ['./references.scss']
 })
 export class ReferencesComponent {
-
-  originalTestimonials = [
-    {
-      name: 'A. Fischer – Team Partner',
-      text: `I had the good fortune of working with Lukas in a group project at the Developer Akademie...`
-    },
-    {
-      name: 'H. Janisch – Team Partner',
-      text: `It was clear from the start that Lukas was someone the team could rely on...`
-    },
-    {
-      name: 'F. Qathasch –Team Partner',
-      text: `I truly appreciated Lukas's reliability and technical expertise...`
-    }
-  ];
-
- 
-  allCards = [...this.originalTestimonials,
-  
+  testimonials: Testimonial[] = [
+    { name: 'John Doe', text: 'Amer is a great team player and always helpful.' },
+    { name: 'Jane Smith', text: 'Working with Amer was a pleasure. Very professional.' },
+    { name: 'Michael Müller', text: 'He brings a lot of creativity and passion to his work.' }
   ];
 
   currentIndex = 1;
@@ -45,9 +35,7 @@ export class ReferencesComponent {
     this.startTransition();
 
     this.currentIndex++;
-
-
-    if (this.currentIndex >= this.allCards.length) {
+    if (this.currentIndex >= this.testimonials.length) {
       setTimeout(() => {
         this.isTransitioning = false;
         this.currentIndex = 0;
@@ -60,12 +48,10 @@ export class ReferencesComponent {
     this.startTransition();
 
     this.currentIndex--;
-
-
     if (this.currentIndex < 0) {
       setTimeout(() => {
         this.isTransitioning = false;
-        this.currentIndex = this.allCards.length - 1;
+        this.currentIndex = this.testimonials.length - 1;
       }, 500);
     }
   }

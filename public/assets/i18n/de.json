@@ -103,8 +103,6 @@
   },
   "TESTIMONIALS": {
   "TITLE": "Was meine Kollegen über mich sagen",
-  "PREV": "Zurück",
-  "NEXT": "Weiter",
   "CARDS": [
     { "text": "Amer ist ein großartiger Teamplayer und immer hilfsbereit.", "name": "John Doe" },
     { "text": "Die Zusammenarbeit mit Amer war eine Freude. Sehr professionell.", "name": "Jane Smith" },
