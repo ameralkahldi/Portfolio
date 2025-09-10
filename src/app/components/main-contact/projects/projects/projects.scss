@@ -182,6 +182,10 @@
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  padding: 1rem; 
+  box-sizing: border-box;
+  overflow-x: hidden;
+
 }
 
 .project-card-modal {
@@ -195,20 +199,50 @@
   gap: 2rem;
   position: relative;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease; 
+  border: 1px solid #3DCFB6;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) and (min-width: 1025px) {
     width: 90%;
+    max-width: 1000px;
     height: auto;
-    flex-direction: column;
-    padding: 1.5rem;
+    padding: 2rem;
+    border-radius: 14px;
+    gap: 1.5rem;
   }
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    padding: 1rem;
-    height: auto;
+  @media (max-width: 1000px) {
+    width: 95%;
+    height: auto;                
+    flex-direction: column;      
+    align-items: center;        
+    padding: 1.5rem;
+    gap: 1.5rem;                 
+    border-radius: 16px;
+    overflow-y: visible;         
   }
+  .next-project-mobile {
+  display: none;
+  @media (max-width :1000px) {
+   display: flex;
+    justify-content:end;
+ 
+   
+
+    .next-text,
+    .arrow {
+      color: #3DCFB6;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    
+  }
+
 }
+
+}
+
 
 .project-right {
   flex: 1;
@@ -218,41 +252,51 @@
   align-items: center;
   gap: 8px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     order: 1;
     width: 100%;
   }
 
-  .close-icon {
-    width: 28px;
-    height: 28px;
-    cursor: pointer;
-    align-self: flex-end;
+.close-icon {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: transform 0.3s ease, color 0.3s ease; 
 
-    @media (max-width: 768px) {
-      margin-bottom: 1rem;
-      order: 1;
-    }
+  &:hover {
+    color: #3dcfb6;
+    transform: scale(1.1) rotate(90deg); 
   }
 
-  .project-image {
-    width: 520px;
-    height: 370px;
-    border-radius: 30px;
-    object-fit: cover;
-    margin-right: 50px;
-
-    @media (max-width: 768px) {
-      width: 100%;
-      height: auto;
-      margin-right: 0;
-      border-radius: 20px;
-      margin-bottom: 1rem;
-      order: 2;
-    }
+  @media (max-width: 1000px) {
+    margin-bottom: 1rem;
+    order: 1;
   }
+}
 
-  .next-project {
+
+ .project-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 20px;
+  margin: 0 auto 1rem auto;
+  display: block; 
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    max-width: 350px;   
+    height: auto;
+    margin: 0 auto 1rem auto; 
+    border-radius: 20px;
+    order: 2;
+    display: block;
+  }
+}
+
+
+  .next-project  {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
@@ -266,9 +310,8 @@
       font-size: 20px;
     }
 
-    @media (max-width: 768px) {
-      order: 9;
-      margin-top: 2rem;
+    @media (max-width: 1000px) {
+      display: none;
     }
   }
 }
@@ -280,9 +323,10 @@
   flex-direction: column;
   gap: 1rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     order: 2;
     width: 100%;
+    text-align: center;
   }
 
   .project-id {
@@ -291,8 +335,8 @@
     color: #3DCFB6;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-    @media (max-width: 768px) {
-      font-size: 2.5rem;
+    @media (max-width: 1000px) {
+      font-size: 2rem;
       text-align: center;
       order: 3;
       margin-bottom: 0.5rem;
@@ -304,8 +348,8 @@
     font-weight: 700;
     margin: 0;
 
-    @media (max-width: 768px) {
-      font-size: 1.8rem;
+    @media (max-width: 1000px) {
+      font-size: 1.5rem;
       text-align: center;
       order: 4;
       margin-bottom: 0.5rem;
@@ -318,8 +362,8 @@
     font-size: 24px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-    @media (max-width: 768px) {
-      font-size: 1.2rem;
+    @media (max-width: 1000px) {
+      font-size: 1rem;
       text-align: center;
       order: 5;
       margin-bottom: 0.5rem;
@@ -330,7 +374,7 @@
     color: #ffffff;
     font-size: 1rem;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
       text-align: center;
       padding: 0 1rem;
       order: 6;
@@ -346,13 +390,13 @@
       width: 75px;
       height: 24px;
 
-      @media (max-width: 768px) {
+      @media (max-width: 1000px) {
         width: 50px;
         height: 16px;
       }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
       justify-content: center;
       flex-wrap: wrap;
       gap: 1rem;
@@ -361,47 +405,70 @@
     }
   }
 
-  .btn-group {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
+ .btn-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
 
-    @media (max-width: 768px) {
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-bottom: 1rem;
-      order: 8;
-    }
+  @media (max-width: 1000px) {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    order: 8;
+  }
 
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.6rem 1.2rem;
-      background-color: #333;
-      color: white;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: background 0.3s;
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.6rem 1.2rem;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    background: none;
+    border: 1px solid #ffffff;
+    transition: all 0.3s ease; 
 
-      &:hover {
-        background-color: #000;
-      }
-
-      &.btn-secondary {
-        background-color: #777;
-
-        &:hover {
-          background-color: #555;
-        }
-      }
+    &:hover {
+      border: 1px solid #3DCFB6;
 
       .btn-icon {
-        width: 16px;
-        height: 16px;
+        transform: translateY(-3px);
       }
     }
   }
+
+  .btn-icon {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease; 
+  }
 }
+.next-project-mobile {
+  display: none;
+  @media (max-width :1000px) {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 1rem;
+    order: 9; 
+
+ 
+   
+
+    .next-text,
+    .arrow {
+      color: #3DCFB6;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    
+  }
+
+}
+
+  }
+
