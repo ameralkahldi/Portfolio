@@ -1,7 +1,7 @@
 .projects {
   display: flex;
   justify-content: center;
-  padding-right: 28rem;
+  padding-right: 35rem;
   margin-top: 5rem;
 
   .portfolio-title {
@@ -277,12 +277,12 @@
 
 
  .project-image {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
+  width: 500px;
+  height: 300px;
   border-radius: 20px;
   margin: 0 auto 1rem auto;
   display: block; 
+  object-fit: cover;
 
   @media (max-width: 1000px) {
     width: 100%;

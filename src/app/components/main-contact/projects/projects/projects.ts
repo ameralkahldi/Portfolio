@@ -27,7 +27,7 @@ interface Project {
 export class ProjectsComponent {
   projects: Project[] = [
     {
-      title: 'Pekomen Show',
+      title: 'Pokomen Show',
       frage: 'What is this project About ?',
       description:
         'Pekomen is a simple and modern app to present and manage creative projects. It’s responsive, multilingual, and supports live demos and tech stacks.',
