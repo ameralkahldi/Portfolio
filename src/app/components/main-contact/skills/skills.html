@@ -14,17 +14,22 @@
           <span class="highlighted-question">{{ 'TECHNOLOGIES.QUESTION' | translate }}</span><br /><br />
           {{ 'TECHNOLOGIES.CONTACT_NOTE' | translate }}
         </p>
+        <a href="#contact" class="btn-talk">
+          <span class="scroll-text">
+            {{ 'TECHNOLOGIES.TALK_BUTTON' | translate }}
+          </span>
+        </a>
+        </div><div></div>
 
-        <a href="#contact" class="btn-talk">{{ 'TECHNOLOGIES.TALK_BUTTON' | translate }}</a>
-      </div>
 
-      <div class="skills-grid">
-        @for (skill of skills; track skill.icon) {
-        <div class="skill-card">
-          <img [src]="skill.icon" [alt]="skill.icon" />
+        <div class="skills-grid">
+          @for (skill of skills; track skill.icon) {
+          <div class="skill-card">
+            <img [src]="skill.icon" [alt]="skill.icon" />
+            <p>{{skill.text}}</p>
+          </div>
+          }
         </div>
-        }
       </div>
     </div>
-  </div>
 </section>
