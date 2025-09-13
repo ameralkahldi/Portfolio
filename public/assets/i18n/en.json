@@ -29,15 +29,20 @@
     "HEADING": "Contact Me",
     "SUBHEADING": "Let's work together",
     "QUESTION": "Got a problem to solve?",
-    "DESCRIPTION": "Need a Frontend developer? Let's talk! I’ll help bring your ideas to life with clean, modern, and responsive code.",
-    
+    "DESCRIPTION": "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work.",
+    "NEEDFRONTEND": "Need a Frontend developer?",
+    "BUTTONRALK" :"Let's talk",
     "NAME_LABEL": "What's your name?",
     "NAME_PLACEHOLDER": "Your name goes here",
     "EMAIL_LABEL": "What's your email?",
     "EMAIL_PLACEHOLDER": "youremail@email.com",
     "MESSAGE_LABEL": "How can I help you?",
     "MESSAGE_PLACEHOLDER": "Hello, I am interested in...",
-    "PRIVACY_LABEL": "I’ve read the privacy policy and agree to the processing of my data.",
+    "PRIVACY_LABEL": "I’ve read the",
+    "PRIVACY_Buttton" :" privacy policy",
+    "PRIVACY_LABEL2" : " and agree to the processing of my data.",
+
+
     
 
     "SUBMIT": "Say Hello :)",

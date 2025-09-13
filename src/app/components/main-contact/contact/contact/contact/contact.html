@@ -2,14 +2,16 @@
   <div class="container">
     <div class="contact-wrapper">
       <div class="contact-heading">
-        <h3>{{ 'CONTACT.HEADING' | translate }}</h3>
+        <h4>{{ 'CONTACT.HEADING' | translate }}</h4>
         <h1>{{ 'CONTACT.SUBHEADING' | translate }}</h1>
         <h2>{{ 'CONTACT.QUESTION' | translate }}</h2>
         <p>{{ 'CONTACT.DESCRIPTION' | translate }}</p>
+        <p>{{ 'CONTACT.NEEDFRONTEND' | translate }} <a href="#contact">{{ 'CONTACT.BUTTONRALK' | translate }}</a></p>
       </div>
 
       <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <div class="form-group">
+          <hr>
 
           <!-- Name -->
           <label for="name">{{ 'CONTACT.NAME_LABEL' | translate }}</label>
@@ -41,7 +43,9 @@
           <label for="privacy">
             <input [(ngModel)]="contactData.privacy" type="checkbox" id="privacy" name="privacy" required
               #privacy="ngModel" />
-            {{ 'CONTACT.PRIVACY_LABEL' | translate }}
+              <span>
+            {{ 'CONTACT.PRIVACY_LABEL' | translate }}  <a [routerLink]="['/legal']">{{ 'CONTACT.PRIVACY_Buttton' | translate }}</a>{{ 'CONTACT.PRIVACY_LABEL2' | translate }}
+              </span>
           </label>
           <span *ngIf="!privacy.valid && privacy.touched" class="error">
             {{ 'CONTACT.PRIVACY_ERROR' | translate }}

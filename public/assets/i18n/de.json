@@ -8,7 +8,7 @@
   
   "HOME": {
     "ROLE": "Frontend-Entwickler",
-    "CHECK_WORK": "Meine Arbeit ansehen",
+    "CHECK_WORK": "Meine Arbeit",
     "CONTACT_ME": "Kontaktiere mich",
     "AVAILABLE": "Verfügbar für Remote-Arbeit",
     "LOCATION": "Ansässig in München",
@@ -29,15 +29,18 @@
     "HEADING": "Kontaktiere mich",
     "SUBHEADING": "Lass uns zusammenarbeiten",
     "QUESTION": "Hast du ein Problem zu lösen?",
-    "DESCRIPTION": "Brauchst du einen Frontend-Entwickler? Lass uns reden! Ich helfe dir, deine Ideen mit sauberem, modernem und responsivem Code zum Leben zu erwecken.",
-    
+    "DESCRIPTION": "Ermutige die Leute, dich zu kontaktieren, und beschreibe, welche Rolle dich interessiert. Zeige, dass du durch deine Arbeit einen Mehrwert für ihre Projekte bringst.",
+    "NEEDFRONTEND": "Brauchst du einen Frontend-Entwickler?",
+    "BUTTONRALK" :"Lass uns sprechen!",
     "NAME_LABEL": "Wie heißt du?",
     "NAME_PLACEHOLDER": "Dein Name hier",
     "EMAIL_LABEL": "Wie lautet deine E-Mail?",
     "EMAIL_PLACEHOLDER": "deinemail@email.com",
     "MESSAGE_LABEL": "Wie kann ich dir helfen?",
     "MESSAGE_PLACEHOLDER": "Hallo, ich interessiere mich für...",
-    "PRIVACY_LABEL": "Ich habe die Datenschutzrichtlinie gelesen und stimme der Verarbeitung meiner Daten zu.",
+    "PRIVACY_LABEL": "Ich habe die  ",
+    "PRIVACY_Buttton" :"Datenschutzbestimmungen",
+    "PRIVACY_LABEL2" : "und stimme der Verarbeitung meiner Daten zu.",
 
     "SUBMIT": "Sag Hallo :)",
     "SUCCESS": "Danke! Ich melde mich bald bei dir.",
