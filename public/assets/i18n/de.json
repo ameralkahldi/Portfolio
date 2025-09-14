@@ -25,31 +25,35 @@
     "PROBLEM_SOLVING": "Eine kurze Beschreibung deines Ansatzes zur Problemlösung. Lernst du aus jeder Herausforderung, um die effizienteste oder eleganteste Lösung zu finden? Du kannst Begriffe wie analytisches Denken, Kreativität, Ausdauer und Zusammenarbeit verwenden."
   },
 
-  "CONTACT": {
-    "HEADING": "Kontaktiere mich",
-    "SUBHEADING": "Lass uns zusammenarbeiten",
-    "QUESTION": "Hast du ein Problem zu lösen?",
-    "DESCRIPTION": "Ermutige die Leute, dich zu kontaktieren, und beschreibe, welche Rolle dich interessiert. Zeige, dass du durch deine Arbeit einen Mehrwert für ihre Projekte bringst.",
-    "NEEDFRONTEND": "Brauchst du einen Frontend-Entwickler?",
-    "BUTTONRALK" :"Lass uns sprechen!",
-    "NAME_LABEL": "Wie heißt du?",
-    "NAME_PLACEHOLDER": "Dein Name hier",
-    "EMAIL_LABEL": "Wie lautet deine E-Mail?",
-    "EMAIL_PLACEHOLDER": "deinemail@email.com",
-    "MESSAGE_LABEL": "Wie kann ich dir helfen?",
-    "MESSAGE_PLACEHOLDER": "Hallo, ich interessiere mich für...",
-    "PRIVACY_LABEL": "Ich habe die  ",
-    "PRIVACY_Buttton" :"Datenschutzbestimmungen",
-    "PRIVACY_LABEL2" : "und stimme der Verarbeitung meiner Daten zu.",
+ "CONTACT": {
+  "HEADING": "Kontaktiere mich",
+  "SUBHEADING": "Lass uns zusammenarbeiten",
+  "QUESTION": "Hast du ein Problem zu lösen?",
+  "DESCRIPTION": "Ermutige die Leute, dich zu kontaktieren, und beschreibe, welche Rolle dich interessiert. Zeige, dass du durch deine Arbeit einen Mehrwert für ihre Projekte bringst.",
+  "NEEDFRONTEND": "Brauchst du einen Frontend-Entwickler?",
+  "BUTTON_TALK": "Lass uns sprechen!",
 
-    "SUBMIT": "Sag Hallo :)",
-    "SUCCESS": "Danke! Ich melde mich bald bei dir.",
+  "NAME_LABEL": "Wie heißt du?",
+  "NAME_PLACEHOLDER": "Dein Name hier",
+  "NAME_ERROR": "Bitte gib einen gültigen Namen ein.",
 
-    "ERROR_NAME": "Bitte gib einen gültigen Namen ein.",
-    "ERROR_REQUIRED": "Dieses Feld muss ausgefüllt werden.",
-    "ERROR_EMAIL": "Bitte gib eine gültige E-Mail-Adresse ein.",
-    "ERROR_PRIVACY": "Du musst der Datenschutzrichtlinie zustimmen."
-  },
+  "EMAIL_LABEL": "Wie lautet deine E-Mail?",
+  "EMAIL_PLACEHOLDER": "deinemail@email.com",
+  "EMAIL_ERROR": "Bitte gib eine gültige E-Mail-Adresse ein.",
+
+  "MESSAGE_LABEL": "Wie kann ich dir helfen?",
+  "MESSAGE_PLACEHOLDER": "Hallo, ich interessiere mich für...",
+  "MESSAGE_ERROR": "Dieses Feld muss ausgefüllt werden.",
+
+  "PRIVACY_LABEL": "Ich habe die",
+  "PRIVACY_Buttton": "Datenschutzbestimmungen",
+  "PRIVACY_LABEL2": "und stimme der Verarbeitung meiner Daten zu.",
+  "PRIVACY_ERROR": "Du musst der Datenschutzrichtlinie zustimmen.",
+
+  "SUBMIT": "Sag Hallo :)",
+  "SUCCESS": "Danke! Ich melde mich bald bei dir."
+},
+
   "TECHNOLOGIES": {
     "TITLE": "Technologien",
     "SKILLSET": "Fähigkeiten",

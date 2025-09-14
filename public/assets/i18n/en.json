@@ -26,33 +26,34 @@
   },
   
   "CONTACT": {
-    "HEADING": "Contact Me",
-    "SUBHEADING": "Let's work together",
-    "QUESTION": "Got a problem to solve?",
-    "DESCRIPTION": "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work.",
-    "NEEDFRONTEND": "Need a Frontend developer?",
-    "BUTTONRALK" :"Let's talk",
-    "NAME_LABEL": "What's your name?",
-    "NAME_PLACEHOLDER": "Your name goes here",
-    "EMAIL_LABEL": "What's your email?",
-    "EMAIL_PLACEHOLDER": "youremail@email.com",
-    "MESSAGE_LABEL": "How can I help you?",
-    "MESSAGE_PLACEHOLDER": "Hello, I am interested in...",
-    "PRIVACY_LABEL": "I’ve read the",
-    "PRIVACY_Buttton" :" privacy policy",
-    "PRIVACY_LABEL2" : " and agree to the processing of my data.",
+  "HEADING": "Contact Me",
+  "SUBHEADING": "Let's work together",
+  "QUESTION": "Got a problem to solve?",
+  "DESCRIPTION": "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work.",
+  "NEEDFRONTEND": "Need a Frontend developer?",
+  "TALK_BUTTON": "Let's talk",
 
+  "NAME_LABEL": "What's your name?",
+  "NAME_PLACEHOLDER": "Your name goes here",
+  "NAME_ERROR": "Please enter a valid name.",
 
-    
+  "EMAIL_LABEL": "What's your email?",
+  "EMAIL_PLACEHOLDER": "youremail@email.com",
+  "EMAIL_ERROR": "Please enter a valid email.",
 
-    "SUBMIT": "Say Hello :)",
-    "SUCCESS": "Thanks! I’ll get back to you soon",
+  "MESSAGE_LABEL": "How can I help you?",
+  "MESSAGE_PLACEHOLDER": "Hello, I am interested in...",
+  "MESSAGE_ERROR": "You must fill in the field.",
 
-    "ERROR_NAME": "Please enter a valid name.",
-    "ERROR_REQUIRED": "You must fill in the field.",
-    "ERROR_EMAIL": "Please enter a valid email.",
-    "ERROR_PRIVACY": "You must agree to the privacy policy."
-  },
+  "PRIVACY_LABEL": "I’ve read the",
+  "PRIVACY_Buttton": " privacy policy",
+  "PRIVACY_LABEL2": " and agree to the processing of my data.",
+  "PRIVACY_ERROR": "You must agree to the privacy policy.",
+
+  "SUBMIT": "Say Hello :)",
+  "SUCCESS": "Thanks! I’ll get back to you soon"
+},
+
   
   "TECHNOLOGIES": {
     "TITLE": "Technologies",
