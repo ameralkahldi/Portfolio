@@ -388,28 +388,37 @@
     }
   }
 
-  .tech-stack-icons {
+.tech-stack-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; 
+
+  .tech-item {
     display: flex;
-    gap: 2rem;
+    align-items: center;
+    gap: 0.3rem; 
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px; 
+  }
 
-    .tech-icon {
-      width: 75px;
-      height: 24px;
+  .tech-icon {
+    width: 30px; 
+    height: 30px;
+    object-fit: contain;
+  }
 
-      @media (max-width: 1000px) {
-        width: 50px;
-        height: 16px;
-      }
-    }
+  .tech-name {
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
 
     @media (max-width: 1000px) {
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-bottom: 1rem;
-      order: 7;
+      font-size: 12px;
     }
   }
+}
+
 
  .btn-group {
   display: flex;

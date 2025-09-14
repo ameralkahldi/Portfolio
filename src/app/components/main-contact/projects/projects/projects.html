@@ -35,19 +35,23 @@
       <div class="project-card-modal">
         <div class="project-left">
           <p class="project-id">
-            {{ 'PROJECTS.PROJECT' | translate }} {{ selectedProjectIndex! + 1 }}
+            0{{ selectedProjectIndex! + 1 }}
           </p>
           <h3 class="project-title">{{ selectedProject.title }}</h3>
-          <p class="project-question text-red">
-            {{ selectedProject.frage || ('PROJECTS.DEFAULT_QUESTION' | translate) }}
-          </p>
-          <p class="project-description">{{ selectedProject.description }}</p>
+            <p class="project-question text-red">
+        {{ selectedProject.frage ? (selectedProject.frage | translate) : ('PROJECTS.DEFAULT_QUESTION' | translate) }}
+      </p>
 
-          <div class="tech-stack-icons">
-            @for (tech of selectedProject.techStack; track $index) {
-            <img [src]="tech.icon.trim()" alt="tech icon" class="tech-icon" />
-            }
+          <div class="project-description" *ngFor="let key of projectKeys">
+            {{ ('PROJECTS.DESCRIPTION.' + key) | translate }}
           </div>
+
+         <div class="tech-stack-icons">
+  <div class="tech-item" *ngFor="let tech of selectedProject.techStack; let i = index">
+    <img [src]="tech.icon.trim()" alt="tech icon" class="tech-icon" />
+    <span class="tech-name">{{ selectedProject.pro[i] }}</span>
+  </div>
+</div>
 
 
           <div class="btn-group">
@@ -65,7 +69,7 @@
             </a>
             }
           </div>
-           <div class="next-project-mobile" (click)="nextProject()">
+          <div class="next-project-mobile" (click)="nextProject()">
             <span class="next-text text-red">{{ 'PROJECTS.NEXT' | translate }}</span>
             <span class="arrow text-red">&rarr;</span>
           </div>

@@ -63,16 +63,22 @@
     "CONTACT_NOTE": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
     "TALK_BUTTON": "Let’s Talk"
   },
-  "PROJECTS": {
-    "PORTFOLIO": "Portfolio",
-    "FEATURED": "Featured Projects",
-    "SUBTITLE": "Explore a selection of my work here - Interact with projects to see my skills in action.",
-    "PROJECT": "Project",
-    "DEFAULT_QUESTION": "What is this project about?",
-    "GITHUB": "GitHub",
-    "LIVE_TEST": "Test Live",
-    "NEXT": "Next Project"
+"PROJECTS": {
+  "PORTFOLIO": "Portfolio",
+  "FEATURED": "Featured Projects",
+  "SUBTITLE": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+  "PROJECT": "Project",
+  "DEFAULT_QUESTION": "What is this project about?",
+  "DESCRIPTION": {
+    "PROJECT1": "Pekomen is a simple and modern app to present and manage creative projects. It’s responsive, multilingual, and supports live demos and tech stacks.",
+    "PROJECT2": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+    "PROJECT3": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen."
   },
+  "GITHUB": "GitHub",
+  "LIVE_TEST": "Test Live",
+  "NEXT": "Next Project"
+},
+
  "FOOTER": {
     "ROLE": "Web Developer",
     "LOCATION": "Munich, Germany",

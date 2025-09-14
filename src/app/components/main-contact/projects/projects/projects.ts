@@ -7,9 +7,9 @@ interface TechIcon {
 }
 
 interface Project {
+  id:string;
   title: string;
   frage?: string;          
-  description: string;
   image: string;
   pro: string[];
   techStack: TechIcon[];
@@ -25,50 +25,52 @@ interface Project {
   imports: [CommonModule, TranslatePipe],
 })
 export class ProjectsComponent {
-  projects: Project[] = [
-    {
-      title: 'Pokomen Show',
-      frage: 'What is this project About ?',
-      description:
-        'Pekomen is a simple and modern app to present and manage creative projects. It’s responsive, multilingual, and supports live demos and tech stacks.',
-      image: './assets/img/2025-08-25 (1).png',
-      pro: ['HTML', 'CSS', 'JavaScript', 'API'],
-      techStack: [
-        { icon: 'assets/icon_skill/HTML.png' },
-        { icon: './assets/icon_skill/CSS.png' },
-        { icon: './assets/icon_skill/Frame 375.png' },
-      ],
-      link: 'https://amer-alkhalidy.developerakademie.net/Pokemon%20API/Pokemon%20API/index.html',
-      testLink: 'https://amer-alkhalidy.developerakademie.net/Pokemon%20API/index.html',
-    },
-    {
-      title: 'El Pollo Loco Spiel',
-      description:
-        'Jump, run and throw game based on object-oriented approach.Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
-      image: './assets/img/2025-08-25 (3).png',
-      pro: ['HTML', 'CSS', 'JavaScript'],
-      techStack: [
-        { icon: './assets/icon_skill/HTML.png' },
-        { icon: './assets/icon_skill/CSS.png' },
-        { icon: './assets/icon_skill/Frame 375.png' },
-      ],
-      link: 'https://github.com/ameralkahldi/El-Pollo-Loco',
-      testLink: 'https://amer-alkhalidy.developerakademie.net/EL%20Pollo%20Loco/index.html',
-    },
-    {
-      title: 'Project 3',
-      description: 'Coming soon...',
-      image: './assets/img/2025-08-25 (3).png',
-      pro: ['HTML', 'CSS', 'JavaScript', 'API'],
-      techStack: [
-        { icon: 'assets/icon_skill/HTML.png' },
-        { icon: 'assets/icon_skill/CSS.png' },
-        { icon: 'assets/icon_skill/Frame 375.png' },
-      ],
-      link: '',
-      testLink: '',
-    },
-  ];
+ projects: Project[] = [
+  {
+    id: 'PROJECT1', 
+    title: 'Pokomen Show',
+    frage: 'PROJECTS.DEFAULT_QUESTION', 
+    image: './assets/img/2025-08-25 (1).png',
+    pro: ['HTML', 'CSS', 'JavaScript', 'API'],
+    techStack: [
+      { icon: './assets/icon_skill/html.png' },
+      { icon: './assets/icon_skill/Vector (1).png' },
+      { icon: './assets/icon_skill/Javascript.png' },
+      {icon :'./assets/icon_logos/Api.png'}
+    ],
+    link: 'https://amer-alkhalidy.developerakademie.net/Pokemon%20API/Pokemon%20API/index.html',
+    testLink: 'https://amer-alkhalidy.developerakademie.net/Pokemon%20API/index.html',
+  },
+  {
+    id: 'PROJECT2',
+    title: 'El Pollo Loco Spiel',
+    frage: 'PROJECTS.DEFAULT_QUESTION',
+    image: './assets/img/2025-08-25 (3).png',
+    pro: ['HTML', 'CSS', 'JavaScript'],
+    techStack: [
+      { icon: './assets/icon_skill/html.png' },
+      { icon: './assets/icon_skill/Vector (1).png' },
+      { icon: '/assets/icon_skill/Javascript.png' },
+    ],
+    link: 'https://github.com/ameralkahldi/El-Pollo-Loco',
+    testLink: 'https://amer-alkhalidy.developerakademie.net/EL%20Pollo%20Loco/index.html',
+  },
+  {
+    id: 'PROJECT3',
+    title: 'Project 3',
+    frage: 'PROJECTS.DEFAULT_QUESTION',
+    image: './assets/img/2025-08-25 (3).png',
+    pro: ['HTML', 'CSS', 'JavaScript', 'API'],
+    techStack: [
+      { icon: './assets/icon_skill/html.png' },
+      { icon: './assets/icon_skill/Vector (1).png' },
+      { icon: '/assets/icon_skill/Javascript.png' },
+    ],
+    link: '',
+    testLink: '',
+  },
+];
+
 
   hoveredProjectIndex: number | null = null;
   selectedProjectIndex: number | null = null;
@@ -86,6 +88,7 @@ export class ProjectsComponent {
     }
   }
 
+
   trackByTitle(index: number, project: Project): string {
     return project.title;
   }
@@ -96,4 +99,8 @@ export class ProjectsComponent {
         (this.selectedProjectIndex + 1) % this.projects.length;
     }
   }
+get projectKeys(): string[] {
+  return this.selectedProject ? [this.selectedProject.id] : [];
+}
+
 }
