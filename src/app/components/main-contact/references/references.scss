@@ -1,7 +1,8 @@
 .testi_wrapper {
-  max-width: 1440px;
-  height: 80dvh;
+    min-height: 80svh;
+  max-width: 1600px;
   margin: 0 auto;
+
   display: flex;
   justify-content: center;
   align-items: center;

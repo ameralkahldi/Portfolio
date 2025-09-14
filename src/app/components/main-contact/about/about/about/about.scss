@@ -1,11 +1,15 @@
 .about-me {
-  min-height: 100vh;
   padding: 4rem;
   background-color: #1c1c1c;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+    min-height: 100svh;
+  max-width: 1600px;
+  margin: 0 auto;
+
+  
 
   .about-wrapper {
     display: flex;

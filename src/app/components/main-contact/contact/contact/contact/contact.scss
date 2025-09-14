@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   padding-right: 18rem;
+    min-height: 80svh;
+  max-width: 1600px;
+  margin: 0 auto;
+  overflow: hidden;
 
   .container {
     max-width: 1000px;
