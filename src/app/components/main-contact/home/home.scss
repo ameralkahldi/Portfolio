@@ -33,8 +33,6 @@ $breakpoints: (
 overflow: hidden;
 max-height: 100vh;}
     
-
-
 .hero-content {
   &.centered {
    
@@ -234,8 +232,6 @@ max-height: 100vh;}
   }
 }
 
-
-
 }
 
 .social-icons {
@@ -247,7 +243,7 @@ max-height: 100vh;}
   a {
     position: relative;
     display: inline-flex;
-    flex-direction: column; /* جعل النص والصورة عموديًا */
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
     text-decoration: none;
@@ -263,9 +259,9 @@ max-height: 100vh;}
     p {
       color: #fff;
       margin: 0;
-      transform: rotate(90deg);  /* تحكم أفضل بالنص بعد التدوير */
+      transform: rotate(90deg);  
       white-space: nowrap;
-      margin-bottom: 90px; /* مسافة صغيرة بين النص والصورة */
+      margin-bottom: 90px; 
     }
 
     @include respond-to(lg) {
@@ -309,10 +305,6 @@ max-height: 100vh;}
   opacity: 0.2;
 }
 
-
-
-
-
 .angled-banner {
   width: 100%;
   background-color: hsla(0, 0%, 100%, 0.12);
@@ -327,9 +319,6 @@ max-height: 100vh;}
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   font-family: 'Fira Code', monospace;
   bottom: 150px;
-
- 
-
 
   .marquee {
     display: flex;
@@ -347,23 +336,18 @@ max-height: 100vh;}
     padding: 1rem 2rem;
   }
 }
-
-// Animations
 @keyframes scroll-loop {
   0% { transform: translateX(0%); }
   100% { transform: translateX(-25%); }
 }
-
 @keyframes scroll-word-by-word {
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
-
 @keyframes scroll-left {
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
-
 @keyframes bounceUpDown {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
