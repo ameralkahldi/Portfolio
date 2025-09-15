@@ -295,7 +295,7 @@ overflow: hidden;}
   width: 100%;
   background-color: hsla(0, 0%, 100%, 0.12);
   color: $primary-color;
-  overflow: hidden;
+  overflow-x: hidden;
   padding: 1rem 3rem;
   font-size: 32px;
   font-weight: 400;
@@ -304,7 +304,7 @@ overflow: hidden;}
   z-index: 10;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   font-family: 'Fira Code', monospace;
-  bottom: 120px;
+  bottom: 140px;
 
  
 
