@@ -15,37 +15,45 @@
 
           <!-- Name -->
           <label for="name">{{ 'CONTACT.NAME_LABEL' | translate }}</label>
-          <input [(ngModel)]="contactData.name" type="text" id="name" name="name" required #name="ngModel" />
+          <input [(ngModel)]="contactData.name" type="text" id="name" name="name" class="input_field_text"
+            #name="ngModel" required [ngClass]="{ 'input_error': contactForm.submitted && !name.valid }"
+            placeholder="{{ contactForm.submitted && !name.valid ? ('CONTACT.NAME_ERROR' | translate) : ('CONTACT.NAME_PLACEHOLDER' | translate) }}" />
           <span *ngIf="!name.valid && name.touched" class="error">
-            {{ 'CONTACT.NAME_ERROR' | translate }}
+            {{ 'CONTACT.NAME_ERROR' | translate }} {{ 'CONTACT.NAME_LABEL' | translate }}
           </span>
           <hr>
 
+
           <!-- Email -->
           <label for="email">{{ 'CONTACT.EMAIL_LABEL' | translate }}</label>
-          <input [(ngModel)]="contactData.email" type="email" id="email" name="email" required
-            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" #email="ngModel" />
+          <input [(ngModel)]="contactData.email" type="email" id="email" name="email" class="input_field_text"
+            #email="ngModel" required [ngClass]="{ 'input_error': contactForm.submitted && !email.valid }"
+            placeholder="{{ contactForm.submitted && !email.valid ? ('CONTACT.EMAIL_ERROR' | translate) : ('CONTACT.EMAIL_PLACEHOLDER' | translate) }}" />
           <span *ngIf="!email.valid && email.touched" class="error">
             {{ 'CONTACT.EMAIL_ERROR' | translate }}
           </span>
           <hr>
 
+
           <!-- Message -->
           <label for="message">{{ 'CONTACT.MESSAGE_LABEL' | translate }}</label>
-          <textarea [(ngModel)]="contactData.message" id="message" name="message" required
-            #message="ngModel"></textarea>
+          <textarea [(ngModel)]="contactData.message" id="message" name="message" class="input_field_text"
+            #message="ngModel" required [ngClass]="{ 'input_error': contactForm.submitted && !message.valid }"
+            placeholder="{{ contactForm.submitted && !message.valid ? ('CONTACT.MESSAGE_ERROR' | translate) : ('CONTACT.MESSAGE_PLACEHOLDER' | translate) }}"></textarea>
           <span *ngIf="!message.valid && message.touched" class="error">
-            {{ 'CONTACT.MESSAGE_ERROR' | translate }}
+            {{ 'CONTACT.MESSAGE_ERROR' | translate }} {{ 'CONTACT.MESSAGE_LABEL' | translate }}
           </span>
           <hr>
+
 
           <!-- Privacy -->
           <label for="privacy">
             <input [(ngModel)]="contactData.privacy" type="checkbox" id="privacy" name="privacy" required
               #privacy="ngModel" />
-              <span>
-            {{ 'CONTACT.PRIVACY_LABEL' | translate }}  <a [routerLink]="['/legal']">{{ 'CONTACT.PRIVACY_Buttton' | translate }}</a>{{ 'CONTACT.PRIVACY_LABEL2' | translate }}
-              </span>
+            <span>
+              {{ 'CONTACT.PRIVACY_LABEL' | translate }} <a [routerLink]="['/legal']">{{ 'CONTACT.PRIVACY_Buttton' |
+                translate }}</a>{{ 'CONTACT.PRIVACY_LABEL2' | translate }}
+            </span>
           </label>
           <span *ngIf="!privacy.valid && privacy.touched" class="error">
             {{ 'CONTACT.PRIVACY_ERROR' | translate }}
@@ -53,7 +61,7 @@
 
           <!-- Submit -->
           <div class="cta-buttons">
-            <button class="btn" type="submit" [disabled]="!contactForm.valid"  >
+            <button class="btn" type="submit" [disabled]="!contactForm.valid">
               <span [class.scroll-text]="scrollActive" [class.allow-hover]="contactData.privacy">
                 {{ 'CONTACT.SUBMIT' | translate }}
 
