@@ -31,7 +31,10 @@ $breakpoints: (
   height: calc(100dvh - 100px);
   max-width: 100%;
   overflow: hidden;
-  max-height: 100vh;
+  height: 100svb;
+  padding-top: 8rem; 
+
+
 }
 
 .hero-content {
@@ -44,7 +47,7 @@ $breakpoints: (
     align-items: center;
     z-index: 2;
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
 
     @include respond-to(sm) {
       margin-top: 5rem;
@@ -57,6 +60,7 @@ $breakpoints: (
       margin-bottom: 0.5rem;
       font-weight: 400;
       font-family: 'Fira Code', monospace;
+
 
       @include respond-to(md) {
         font-size: 28px;
@@ -304,14 +308,14 @@ $breakpoints: (
 .right-line {
   border: none;
   border-left: 2px solid $primary-color;
-  height: 250px;
+  height:320px;
   opacity: 0.2;
 }
 
 .left-line {
   border: none;
   border-left: 2px solid $primary-color;
-  height: 250px;
+  height: 320px;
   opacity: 0.2;
 }
 
@@ -328,7 +332,7 @@ $breakpoints: (
   z-index: 10;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   font-family: 'Fira Code', monospace;
-  bottom: 150px;
+  bottom: 230px;
 
   .marquee {
     display: flex;
