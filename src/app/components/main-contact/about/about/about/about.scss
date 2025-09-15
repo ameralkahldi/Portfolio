@@ -1,11 +1,10 @@
-/* ---------- About Me Section ---------- */
 .about-me {
   padding: 4rem;
   background-color: #1c1c1c;
   color: #fff;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   min-height: 100svh;
   max-width: 1600px;
   margin: 0 auto;
@@ -13,12 +12,12 @@
   .about-wrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; 
     gap: 2rem;
     flex-wrap: wrap;
     width: 100%;
+    padding-left: 7rem; 
   }
-
   .left-side {
     flex: 1 1 300px;
     display: flex;
@@ -98,102 +97,133 @@
           color: #ddd;
         }
       }
-    }
+    }}
   }
-}
 
-/* ---------- Medium Screens (Tablets) ---------- */
-@media (max-width: 1024px) {
-  .about-me {
-    padding: 3rem 2rem;
 
-    .about-wrapper {
-      gap: 1.5rem;
-    }
+  @media (max-width: 1024px) {
+    .about-me {
+      padding: 3rem 2rem;
 
-    .right-side {
-      .about-box {
-        max-width: 100%;
-        h2 { font-size: 48px; }
-        p { font-size: 16px; }
+      .about-wrapper {
+        gap: 1.5rem;
+        justify-content: center;
+        padding-left: 1.5;
+      }
+
+      .right-side {
+        .about-box {
+          max-width: 100%;
+
+          h2 {
+            font-size: 48px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .left-side {
+        .image-wrapper {
+          max-width: 100%;
+        }
       }
     }
-
-    .left-side {
-      .image-wrapper {
-        max-width: 100%;
-      }
-    }
   }
-}
 
-/* ---------- Small Screens (Phones) ---------- */
-@media (max-width: 768px) {
-  .about-me {
-    flex-direction: column;
-    padding: 2rem 1rem;
-
-    .about-wrapper {
+  @media (max-width: 768px) {
+    .about-me {
       flex-direction: column;
-      align-items: center;
-    }
+      padding: 2rem 1rem;
 
-    .right-side {
-      align-items: center;
-
-      .label { font-size: 20px; margin-top: 2rem; }
-
-      .about-box {
-        padding: 1.5rem;
-        border-radius: 20px;
-
-        h2 { font-size: 36px; text-align: center; }
-        p { font-size: 15px; text-align: justify; }
-
-        .info-item {
-          flex-direction: row;
-          align-items: center;
-
-          img { width: 24px; height: 24px; }
-          p { font-size: 14px; }
-        }
+      .about-wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+        gap: 1rem;
       }
-    }
 
-    .left-side {
-      .image-wrapper {
-        max-width: 100%;
-        margin-top: 0;
+      .right-side {
+        align-items: center;
 
-        img {
-          width: 100%;
-          height: auto;
+        .label {
+          font-size: 20px;
+          margin-top: 2rem;
+        }
+
+        .about-box {
+          padding: 1.5rem;
           border-radius: 20px;
+
+          h2 {
+            font-size: 36px;
+            text-align: center;
+          }
+
+          p {
+            font-size: 15px;
+            text-align: justify;
+          }
+
+          .info-item {
+            flex-direction: row;
+            align-items: center;
+
+            img {
+              width: 24px;
+              height: 24px;
+            }
+
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      .left-side {
+        .image-wrapper {
+          max-width: 100%;
+          margin-top: 0;
+
+          img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+          }
         }
       }
     }
   }
-}
 
-/* ---------- Extra Small Screens (e.g., iPhone SE) ---------- */
-@media (max-width: 480px) {
-  .about-me {
-    .right-side {
-      .about-box {
-        h2 { font-size: 28px; }
-        p { font-size: 14px; }
+  @media (max-width: 480px) {
+    .about-me {
+      .right-side {
+        .about-box {
+          h2 {
+            font-size: 28px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+
+        .label {
+          font-size: 18px;
+        }
       }
 
-      .label { font-size: 18px; }
-    }
-
-    .left-side {
-      .image-wrapper {
-        img {
-          width: 100%;
-          height: auto;
+      .left-side {
+        .image-wrapper {
+          img {
+            width: 100%;
+            height: auto;
+          }
         }
       }
     }
   }
-}
