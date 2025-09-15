@@ -28,11 +28,7 @@
       justify-content: center;
       padding-right: 2rem;
       gap: 2rem;
-     
-
-
-
-
+  
       h4 {
         font-family: 'Karla', sans-serif;
         font-weight: 500;
@@ -214,8 +210,6 @@ label a{
         }
       }
 
-
-
       .success-message,
       .error-message {
         text-align: center;
@@ -258,8 +252,6 @@ label a{
     }
   }
 }
-
-/* ============ Responsive ============ */
 
 @media (max-width: 1024px) {
   .contact {
