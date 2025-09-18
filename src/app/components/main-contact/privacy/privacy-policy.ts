@@ -3,7 +3,7 @@ import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-privacy-policy',
-  imports: [TranslatePipe,],
+  imports: [TranslatePipe],
   templateUrl: './privacy-policy.html',
   styleUrls: ['./privacy-policy.scss']
 })
