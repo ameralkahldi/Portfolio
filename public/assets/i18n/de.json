@@ -121,11 +121,65 @@
     { "text": "Die Zusammenarbeit mit Amer war eine Freude. Sehr professionell.", "name": "Jane Smith" },
     { "text": "Er bringt viel Kreativität und Leidenschaft in seine Arbeit.", "name": "Michael Müller" }
   ]
+},
+
+  "privacyPolicy": {
+    "title": "Datenschutzerklärung",
+    "dataController": "Datenverantwortlicher",
+    "contactInformation": "Kontaktinformation",
+    "controllerDetails": [
+      "Amer Alkhalidy",
+      "Robert-Koch-Straße 9",
+      "56073 Koblenz"
+    ],
+    "email": "amer.alkhaldi@icloud.com",
+    "introduction": "Der Schutz Ihrer persönlichen Daten ist uns wichtig. Diese Datenschutzerklärung erklärt, wie Portfolio personenbezogene Daten im Einklang mit der Datenschutz-Grundverordnung (DSGVO) und anderen geltenden europäischen Datenschutzgesetzen erhebt, verarbeitet und speichert.",
+    "dataWeCollect": "Wenn Sie Portfolio besuchen oder nutzen, können wir folgende Daten erheben:",
+    "dataWeCollectList": [
+      "Daten, die Sie direkt bereitstellen (z. B. Kontaktformulare, E‑Mail‑Anfragen)",
+      "Technische Daten, die automatisch gesammelt werden (z. B. IP‑Adresse, Browsertyp, Geräteinformationen)",
+      "Nutzungsdaten (z. B. besuchte Seiten, Verweildauer auf der Website)"
+    ],
+    "purpose": "Wir verarbeiten Ihre Daten nur zu folgenden Zwecken:",
+    "purposeList": [
+      "Um auf Anfragen zu antworten und angeforderte Dienstleistungen bereitzustellen",
+      "Um unsere Website und Dienstleistungen zu verbessern",
+      "Um gesetzlichen Verpflichtungen nachzukommen"
+    ],
+    "legalBasis": "Die rechtlichen Grundlagen für die Verarbeitung Ihrer personenbezogenen Daten sind:",
+    "legalBasisList": [
+      "Ihre Einwilligung, wo erforderlich (Art. 6 Abs. 1 lit. a DSGVO)",
+      "Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen (Art. 6 Abs. 1 lit. b DSGVO)",
+      "Einhaltung rechtlicher Verpflichtungen (Art. 6 Abs. 1 lit. c DSGVO)",
+      "Berechtigte Interessen, die von uns verfolgt werden (Art. 6 Abs. 1 lit. f DSGVO)"
+    ],
+    "dataSharing": "Wir verkaufen oder vermieten Ihre personenbezogenen Daten nicht. Wir können Ihre Daten nur mit vertrauenswürdigen Dritten teilen, um:",
+    "dataSharingList": [
+      "technischen Support oder Website-Dienstleistungen bereitzustellen",
+      "gesetzlichen Verpflichtungen oder behördlichen Anforderungen nachzukommen"
+    ],
+    "dataStorage": "Personenbezogene Daten werden nur so lange gespeichert, wie es notwendig ist, um die in dieser Datenschutzerklärung genannten Zwecke zu erfüllen oder wie es gesetzlich vorgeschrieben ist.",
+    "yourRights": "Nach der DSGVO haben Sie folgende Rechte:",
+    "yourRightsList": [
+      "Recht auf Auskunft über Ihre personenbezogenen Daten",
+      "Recht auf Berichtigung oder Aktualisierung Ihrer Daten",
+      "Recht auf Löschung Ihrer Daten („Recht auf Vergessen“)",
+      "Recht, die Verarbeitung einzuschränken oder ihr zu widersprechen",
+      "Recht auf Datenübertragbarkeit",
+      "Recht, Ihre Einwilligung jederzeit zu widerrufen",
+      "Recht, Beschwerde bei einer Aufsichtsbehörde einzureichen"
+    ],
+    "cookies": "Unsere Website kann Cookies verwenden, um die Nutzererfahrung zu verbessern und den Datenverkehr zu analysieren. Sie können Ihre Cookie‑Einstellungen über die Einstellungen Ihres Browsers verwalten.",
+    "thirdParty": "Portfolio kann Drittanbieter‑Dienste wie Analyse‑ oder Hosting‑Anbieter verwenden. Diese Dienste können personenbezogene Daten sammeln oder verarbeiten. Wir stellen sicher, dass alle Drittanbieter‑Dienste den Anforderungen der DSGVO entsprechen.",
+    "changes": "Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Änderungen werden mit einem aktualisierten Datum auf dieser Seite veröffentlicht. Wir empfehlen, diese Seite regelmäßig zu überprüfen.",
+    "questions": "Bei Fragen zu Ihren personenbezogenen Daten kontaktieren Sie uns bitte unter ameralkhalid@icloud.com.",
+    "date": "Datum: 08. September 2025"
+  }
 }
 
 
 
-}
+
 
 
 

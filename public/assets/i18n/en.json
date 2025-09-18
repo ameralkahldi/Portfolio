@@ -119,12 +119,67 @@
     { "text": "Working with Amer was a pleasure. Very professional.", "name": "Jane Smith" },
     { "text": "He brings a lot of creativity and passion to his work.", "name": "Michael Müller" }
   ]
+},
+
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "dataController": "Data Controller",
+    "contactInformation": "Contact Information",
+    "controllerDetails": [
+      "Amer Alkhalidy",
+      "Robert-Koch-Straße 9",
+      "56073 Koblenz"
+    ],
+    "email": "amer.alkhaldi@icloud.com",
+    "introduction": "Protecting your personal data is important to us. This Privacy Policy explains how Portfolio collects, processes, and stores personal data in accordance with the General Data Protection Regulation (GDPR) and other applicable European data protection laws.",
+    "dataWeCollect": "When you visit or use Portfolio, we may collect the following data:",
+    "dataWeCollectList": [
+      "Information you provide directly (e.g., contact forms, email inquiries)",
+      "Technical data automatically collected (e.g., IP address, browser type, device information)",
+      "Usage data (e.g., pages visited, time spent on the website)"
+    ],
+    "purpose": "We process your data only for the following purposes:",
+    "purposeList": [
+      "To respond to inquiries and provide requested services",
+      "To improve our website and services",
+      "To comply with legal obligations"
+    ],
+    "legalBasis": "The legal bases for processing your personal data are:",
+    "legalBasisList": [
+      "Your consent where required (Art. 6(1)(a) GDPR)",
+      "Performance of a contract or pre-contractual measures (Art. 6(1)(b) GDPR)",
+      "Compliance with legal obligations (Art. 6(1)(c) GDPR)",
+      "Legitimate interests pursued by us (Art. 6(1)(f) GDPR)"
+    ],
+    "dataSharing": "We do not sell or rent your personal data. We may share your data with trusted third parties only to:",
+    "dataSharingList": [
+      "Provide technical support or website services",
+      "Comply with legal obligations or governmental requests"
+    ],
+    "dataStorage": "Personal data will be stored only for as long as necessary to fulfill the purposes outlined in this Privacy Policy or as required by law.",
+    "yourRights": "Under GDPR, you have the following rights:",
+    "yourRightsList": [
+      "Right to access your personal data",
+      "Right to correct or update your data",
+      "Right to request deletion of your data (\"Right to be forgotten\")",
+      "Right to restrict or object to processing",
+      "Right to data portability",
+      "Right to withdraw consent at any time",
+      "Right to lodge a complaint with a supervisory authority"
+    ],
+    "cookies": "Our website may use cookies to improve user experience and analyze traffic. You can manage cookie preferences via your browser settings.",
+    "thirdParty": "Portfolio may use third-party services such as analytics or hosting providers. These services may collect or process personal data. We ensure that all third-party services comply with GDPR requirements.",
+    "changes": "We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date. We recommend checking this page regularly.",
+    "questions": "For questions regarding your personal data, please contact us at amer.alkhaldi@icloud.com",
+    "date": "Date: September 08, 2025"
+  }
 }
 
 
 
 
-}
+
+
 
 
 
