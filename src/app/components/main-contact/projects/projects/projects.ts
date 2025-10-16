@@ -57,14 +57,17 @@ export class ProjectsComponent {
   },
   {
     id: 'PROJECT3',
-    title: 'Project 3',
+    title: 'Join',
     frage: 'PROJECTS.DEFAULT_QUESTION',
-    image: './assets/img/2025-08-25 (3).png',
-    pro: ['HTML', 'CSS', 'JavaScript', 'API'],
+    image: '/assets/img/2025-08-25 (3).png',
+    pro: ['HTML', 'CSS', 'Typescript', 'Angular','Firebase'],
     techStack: [
       { icon: './assets/icon_skill/html.png' },
       { icon: './assets/icon_skill/Vector (1).png' },
-      { icon: '/assets/icon_skill/Javascript.png' },
+      { icon: './assets/icon_skill/Vector (3).png' },
+      { icon: './assets/icon_skill/Angular.png' },
+      { icon: './assets/icon_skill/Group.png' },
+
     ],
     link: '',
     testLink: '',
