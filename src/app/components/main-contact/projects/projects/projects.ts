@@ -38,8 +38,8 @@ export class ProjectsComponent {
       { icon: './assets/icon_skill/Javascript.png' },
       {icon :'./assets/icon_logos/Api.png'}
     ],
-    link: 'https://amer-alkhalidy.developerakademie.net/Pokemon%20API/Pokemon%20API/index.html',
-    testLink: 'https://amer-alkhalidy.developerakademie.net/Pokemon%20API/index.html',
+    link: 'https://github.com/ameralkahldi/Pekomen-App',
+    testLink: 'https://ameralkhalidy.de/pokemon/index.html',
   },
   {
     id: 'PROJECT2',
@@ -53,7 +53,7 @@ export class ProjectsComponent {
       { icon: '/assets/icon_skill/Javascript.png' },
     ],
     link: 'https://github.com/ameralkahldi/El-Pollo-Loco',
-    testLink: 'https://amer-alkhalidy.developerakademie.net/EL%20Pollo%20Loco/index.html',
+    testLink: 'https://ameralkhalidy.de/el_polo_loco/index.html',
   },
   {
     id: 'PROJECT3',
