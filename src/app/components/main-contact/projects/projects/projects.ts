@@ -50,7 +50,7 @@ export class ProjectsComponent {
     techStack: [
       { icon: './assets/icon_skill/html.png' },
       { icon: './assets/icon_skill/Vector (1).png' },
-      { icon: '/assets/icon_skill/Javascript.png' },
+      { icon: './assets/icon_skill/java.png' },
     ],
     link: 'https://github.com/ameralkahldi/El-Pollo-Loco',
     testLink: 'https://ameralkhalidy.de/el_polo_loco/index.html',
@@ -59,7 +59,7 @@ export class ProjectsComponent {
     id: 'PROJECT3',
     title: 'Join',
     frage: 'PROJECTS.DEFAULT_QUESTION',
-    image: '/assets/img/2025-08-25 (3).png',
+    image: './assets/icon_skill/2025-10-20.png',
     pro: ['HTML', 'CSS', 'Typescript', 'Angular','Firebase'],
     techStack: [
       { icon: './assets/icon_skill/html.png' },
@@ -69,7 +69,7 @@ export class ProjectsComponent {
       { icon: './assets/icon_skill/Group.png' },
 
     ],
-    link: '',
+    link: 'https://github.com/TobiasDreifke/join',
     testLink: '',
   },
 ];
