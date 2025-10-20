@@ -1,11 +1,15 @@
   .projects {
-    min-height: 70svh;
+    min-height: 80svh;
     max-width: 1300px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    @media (max-width:100px) {
+      padding: 10rem 1rem;
+      
+    }
 
     .container {
       width: 95%;
