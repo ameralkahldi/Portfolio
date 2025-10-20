@@ -1,37 +1,59 @@
 <?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'vendor/autoload.php';
 
 switch ($_SERVER['REQUEST_METHOD']) {
-    case ("OPTIONS"): //Allow preflighting to take place.
+    case ("OPTIONS"):
         header("Access-Control-Allow-Origin: *");
         header("Access-Control-Allow-Methods: POST");
         header("Access-Control-Allow-Headers: content-type");
         exit;
-        case("POST"): //Send the email;
-            header("Access-Control-Allow-Origin: *");
-            // Payload is not send to $_POST Variable,
-            // is send to php:input as a text
-            $json = file_get_contents('php://input');
-            //parse the Payload from text format to Object
-            $params = json_decode($json);
-    
-            $email = $params->email;
-            $name = $params->name;
-            $message = $params->message;
-    
-            $recipient = 'amer.alkhaldi@icloud.com';  
-            $subject = "Contact From <$email>";
-            $message = "From:" . $name . "<br>" . $message ;
-    
-            $headers   = array();
-            $headers[] = 'MIME-Version: 1.0';
-            $headers[] = 'Content-type: text/html; charset=utf-8';
 
-            // Additional headers
-            $headers[] = "From: noreply@mywebsite.com";
+    case ("POST"):
+        header("Access-Control-Allow-Origin: *");
 
-            mail($recipient, $subject, $message, implode("\r\n", $headers));
-            break;
-        default: //Reject any non POST or OPTIONS requests.
-            header("Allow: POST", true, 405);
-            exit;
-    } 
+        $json = file_get_contents('php://input');
+        $params = json_decode($json);
+
+        $email = $params->email ?? '';
+        $name = $params->name ?? '';
+        $message = $params->message ?? '';
+
+        $mail = new PHPMailer(true);
+
+        try {
+           
+            $mail->isSMTP();
+            $mail->Host = 'mail.ameralkhalidy.de';  
+            $mail->SMTPAuth = true;
+            $mail->Username = 'm079790b';         
+            $mail->Password = 'Amer1996@@'; 
+            $mail->SMTPSecure = 'tls';
+            $mail->Port = 587;
+
+            $mail->setFrom('contact@ameralkhalidy.de', 'Website Kontaktformular');
+            $mail->addAddress('amer.alkhaldi@icloud.com');
+
+            
+            $mail->isHTML(true);
+            $mail->Subject = "Neue Nachricht von $name <$email>";
+            $mail->Body = "Von: $name <br>Email: $email <br><br>Nachricht:<br>$message";
+
+            $mail->send();
+            http_response_code(200);
+            echo json_encode(['status' => 'success', 'message' => 'E-Mail erfolgreich gesendet.']);
+        } catch (Exception $e) {
+            http_response_code(500);
+            echo json_encode(['status' => 'error', 'message' => 'Mailer Error: ' . $mail->ErrorInfo]);
+        }
+        break;
+
+    default:
+        header("Allow: POST", true, 405);
+        exit;
+}
