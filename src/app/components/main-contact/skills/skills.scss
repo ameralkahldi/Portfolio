@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-   min-height: 80svh;
+   min-height: 90svh;
   max-width: 1600px;
   margin: 0 auto;
   .container {
@@ -124,8 +124,8 @@
  
 
     h3 { font-size: 32px; line-height: 1.2; }
-    p { font-size: 14px; line-height: 1.3; text-align: justify; }
-    .contact-note { font-size: 12px;
+    p { font-size: 18px; line-height: 1.3; text-align: justify; }
+    .contact-note { font-size: 18px;
       .highlighted-question { font-size: 18px; line-height: 1.2; }
     }
   }
@@ -223,7 +223,7 @@ gap: 1rem;
       text-align: center;
       border-radius: 20px;
       h3 { font-size: 36px; }
-      p { font-size: 15px; }
+      p { font-size: 16px; }
     }
 
     .skills-grid {
@@ -240,7 +240,7 @@ gap: 1rem;
   .technologies {
     .header-box {
       h3 { font-size: 28px; }
-      p { font-size: 14px; }
+      p { font-size: 16px; }
     }
 
     .skills-grid {
@@ -255,7 +255,7 @@ gap: 1rem;
       }
 
       p {
-        font-size: 12px; 
+        font-size: 16px; 
       }
     }
   }
