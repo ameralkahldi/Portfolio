@@ -152,7 +152,7 @@
 
     .hover-preview {
       position: absolute;
-      left: 75%;
+      left: 80%;
       transform: translateX(-40%);
       pointer-events: none;
 
@@ -163,7 +163,7 @@
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
       }
 
-      @media (max-width: 1025px) {
+      @media (max-width: 1200px) {
         display: none;
       }
     }
