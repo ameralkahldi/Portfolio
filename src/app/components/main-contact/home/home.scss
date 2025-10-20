@@ -337,10 +337,10 @@ $breakpoints: (
   .marquee {
     display: flex;
     gap: 3rem;
-    animation: scroll-loop 30s linear infinite;
+    animation: scroll-loop 20s linear infinite;
     white-space: nowrap;
   }
-
+  
   span {
     white-space: nowrap;
   }
