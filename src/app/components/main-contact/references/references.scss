@@ -39,7 +39,6 @@
   gap: 2rem;
   position: relative;
   width: 100%;
-
   transition: transform 0.5s ease;
 
   &.transitioning {
@@ -58,11 +57,9 @@
   flex-direction: column;
   justify-content: space-around;
   opacity: 0.5;
-  display: flex;
   transform: scale(0.9);
   height: 250px;
   transition: opacity 0.5s ease, transform 0.5s ease;
-
 
   &.active {
     opacity: 1;
@@ -72,8 +69,23 @@
   &.prev,
   &.next {
     transform: scale(0.95);
-
   }
+}
+
+@media (max-width: 375px) {
+  .carousell_wrapper {
+    gap: 0.5rem;
+   
+  }
+
+  .carousell_container {
+    flex: 0 0 60%;
+    padding: 0.5rem;
+    height: 220px;
+    
+  }
+
+  
 }
 
 
