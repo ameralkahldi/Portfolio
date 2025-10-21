@@ -9,5 +9,15 @@ import { TranslatePipe } from '@ngx-translate/core';
   styleUrl: './about.scss'
 })
 export class AboutComponent {
+  isLineVisible = false;
+
+showLines() {
+  this.isLineVisible = true; // تظهر الصورة عند تمرير الماوس
+}
+
+keepLinesVisible() {
+  this.isLineVisible = true; // تبقى ظاهرة حتى بعد إخراج الماوس
+}
+
 
 }

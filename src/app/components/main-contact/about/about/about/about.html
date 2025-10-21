@@ -1,23 +1,13 @@
 <section class="about-me">
   <div class="container about-wrapper">
 
-<div class="left-side">
-  <div class="image-wrapper aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
-    <img src="./assets/img/amer.jpg" alt="Amer Alkhalidy" />
+    <div class="left-side">
+      <div class="image-wrapper" (mouseenter)="showLines()" (mouseleave)="keepLinesVisible()">
+        <img src="./assets/icon_skill/Capa_1.png" alt="" class="line_image" [class.visible]="isLineVisible" />
 
-    <div class="decor-lines left-lines">
-      <span></span><span></span><span></span><span></span>
-      <span></span><span></span><span></span><span></span>
+        <img src="./assets/img/amer.jpg" alt="Amer Alkhalidy" class="amer_image" />
+      </div>
     </div>
-
-    <div class="decor-lines bottom-lines">
-      <span></span><span></span><span></span><span></span>
-      <span></span><span></span><span></span><span></span>
-    </div>
-  </div>
-</div>
-
-
 
 
     <div class="right-side">
