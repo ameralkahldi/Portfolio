@@ -1,16 +1,19 @@
 .navbar {
-  position: fixed;
-  top: 0;
-  z-index: 1000;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  gap: 8px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 1.5rem 4rem;
-  gap: 2rem;
-   background: linear-gradient(35deg,#1c1c1c 30%,#225c51);
-   width: 100%;
+  transition: all 0.25ms ease;
+  padding: 2rem;
+  z-index: 1000;
+
 
 }
- .nav-links {
+
+.nav-links {
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -34,7 +37,7 @@
     &:hover::after {
       content: "";
       position: absolute;
-      bottom: -6px;       
+      bottom: -6px;
       left: 50%;
       transform: translateX(-50%);
       width: 6px;
@@ -50,36 +53,36 @@
 }
 
 
-  .desktop-lang {
-    display: inline-flex;
-    border: 1px solid #3DCFB6;
-    border-radius: 20px;
-    overflow: hidden;
+.desktop-lang {
+  display: inline-flex;
+  border: 1px solid #3DCFB6;
+  border-radius: 20px;
+  overflow: hidden;
 
-    button {
-      padding: 0.5rem 1.4rem;
-      background-color: transparent;
-      color: #3DCFB6;
-      font-weight: 600;
-      font-size: 0.95rem;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s ease, color 0.3s ease;
+  button {
+    padding: 0.5rem 1.4rem;
+    background-color: transparent;
+    color: #3DCFB6;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 
-      &:first-child {
-        border-right: 1px solid #3DCFB6;
-      }
+    &:first-child {
+      border-right: 1px solid #3DCFB6;
+    }
 
-      &.active {
-        background-color: #3DCFB6;
-        color: white;
-      }
+    &.active {
+      background-color: #3DCFB6;
+      color: white;
+    }
 
-      &:hover:not(.active) {
-        background-color: rgba(61, 207, 182, 0.1);
-      }
+    &:hover:not(.active) {
+      background-color: rgba(61, 207, 182, 0.1);
     }
   }
+}
 
 
 .logo {
@@ -102,7 +105,7 @@
   border: 2px solid #3DCFB6;
   border-radius: 50%;
   padding: 0.5rem 0.8rem;
-  background:#ffffff;
+  background: #ffffff;
 }
 
 .logo-text {
@@ -125,67 +128,67 @@
   letter-spacing: 1px;
 }
 
- 
 
 
-  .menu-toggle {
-    display: none;
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: #3DCFB6;
-    background: none;
-    border: none;
-  }
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #3DCFB6;
+  background: none;
+  border: none;
+}
 
 @media (max-width: 800px) {
   .navbar {
     padding: 1rem;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
 
     .logo {
-      order: 1; 
+      order: 1;
     }
 
     .menu-toggle {
       display: block;
-      order: 2; 
+      order: 2;
       margin-left: 0;
     }
 
     .desktop-lang {
-      display: none; 
+      display: none;
     }
 
     .nav-links {
-  display: none;
-  flex-direction: column;
-  justify-content: center;   
-  align-items: center;      
-  gap: 1rem;
-  margin-right: 0;
-  background: linear-gradient(35deg,#1c1c1c 30%,#225c51);
-  padding: 1rem 2rem;
-  position: absolute;
-  top: 90px;
-  left: 0;
-  right: 0;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  z-index: 999;
-  text-align: center;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin-right: 0;
+      background: linear-gradient(35deg, #1c1c1c 30%, #225c51);
+      padding: 1rem 2rem;
+      position: absolute;
+      top: 90px;
+      left: 0;
+      right: 0;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+      text-align: center;
 
-  a {
-    font-size: 1.1rem;
-    color: white;
-    font-weight: 600;
+      a {
+        font-size: 1.1rem;
+        color: white;
+        font-weight: 600;
 
-    &:hover,
-    &.active {
-      color: #3DCFB6;
-    }
-  }
+        &:hover,
+        &.active {
+          color: #3DCFB6;
+        }
+      }
 
 
 
