@@ -26,13 +26,17 @@
 
           <!-- Email -->
           <label for="email">{{ 'CONTACT.EMAIL_LABEL' | translate }}</label>
+
           <input [(ngModel)]="contactData.email" type="email" id="email" name="email" class="input_field_text"
-            #email="ngModel" required [ngClass]="{ 'input_error': contactForm.submitted && !email.valid }"
-            placeholder="{{ contactForm.submitted && !email.valid ? ('CONTACT.EMAIL_ERROR' | translate) : ('CONTACT.EMAIL_PLACEHOLDER' | translate) }}" />
-          <span *ngIf="!email.valid && email.touched" class="error">
+            #email="ngModel" required
+            [ngClass]="{ 'input_error': (contactForm.submitted || email.touched) && !email.valid }"
+            placeholder="{{ 'CONTACT.EMAIL_PLACEHOLDER' | translate }}" />
+          <span *ngIf="(contactForm.submitted || email.touched) && !email.valid" class="error">
             {{ 'CONTACT.EMAIL_ERROR' | translate }}
           </span>
+
           <hr>
+
 
 
           <!-- Message -->
@@ -70,8 +74,6 @@
           </div>
         </div>
 
-
-
         <div *ngIf="successMessage" class="success-message">
           {{ successMessage }}
         </div>
@@ -79,6 +81,7 @@
         <div *ngIf="errorMessage" class="error-message">
           {{ errorMessage }}
         </div>
+
       </form>
     </div>
   </div>

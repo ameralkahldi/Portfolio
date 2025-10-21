@@ -17,9 +17,12 @@
       </div>
 
       <div class="footer-right">
-        <a href="https://github.com/ameralkahldi">{{ 'FOOTER.GITHUB' | translate }}</a>
-        <a href="https://www.linkedin.com/in/amer-alkhalidy/">{{ 'FOOTER.LINKEDIN' | translate }}</a>
-        <a href="mailto:amer.alkhaldi@icloud.com">{{ 'FOOTER.EMAIL' | translate }}</a>
+        <a href="https://github.com/ameralkahldi" target="_blank">{{ 'FOOTER.GITHUB' | translate }}</a>
+        <a href="https://www.linkedin.com/in/amer-alkhalidy/" target="_blank" rel="noopener noreferrer">
+          {{ 'FOOTER.LINKEDIN' | translate }}
+        </a>
+
+        <a href="mailto:amer.alkhaldi@icloud.com" target="_blank">{{ 'FOOTER.EMAIL' | translate }}</a>
         <a [routerLink]="['/legal']">{{ 'FOOTER.LEGAL' | translate }}</a>
       </div>
     </div>

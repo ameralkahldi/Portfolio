@@ -15,6 +15,7 @@ import { RouterModule } from '@angular/router';
 export class ContactComponent {
   successMessage = '';
   errorMessage = '';
+  scrollActive = false;
 
   contactData = {
     name: '',
@@ -37,39 +38,44 @@ export class ContactComponent {
   };
   http =inject(HttpClient)
 
-  onSubmit(ngForm: NgForm) {
-    this.errorMessage = '';
-    if (ngForm.submitted && ngForm.form.valid ) {
-      console.log({
-        "contactData": JSON.stringify(this.contactData)
-      });
-      if(this.contactData.email.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/) === null){
-        console.log("Validation Error");
-        
-        this.errorMessage = 'Please enter a valid email address.';
-        return;
-      } else {
-        console.log("Validation Success");
-        this.errorMessage = '';
-      }
-      
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
-        .subscribe({
-          next: (response) => {
-            ngForm.resetForm();
-            this.successMessage = 'Your message has been sent successfully!';
-          },
-          error: (error) => {
-            console.error(error);
-          },
-          complete: () => console.info('send post complete'),
-        });
-    } else if (ngForm.submitted && ngForm.form.valid) {
+onSubmit(ngForm: NgForm) {
+  this.successMessage = '';
+  this.errorMessage = '';
 
-      ngForm.resetForm();
-    }
+  if (!ngForm.form.valid) {
+    this.errorMessage = 'Please fill in all required fields correctly.';
+    return;
   }
-  scrollActive = false;
+
+  const emailPattern = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  if (!emailPattern.test(this.contactData.email)) {
+    this.errorMessage = '';
+    setTimeout(() => {
+      this.errorMessage = 'Please enter a valid email address.';
+    });
+    return;
+  }
+
+  this.http.post(this.post.endPoint, this.post.body(this.contactData))
+    .subscribe({
+      next: (response) => {
+        ngForm.resetForm();
+        this.successMessage = 'Your message has been sent successfully!';
+
+        setTimeout(() => {
+          this.successMessage = '';
+        }, 3000);
+      },
+      error: (error) => {
+        console.error(error);
+        this.errorMessage = 'Something went wrong. Please try again later.';
+      },
+      complete: () => console.info('Send post complete'),
+    });
+}
+
+
+  
 
 startScroll() {
   if (this.contactData.privacy) {
