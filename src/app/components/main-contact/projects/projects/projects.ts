@@ -28,7 +28,7 @@ export class ProjectsComponent {
  projects: Project[] = [
   {
     id: 'PROJECT1', 
-    title: 'Pokomon Show',
+    title: 'Pokemon Show',
     frage: 'PROJECTS.DEFAULT_QUESTION', 
     image: './assets/img/2025-08-25 (1).png',
     pro: ['HTML', 'CSS', 'JavaScript', 'API'],

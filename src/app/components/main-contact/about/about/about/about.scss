@@ -136,53 +136,56 @@
     justify-content: space-between;
     width: 100%;
     left: 0;
+    top: 565px;
+
   
 
   }
 
   .bottom-lines span:nth-child(1) {
-    transform: rotate(15deg);
-    height: 20px;
+    transform: rotate(-50deg);
+    height: 70px;
+ 
+   
   }
 
   .bottom-lines span:nth-child(2) {
-    transform: rotate(15deg);
-    height: 30px;
+    transform: rotate(-50deg);
+    height: 25px;
   }
 
   .bottom-lines span:nth-child(3) {
-    transform: rotate(15deg);
-    height: 40px;
+    transform: rotate(-50deg);
+    height: 25px;
   }
 
   .bottom-lines span:nth-child(4) {
-    transform: rotate(15deg);
-    height: 50px;
+    transform: rotate(-50deg);
+    height: 25px;
   }
 
   .bottom-lines span:nth-child(5) {
-    transform: rotate(15deg);
-    height: 40px;
+    transform: rotate(-50deg);
+    height: 25px;
   }
 
   .bottom-lines span:nth-child(6) {
-    transform: rotate(15deg);
+    transform: rotate(-50deg);
 
-    height: 30px;
+    height: 25px;
   }
 
   .bottom-lines span:nth-child(7) {
-    height: 20px;
-    transform: rotate(15deg);
+    height: 25px;
+    transform: rotate(-50deg);
 
   }
 
   .bottom-lines span:nth-child(8) {
-    transform: rotate(15deg);
+    transform: rotate(-50deg);
     height: 25px;
   }
 
-  /* عند الشاشات الصغيرة */
   @media (max-width: 1050px) {
     .decor-lines {
       display: none;
