@@ -58,14 +58,14 @@
             @if (selectedProject.link) {
             <a [href]="selectedProject.link" target="_blank" class="btn">
               {{ 'PROJECTS.GITHUB' | translate }}
-              <img src="assets/icon_skill/arrow_outward.png" alt="Arrow" class="btn-icon" />
+              <img src="./assets/icon_skill/arrow_outward.png" alt="Arrow" class="btn-icon" />
             </a>
             }
 
             @if (selectedProject.testLink) {
             <a [href]="selectedProject.testLink" target="_blank" class="btn btn-secondary">
               {{ 'PROJECTS.LIVE_TEST' | translate }}
-              <img src="assets/icon_skill/arrow_outward.png" alt="Arrow" class="btn-icon" />
+              <img src="./assets/icon_skill/arrow_outward.png" alt="Arrow" class="btn-icon" />
             </a>
             }
           </div>
@@ -76,7 +76,7 @@
         </div>
 
         <div class="project-right">
-          <img src="assets/icon_skill/23. Close Button.png" alt="Close" class="close-icon"
+          <img src="./assets/icon_skill/23. Close Button.png" alt="Close" class="close-icon"
             (click)="selectedProjectIndex = null" />
 
           <img [src]="selectedProject.image" [alt]="selectedProject.title" class="project-image" />

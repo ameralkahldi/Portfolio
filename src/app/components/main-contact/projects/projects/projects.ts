@@ -35,7 +35,7 @@ export class ProjectsComponent {
     techStack: [
       { icon: './assets/icon_skill/html.png' },
       { icon: './assets/icon_skill/Vector (1).png' },
-      { icon: './assets/icon_skill/Javascript.png' },
+      { icon: './assets/icon_skill/javascript.png' },
       {icon :'./assets/icon_logos/Api.png'}
     ],
     link: 'https://github.com/ameralkahldi/Pekomen-App',
@@ -50,7 +50,7 @@ export class ProjectsComponent {
     techStack: [
       { icon: './assets/icon_skill/html.png' },
       { icon: './assets/icon_skill/Vector (1).png' },
-      { icon: './assets/icon_skill/java.png' },
+      { icon: './assets/icon_skill/javascript.png' },
     ],
     link: 'https://github.com/ameralkahldi/El-Pollo-Loco',
     testLink: 'https://ameralkhalidy.de/el_polo_loco/index.html',
