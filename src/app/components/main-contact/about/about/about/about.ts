@@ -12,11 +12,11 @@ export class AboutComponent {
   isLineVisible = false;
 
 showLines() {
-  this.isLineVisible = true; // تظهر الصورة عند تمرير الماوس
+  this.isLineVisible = true; 
 }
 
 keepLinesVisible() {
-  this.isLineVisible = true; // تبقى ظاهرة حتى بعد إخراج الماوس
+  this.isLineVisible = true;
 }
 
 
