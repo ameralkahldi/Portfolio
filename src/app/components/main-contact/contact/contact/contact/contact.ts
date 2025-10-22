@@ -70,7 +70,6 @@ onSubmit(ngForm: NgForm) {
         console.error(error);
         this.errorMessage = 'Something went wrong. Please try again later.';
       },
-      complete: () => console.info('Send post complete'),
     });
 }
 
