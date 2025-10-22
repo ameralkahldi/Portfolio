@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core'; 
 import { TranslatePipe } from '@ngx-translate/core';
 import { RouterModule } from '@angular/router'; 
 
@@ -10,4 +10,10 @@ import { RouterModule } from '@angular/router';
   templateUrl: './imprint.html',
   styleUrls: ['./imprint.scss']
 })
-export class ImprintComponent {}
+export class ImprintComponent implements OnInit { 
+
+  ngOnInit(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' }); 
+  }
+
+}
