@@ -22,16 +22,15 @@ body {
 
 .cursor-shadow {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
+  background-color: rgba(117, 95, 95, 0.2); 
   border-radius: 50%;
   pointer-events: none;
-  background: radial-gradient(circle, rgba(61, 207, 182, 0.2) 0%, rgba(61, 207, 182, 0) 80%);
   transform: translate(-50%, -50%);
-  transition: transform 0.1s linear;
+  opacity: 0;
+  transition: opacity 0.2s ease;
   z-index: 9999;
-  mix-blend-mode: screen;
 }
+
 

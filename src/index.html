@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="de">
+
 <head>
   <meta charset="utf-8">
   <title>Portfolio</title>
@@ -14,8 +15,9 @@
   <link rel="preconnect" href="https://fonts.bunny.net">
   <link href="https://fonts.bunny.net/css?family=karla:700" rel="stylesheet" />
 
- 
+
 </head>
+
 <body>
   <app-root></app-root>
 
@@ -23,14 +25,29 @@
 
   <script>
     const cursorShadow = document.createElement("div");
-cursorShadow.classList.add("cursor-shadow");
-document.body.appendChild(cursorShadow);
+    cursorShadow.classList.add("cursor-shadow");
+    document.body.appendChild(cursorShadow);
 
-document.addEventListener("mousemove", (e) => {
-  cursorShadow.style.top = `${e.clientY}px`;
-  cursorShadow.style.left = `${e.clientX}px`;
-});
+    let lastMoveTime = Date.now();
+    let isVisible = false;
+    let timeout;
 
+    document.addEventListener("mousemove", (e) => {
+      cursorShadow.style.top = `${e.clientY}px`;
+      cursorShadow.style.left = `${e.clientX}px`;
+      if (!isVisible) {
+        cursorShadow.style.opacity = "1";
+        isVisible = true;
+      }
+      clearTimeout(timeout);
+      lastMoveTime = Date.now();
+      timeout = setTimeout(() => {
+        cursorShadow.style.opacity = "0";
+        isVisible = false;
+      }, 1500);
+    });
   </script>
+
 </body>
+
 </html>
