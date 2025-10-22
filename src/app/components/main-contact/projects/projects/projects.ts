@@ -45,7 +45,7 @@ export class ProjectsComponent {
     id: 'PROJECT2',
     title: 'El Pollo Loco Spiel',
     frage: 'PROJECTS.DEFAULT_QUESTION',
-    image: './assets/img/2025-08-25 (3).png',
+    image: './assets/icon_logos/Rectangle 30-1.png',
     pro: ['HTML', 'CSS', 'JavaScript'],
     techStack: [
       { icon: './assets/icon_skill/html.png' },
@@ -59,7 +59,7 @@ export class ProjectsComponent {
     id: 'PROJECT3',
     title: 'Join',
     frage: 'PROJECTS.DEFAULT_QUESTION',
-    image: './assets/icon_skill/2025-10-20.png',
+    image: './assets/icon_logos/Rectangle 30-2 (1).png',
     pro: ['HTML', 'CSS', 'Typescript', 'Angular','Firebase'],
     techStack: [
       { icon: './assets/icon_skill/html.png' },
