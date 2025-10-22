@@ -23,6 +23,7 @@ $breakpoints: (
 .home-hero {
   width: 100%;
   max-width: 1540px;
+  height: 100vh;
   margin: 0 auto;
   gap: 8px;
   display: flex;
@@ -182,15 +183,16 @@ $breakpoints: (
   width: 80vw;
   margin: 0 auto;
   padding: 0 2rem;
-  transition: all 0.3s ease;;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 .arrow-group {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-
+  gap: 3rem;
+ 
 
 
   .scroll-down-arrow {
