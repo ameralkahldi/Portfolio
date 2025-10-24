@@ -13,7 +13,7 @@
          [class.active]="i === currentIndex"
          [class.prev]="i === (currentIndex - 1 + ('TESTIMONIALS.CARDS' | translate).length) % ('TESTIMONIALS.CARDS' | translate).length"
          [class.next]="i === (currentIndex + 1) % ('TESTIMONIALS.CARDS' | translate).length">
-      <p>{{ testimonial.text }}</p>
+      <p class="text-content">{{ testimonial.text }}</p>
       <div class="author">
         <div class="line"></div>
         <p>{{ testimonial.name }}</p>
