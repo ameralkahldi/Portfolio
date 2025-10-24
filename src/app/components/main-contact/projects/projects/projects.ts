@@ -70,7 +70,7 @@ export class ProjectsComponent {
 
     ],
     link: 'https://github.com/TobiasDreifke/join',
-    testLink: '',
+    testLink: 'https://amer-alkhalidy.developerakademie.net/angular-projects/join/login',
   },
 ];
 
