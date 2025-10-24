@@ -117,9 +117,9 @@
   "TESTIMONIALS": {
   "TITLE": "Was meine Kollegen über mich sagen",
   "CARDS": [
-    { "text": "Amer ist ein großartiger Teamplayer und immer hilfsbereit.", "name": "John Doe" },
-    { "text": "Die Zusammenarbeit mit Amer war eine Freude. Sehr professionell.", "name": "Jane Smith" },
-    { "text": "Er bringt viel Kreativität und Leidenschaft in seine Arbeit.", "name": "Michael Müller" }
+    { "text": "Amer war ein engagiertes und kompetentes Teammitglied, das durch klare Kommunikation, zuverlässige Arbeit und sauberen, gut strukturierten Code überzeugte.", "name": "Demis Moysidis - Join" },
+    { "text": "Amer arbeitet stets zuverlässig und gewissenhaft. Durch seinen ruhigen, fokussierten Stil und den gezielten Einsatz moderner KI-Technologien trägt er effizient und teamorientiert zum Projekterfolg bei.", "name": "Tobias Dreifke - Join" },
+    { "text": "Amer zeichnete sich in unserem gemeinsamen Projekt bei der Developer Akademie durch hohe Zuverlässigkeit, strukturiertes Arbeiten und konsequente Umsetzung der Aufgaben aus – auf ihn war stets Verlass.", "name": "Calvin Hanisch - Kochwelt" }
   ]
 },
 
