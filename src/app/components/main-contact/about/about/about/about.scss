@@ -119,6 +119,7 @@
       max-width: 568px;
       border: 1px solid #3dcfb6;
       height: auto;
+     
 
       h2 {
         font-size: 64px;
@@ -126,6 +127,7 @@
         color: #3dcfb6;
         font-weight: bold;
         font-family: 'Fira Code', monospace;
+        white-space: normal;
       }
 
       p {
@@ -136,6 +138,8 @@
         font-family: 'Karla', sans-serif;
         font-weight: 400;
         margin-bottom: 1rem;
+        white-space: normal;
+       
       }
 
       .info-item {

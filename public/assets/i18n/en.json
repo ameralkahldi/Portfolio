@@ -15,16 +15,16 @@
   },
   
     
-  "ABOUT": {
-    "LABEL": "Who I Am",
-    "TITLE": "About me",
-    "INTRO": "Hey there, I'm Amer.",
-    "DETAILS": "Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills?",
-    "LOCATION": "Where are you based? Would you be open to working remotely or potentially relocating?",
-    "LEARNING": "Show that you are open-minded. Are you enthusiastic about learning new technologies and continually improving your skills?",
-    "PROBLEM_SOLVING": "A brief description of your problem-solving approach. Do you learn from each challenge as you search for the most efficient or elegant solution? You can include some keywords like analytical thinking, creativity, persistence, and collaboration."
-  },
-  
+"ABOUT": {
+  "LABEL": "Who I Am",
+  "TITLE": "About me",
+  "INTRO": "Hey there, I'm Amer.",
+  "DETAILS": "Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills?",
+  "LOCATION": "Where are you based? Would you be open to working remotely or potentially relocating?",
+  "LEARNING": "Let your open-minded attitude show. Do you actively seek to learn new tech and continue growing your skill set?",
+  "PROBLEM_SOLVING": "Describe your personal strategy for tackling problems. Do you use every challenge as an opportunity to learn and to discover more efficient or polished solutions? Include traits such as analytical thinking, creativity, perseverance, and collaboration."
+},
+
   "CONTACT": {
   "HEADING": "Contact Me",
   "SUBHEADING": "Let's work together",
@@ -58,7 +58,7 @@
   "TECHNOLOGIES": {
     "TITLE": "Technologies",
     "SKILLSET": "Skill Set",
-    "DESCRIPTION": "A short introduction of your skills. Highlight your experience of using different front-end technologies and emphasise your openness to learning and adapting to new technologies. Show how important it is for you to keep up with the rapid changes in web development.",
+    "DESCRIPTION": "Provide a brief introduction to your skills. Mention your background working with different front-end technologies and your openness to adopting new ones. Demonstrate your commitment to keeping up with the rapid evolution of web development.",
     "QUESTION": "You need another skill?",
     "CONTACT_NOTE": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
     "TALK_BUTTON": "Let’s Talk"
@@ -70,7 +70,7 @@
   "PROJECT": "Project",
   "DEFAULT_QUESTION": "What is this project about?",
   "DESCRIPTION": {
-    "PROJECT1": "Pekomen is a simple and modern app to present and manage creative projects. It’s responsive, multilingual, and supports live demos and tech stacks.",
+    "PROJECT1": "Pokemon is a simple and modern app to present and manage creative projects. It’s responsive, multilingual, and supports live demos and tech stacks.",
     "PROJECT2": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
     "PROJECT3": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
   },
