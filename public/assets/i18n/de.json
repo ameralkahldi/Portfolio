@@ -19,10 +19,10 @@
     "LABEL": "Wer ich bin",
     "TITLE": "Über mich",
     "INTRO": "Hallo, ich bin Amer.",
-    "DETAILS": "Schreibe einige IT-bezogene Informationen über dich. Warum bist du leidenschaftlich beim Programmieren? Was inspiriert dich, deine Fähigkeiten zu verbessern?",
-    "LOCATION": "Wo lebst du? Bist du offen für Remote-Arbeit oder sogar für einen Umzug?",
-    "LEARNING": "Zeige, dass du offen für Neues bist. Bist du begeistert davon, neue Technologien zu lernen und deine Fähigkeiten ständig zu verbessern?",
-    "PROBLEM_SOLVING": "Eine kurze Beschreibung deines Ansatzes zur Problemlösung. Lernst du aus jeder Herausforderung, um die effizienteste oder eleganteste Lösung zu finden? Du kannst Begriffe wie analytisches Denken, Kreativität, Ausdauer und Zusammenarbeit verwenden."
+    "DETAILS": "Ich bin ein leidenschaftlicher Frontend-Entwickler, der es genießt, Ideen in saubere, funktionale und benutzerfreundliche Webanwendungen umzusetzen. Das Programmieren inspiriert mich, weil es mir ermöglicht, Probleme kreativ zu lösen und ständig neue Technologien zu erlernen. Ich bin immer motiviert, meine Fähigkeiten zu verbessern, moderne Tools zu erforschen und bessere digitale Erlebnisse zu schaffen.",
+    "LOCATION": "Ich bin derzeit in Deutschland ansässig und bin voll und ganz offen für die Arbeit im Homeoffice. Ich bin auch bereit, umzuziehen, wenn die Position dies erfordert.",
+    "LEARNING": "Ich bin sehr aufgeschlossen und immer begierig darauf, neue Technologien zu lernen. Ich investiere aktiv Zeit in die Verbesserung meiner Fähigkeiten, die Erforschung moderner Werkzeuge, Frameworks und bewährter Praktiken, um kontinuierlich als Entwickler zu wachsen.",
+    "PROBLEM_SOLVING": "Ich gehe Probleme an, indem ich sie Schritt für Schritt analysiere, in handhabbare Teile zerlege und effiziente Lösungen erforsche. Jede Herausforderung sehe ich als Chance zum Lernen. Mit analytischem Denken, Kreativität und Ausdauer – und bei Bedarf durch Zusammenarbeit – strebe ich nach dem bestmöglichen Ergebnis."
   },
 
  "CONTACT": {
@@ -57,9 +57,9 @@
   "TECHNOLOGIES": {
     "TITLE": "Technologien",
     "SKILLSET": "Fähigkeiten",
-    "DESCRIPTION": "Eine kurze Einführung in deine Fähigkeiten. Hebe deine Erfahrung mit verschiedenen Frontend-Technologien hervor und betone deine Bereitschaft, neue Technologien zu erlernen und dich anzupassen. Zeige, wie wichtig es für dich ist, mit den schnellen Entwicklungen im Web Schritt zu halten.",
+    "DESCRIPTION": "Meine Fähigkeiten konzentrieren sich auf die moderne Frontend-Entwicklung. Ich habe praktische Erfahrung mit HTML, CSS/SCSS, JavaScript, TypeScript und Angular und baue gerne saubere, responsive und benutzerfreundliche Oberflächen. Ich bin immer offen dafür, neue Tools und Technologien zu lernen, und ich aktualisiere mein Wissen ständig, um mit der sich schnell verändernden Welt der Webentwicklung Schritt zu halten.",
     "QUESTION": "Brauchst du eine andere Fähigkeit?",
-    "CONTACT_NOTE": "Kontaktiere mich gerne. Ich freue mich darauf, mein Wissen zu erweitern.",
+    "CONTACT_NOTE": "Fühlen Sie sich frei, mich zu kontaktieren – ich bin immer bereit, zu lernen und mein Wissen zu erweitern.",
     "TALK_BUTTON": "Lass uns reden"
   },
  

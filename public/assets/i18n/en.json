@@ -19,10 +19,10 @@
   "LABEL": "Who I Am",
   "TITLE": "About me",
   "INTRO": "Hey there, I'm Amer.",
-  "DETAILS": "Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills?",
-  "LOCATION": "Where are you based? Would you be open to working remotely or potentially relocating?",
-  "LEARNING": "Let your open-minded attitude show. Do you actively seek to learn new tech and continue growing your skill set?",
-  "PROBLEM_SOLVING": "Describe your personal strategy for tackling problems. Do you use every challenge as an opportunity to learn and to discover more efficient or polished solutions? Include traits such as analytical thinking, creativity, perseverance, and collaboration."
+  "DETAILS": "I’m a passionate frontend developer who enjoys turning ideas into clean, functional, and user-friendly web applications. Coding inspires me because it allows me to solve problems creatively and continuously learn new technologies. I’m always motivated to improve my skills, explore modern tools, and build better digital experiences.",
+  "LOCATION": "I am currently based in Germany and I am fully open to working remotely. I am also willing to relocate if the position requires it.",
+  "LEARNING": " I’m very open-minded and always eager to learn new technologies. I actively invest time in improving my skills, exploring modern tools, frameworks, and best practices to grow continuously as a developer.",
+  "PROBLEM_SOLVING": "I approach problems by analyzing them step by step, breaking them into manageable parts, and exploring efficient solutions. I see every challenge as an opportunity to learn. With analytical thinking, creativity, and perseverance — and by collaborating when needed — I work toward the best possible result."
 },
 
   "CONTACT": {
@@ -58,9 +58,9 @@
   "TECHNOLOGIES": {
     "TITLE": "Technologies",
     "SKILLSET": "Skill Set",
-    "DESCRIPTION": "Provide a brief introduction to your skills. Mention your background working with different front-end technologies and your openness to adopting new ones. Demonstrate your commitment to keeping up with the rapid evolution of web development.",
+    "DESCRIPTION": "My skill set is focused on modern front-end development. I have hands-on experience with HTML, CSS/SCSS, JavaScript, TypeScript, and Angular, and I enjoy building clean, responsive, and user-friendly interfaces. I’m always open to learning new tools and technologies, and I continuously update my knowledge to keep pace with the fast-changing world of web development.",
     "QUESTION": "You need another skill?",
-    "CONTACT_NOTE": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+    "CONTACT_NOTE": "Feel free to contact me — I’m always ready to learn and expand my knowledge.",
     "TALK_BUTTON": "Let’s Talk"
   },
 "PROJECTS": {
